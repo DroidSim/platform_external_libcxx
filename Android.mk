@@ -50,10 +50,11 @@ LIBCXX_SRC_FILES := \
 
 LIBCXX_CPPFLAGS := \
 	-I$(LOCAL_PATH)/include/ \
-	-Iexternal/libcxxabi/include \
+	-Iexternal/libcxxrt/src \
 	-std=c++11 \
 	-nostdinc++ \
 	-fexceptions \
+	-DLIBCXXRT \
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libc++
@@ -61,8 +62,9 @@ LOCAL_CLANG := true
 LOCAL_SRC_FILES := $(LIBCXX_SRC_FILES)
 LOCAL_CPPFLAGS := $(LIBCXX_CPPFLAGS)
 LOCAL_RTTI_FLAG := -frtti
+LOCAL_STATIC_LIBRARIES := libcxxrt
+LOCAL_SHARED_LIBRARIES := libdl
 LOCAL_SYSTEM_SHARED_LIBRARIES := libc
-LOCAL_SHARED_LIBRARIES := libc++abi
 
 # Bug: 14296739
 # The MIPS target in LLVM is spuriously generating a text relocation for
@@ -86,7 +88,8 @@ LOCAL_SRC_FILES := $(LIBCXX_SRC_FILES)
 LOCAL_CPPFLAGS := $(LIBCXX_CPPFLAGS)
 LOCAL_RTTI_FLAG := -frtti
 LOCAL_LDFLAGS := -nodefaultlibs
-LOCAL_LDLIBS := -lc
+LOCAL_STATIC_LIBRARIES := libcxxrt
+LOCAL_LDLIBS := -lc -ldl -lgcc_s
 
 ifeq ($(HOST_OS), darwin)
 LOCAL_LDFLAGS += \
@@ -98,7 +101,6 @@ else
 LOCAL_LDLIBS += -lrt -lpthread
 endif
 
-LOCAL_SHARED_LIBRARIES := libc++abi libcompiler_rt
 include $(BUILD_HOST_SHARED_LIBRARY)
 
 endif  # TARGET_BUILD_APPS
