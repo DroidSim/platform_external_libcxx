@@ -33,8 +33,10 @@
 
 extern "C" {
 
+#if !defined(USE_MINGW)
 int vasprintf(char **sptr, const char *__restrict fmt, va_list ap);
 int asprintf(char **sptr, const char *__restrict fmt, ...);
+#endif
 size_t mbsnrtowcs(wchar_t *__restrict dst, const char **__restrict src,
                   size_t nmc, size_t len, mbstate_t *__restrict ps);
 size_t wcsnrtombs(char *__restrict dst, const wchar_t **__restrict src,
