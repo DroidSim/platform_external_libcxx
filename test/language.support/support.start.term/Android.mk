@@ -15,8 +15,4 @@
 #
 LOCAL_PATH := $(call my-dir)
 
-test_name := language.support/support.start.term/quick_exit
-test_src := quick_exit.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 include $(call all-makefiles-under,$(LOCAL_PATH))
