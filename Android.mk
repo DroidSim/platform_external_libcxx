@@ -98,7 +98,8 @@ else
 LOCAL_LDLIBS += -lrt -lpthread
 endif
 
-LOCAL_SHARED_LIBRARIES := libc++abi libcompiler_rt
+LOCAL_SHARED_LIBRARIES := libc++abi
+LOCAL_STATIC_LIBRARIES := libcompiler_rt
 include $(BUILD_HOST_SHARED_LIBRARY)
 
 endif  # TARGET_BUILD_APPS
