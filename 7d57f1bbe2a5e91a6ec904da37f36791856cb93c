@@ -1,0 +1,7 @@
+Code-Review+2: Elliott Hughes <enh@google.com>
+Verified+1: Dan Albert <danalbert@google.com>
+Submitted-by: Dan Albert <danalbert@google.com>
+Submitted-at: Mon, 12 May 2014 22:07:38 +0000
+Reviewed-on: https://android-review.googlesource.com/94229
+Project: platform/external/libcxx
+Branch: refs/heads/master
