@@ -14,38 +14,37 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/numarray/template.valarray/valarray.sub/Android.mk
-
-test_name := numerics/numarray/template.valarray/valarray.sub/slice_const
-test_src := slice_const.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := numerics/numarray/template.valarray/valarray.sub/valarray_bool_non_const
 test_src := valarray_bool_non_const.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/numarray/template.valarray/valarray.sub/gslice_const
-test_src := gslice_const.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/numarray/template.valarray/valarray.sub/indirect_array_const
 test_src := indirect_array_const.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/numarray/template.valarray/valarray.sub/slice_non_const
-test_src := slice_non_const.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := numerics/numarray/template.valarray/valarray.sub/valarray_bool_const
 test_src := valarray_bool_const.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/numarray/template.valarray/valarray.sub/gslice_non_const
-test_src := gslice_non_const.pass.cpp
+test_name := numerics/numarray/template.valarray/valarray.sub/slice_const
+test_src := slice_const.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/numarray/template.valarray/valarray.sub/slice_non_const
+test_src := slice_non_const.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/numarray/template.valarray/valarray.sub/indirect_array_non_const
 test_src := indirect_array_non_const.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/numarray/template.valarray/valarray.sub/gslice_const
+test_src := gslice_const.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/numarray/template.valarray/valarray.sub/gslice_non_const
+test_src := gslice_non_const.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

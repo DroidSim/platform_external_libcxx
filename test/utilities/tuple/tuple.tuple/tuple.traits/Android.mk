@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/tuple/tuple.tuple/tuple.traits/Android.mk
 
 test_name := utilities/tuple/tuple.tuple/tuple.traits/uses_allocator
 test_src := uses_allocator.pass.cpp

@@ -14,22 +14,21 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/algorithms/alg.modifying.operations/alg.copy/Android.mk
 
 test_name := algorithms/alg.modifying.operations/alg.copy/copy_n
 test_src := copy_n.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := algorithms/alg.modifying.operations/alg.copy/copy_backward
-test_src := copy_backward.pass.cpp
+test_name := algorithms/alg.modifying.operations/alg.copy/copy
+test_src := copy.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := algorithms/alg.modifying.operations/alg.copy/copy_if
 test_src := copy_if.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := algorithms/alg.modifying.operations/alg.copy/copy
-test_src := copy.pass.cpp
+test_name := algorithms/alg.modifying.operations/alg.copy/copy_backward
+test_src := copy_backward.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

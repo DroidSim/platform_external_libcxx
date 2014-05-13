@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/re/re.regex/re.regex.const/Android.mk
 
 test_name := re/re.regex/re.regex.const/constants
 test_src := constants.pass.cpp

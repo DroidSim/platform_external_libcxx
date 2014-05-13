@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/thread/thread.threads/thread.thread.class/thread.thread.constr/Android.mk
 
 test_name := thread/thread.threads/thread.thread.class/thread.thread.constr/default
 test_src := default.pass.cpp

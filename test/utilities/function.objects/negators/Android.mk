@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/function.objects/negators/Android.mk
-
-test_name := utilities/function.objects/negators/not1
-test_src := not1.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/negators/unary_negate
 test_src := unary_negate.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/function.objects/negators/not1
+test_src := not1.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/negators/binary_negate

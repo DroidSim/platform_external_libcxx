@@ -14,7 +14,10 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/numarray/template.valarray/valarray.unary/Android.mk
+
+test_name := numerics/numarray/template.valarray/valarray.unary/plus
+test_src := plus.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := numerics/numarray/template.valarray/valarray.unary/not
 test_src := not.pass.cpp
@@ -26,10 +29,6 @@ include external/libcxx/test/Android.build.mk
 
 test_name := numerics/numarray/template.valarray/valarray.unary/negate
 test_src := negate.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/numarray/template.valarray/valarray.unary/plus
-test_src := plus.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/depr/depr.lib.binders/depr.lib.binder.1st/Android.mk
 
 test_name := depr/depr.lib.binders/depr.lib.binder.1st/binder1st
 test_src := binder1st.pass.cpp

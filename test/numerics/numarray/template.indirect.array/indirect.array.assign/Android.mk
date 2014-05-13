@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/numarray/template.indirect.array/indirect.array.assign/Android.mk
-
-test_name := numerics/numarray/template.indirect.array/indirect.array.assign/indirect_array
-test_src := indirect_array.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := numerics/numarray/template.indirect.array/indirect.array.assign/valarray
 test_src := valarray.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/numarray/template.indirect.array/indirect.array.assign/indirect_array
+test_src := indirect_array.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

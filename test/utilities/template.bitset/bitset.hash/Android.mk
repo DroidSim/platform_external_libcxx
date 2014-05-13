@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/template.bitset/bitset.hash/Android.mk
 
 test_name := utilities/template.bitset/bitset.hash/bitset
 test_src := bitset.pass.cpp

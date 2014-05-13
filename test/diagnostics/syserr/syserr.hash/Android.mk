@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/diagnostics/syserr/syserr.hash/Android.mk
 
 test_name := diagnostics/syserr/syserr.hash/error_code
 test_src := error_code.pass.cpp

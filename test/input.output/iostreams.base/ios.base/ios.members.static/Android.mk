@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/iostreams.base/ios.base/ios.members.static/Android.mk
 
 test_name := input.output/iostreams.base/ios.base/ios.members.static/sync_with_stdio
 test_src := sync_with_stdio.pass.cpp

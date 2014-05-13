@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/algorithms/alg.nonmodifying/alg.adjacent.find/Android.mk
-
-test_name := algorithms/alg.nonmodifying/alg.adjacent.find/adjacent_find_pred
-test_src := adjacent_find_pred.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := algorithms/alg.nonmodifying/alg.adjacent.find/adjacent_find
 test_src := adjacent_find.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := algorithms/alg.nonmodifying/alg.adjacent.find/adjacent_find_pred
+test_src := adjacent_find_pred.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

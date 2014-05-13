@@ -14,38 +14,17 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/complex.number/complex.member.ops/Android.mk
-
-test_name := numerics/complex.number/complex.member.ops/divide_equal_complex
-test_src := divide_equal_complex.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/complex.number/complex.member.ops/minus_equal_scalar
-test_src := minus_equal_scalar.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := numerics/complex.number/complex.member.ops/minus_equal_complex
 test_src := minus_equal_complex.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/complex.number/complex.member.ops/plus_equal_scalar
-test_src := plus_equal_scalar.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/complex.number/complex.member.ops/times_equal_complex
-test_src := times_equal_complex.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/complex.number/complex.member.ops/times_equal_scalar
-test_src := times_equal_scalar.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/complex.number/complex.member.ops/assignment_complex
 test_src := assignment_complex.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/complex.number/complex.member.ops/assignment_scalar
-test_src := assignment_scalar.pass.cpp
+test_name := numerics/complex.number/complex.member.ops/plus_equal_scalar
+test_src := plus_equal_scalar.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/complex.number/complex.member.ops/divide_equal_scalar
@@ -54,6 +33,26 @@ include external/libcxx/test/Android.build.mk
 
 test_name := numerics/complex.number/complex.member.ops/plus_equal_complex
 test_src := plus_equal_complex.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/complex.number/complex.member.ops/assignment_scalar
+test_src := assignment_scalar.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/complex.number/complex.member.ops/times_equal_scalar
+test_src := times_equal_scalar.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/complex.number/complex.member.ops/times_equal_complex
+test_src := times_equal_complex.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/complex.number/complex.member.ops/minus_equal_scalar
+test_src := minus_equal_scalar.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/complex.number/complex.member.ops/divide_equal_complex
+test_src := divide_equal_complex.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

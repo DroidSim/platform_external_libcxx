@@ -14,11 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/diagnostics/syserr/syserr.errcat/syserr.errcat.virtuals/Android.mk
-
-test_name := diagnostics/syserr/syserr.errcat/syserr.errcat.virtuals/equivalent_error_code_int
-test_src := equivalent_error_code_int.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := diagnostics/syserr/syserr.errcat/syserr.errcat.virtuals/default_error_condition
 test_src := default_error_condition.pass.cpp
@@ -26,6 +21,10 @@ include external/libcxx/test/Android.build.mk
 
 test_name := diagnostics/syserr/syserr.errcat/syserr.errcat.virtuals/equivalent_int_error_condition
 test_src := equivalent_int_error_condition.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := diagnostics/syserr/syserr.errcat/syserr.errcat.virtuals/equivalent_error_code_int
+test_src := equivalent_error_code_int.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/language.support/cstdint/Android.mk
 
 test_name := language.support/cstdint/version
 test_src := version.pass.cpp

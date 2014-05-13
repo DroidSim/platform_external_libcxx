@@ -14,7 +14,10 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/thread/futures/futures.future_error/Android.mk
+
+test_name := thread/futures/futures.future_error/types
+test_src := types.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := thread/futures/futures.future_error/what
 test_src := what.pass.cpp
@@ -22,10 +25,6 @@ include external/libcxx/test/Android.build.mk
 
 test_name := thread/futures/futures.future_error/code
 test_src := code.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := thread/futures/futures.future_error/types
-test_src := types.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

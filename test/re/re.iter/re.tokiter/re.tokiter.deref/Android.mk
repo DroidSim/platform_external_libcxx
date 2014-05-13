@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/re/re.iter/re.tokiter/re.tokiter.deref/Android.mk
 
 test_name := re/re.iter/re.tokiter/re.tokiter.deref/deref
 test_src := deref.pass.cpp

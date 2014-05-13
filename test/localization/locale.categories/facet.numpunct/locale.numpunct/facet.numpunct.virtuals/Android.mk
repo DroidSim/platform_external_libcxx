@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/localization/locale.categories/facet.numpunct/locale.numpunct/facet.numpunct.virtuals/Android.mk
 
 test_name := localization/locale.categories/facet.numpunct/locale.numpunct/facet.numpunct.virtuals/tested_elsewhere
 test_src := tested_elsewhere.pass.cpp

@@ -14,30 +14,29 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/language.support/support.types/Android.mk
 
-test_name := language.support/support.types/null
-test_src := null.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := language.support/support.types/size_t
-test_src := size_t.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := language.support/support.types/version
-test_src := version.pass.cpp
+test_name := language.support/support.types/offsetof
+test_src := offsetof.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := language.support/support.types/ptrdiff_t
 test_src := ptrdiff_t.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := language.support/support.types/offsetof
-test_src := offsetof.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := language.support/support.types/nullptr_t
 test_src := nullptr_t.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := language.support/support.types/version
+test_src := version.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := language.support/support.types/size_t
+test_src := size_t.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := language.support/support.types/null
+test_src := null.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

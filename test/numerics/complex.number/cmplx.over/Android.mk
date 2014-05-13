@@ -14,26 +14,21 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/complex.number/cmplx.over/Android.mk
-
-test_name := numerics/complex.number/cmplx.over/conj
-test_src := conj.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := numerics/complex.number/cmplx.over/imag
 test_src := imag.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/complex.number/cmplx.over/proj
-test_src := proj.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/complex.number/cmplx.over/real
-test_src := real.pass.cpp
+test_name := numerics/complex.number/cmplx.over/conj
+test_src := conj.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/complex.number/cmplx.over/arg
 test_src := arg.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/complex.number/cmplx.over/real
+test_src := real.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/complex.number/cmplx.over/pow
@@ -42,6 +37,10 @@ include external/libcxx/test/Android.build.mk
 
 test_name := numerics/complex.number/cmplx.over/norm
 test_src := norm.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/complex.number/cmplx.over/proj
+test_src := proj.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

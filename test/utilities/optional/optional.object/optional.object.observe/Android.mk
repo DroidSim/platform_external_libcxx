@@ -14,22 +14,21 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/optional/optional.object/optional.object.observe/Android.mk
 
 test_name := utilities/optional/optional.object/optional.object.observe/bool
 test_src := bool.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/optional/optional.object/optional.object.observe/value_const
-test_src := value_const.pass.cpp
+test_name := utilities/optional/optional.object/optional.object.observe/dereference_const
+test_src := dereference_const.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/optional/optional.object/optional.object.observe/op_arrow
+test_src := op_arrow.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/optional/optional.object/optional.object.observe/value_or
 test_src := value_or.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/optional/optional.object/optional.object.observe/dereference_const
-test_src := dereference_const.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/optional/optional.object/optional.object.observe/dereference
@@ -40,16 +39,16 @@ test_name := utilities/optional/optional.object/optional.object.observe/op_arrow
 test_src := op_arrow_const.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/optional/optional.object/optional.object.observe/value
-test_src := value.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := utilities/optional/optional.object/optional.object.observe/value_or_const
 test_src := value_or_const.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/optional/optional.object/optional.object.observe/op_arrow
-test_src := op_arrow.pass.cpp
+test_name := utilities/optional/optional.object/optional.object.observe/value
+test_src := value.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/optional/optional.object/optional.object.observe/value_const
+test_src := value_const.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

@@ -14,11 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/depr/depr.auto.ptr/auto.ptr/auto.ptr.members/Android.mk
-
-test_name := depr/depr.auto.ptr/auto.ptr/auto.ptr.members/release
-test_src := release.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := depr/depr.auto.ptr/auto.ptr/auto.ptr.members/arrow
 test_src := arrow.pass.cpp
@@ -26,6 +21,10 @@ include external/libcxx/test/Android.build.mk
 
 test_name := depr/depr.auto.ptr/auto.ptr/auto.ptr.members/reset
 test_src := reset.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := depr/depr.auto.ptr/auto.ptr/auto.ptr.members/release
+test_src := release.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := depr/depr.auto.ptr/auto.ptr/auto.ptr.members/deref

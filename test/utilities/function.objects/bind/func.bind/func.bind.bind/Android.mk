@@ -14,30 +14,29 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/function.objects/bind/func.bind/func.bind.bind/Android.mk
 
-test_name := utilities/function.objects/bind/func.bind/func.bind.bind/invoke_lvalue
-test_src := invoke_lvalue.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/function.objects/bind/func.bind/func.bind.bind/invoke_int_0
-test_src := invoke_int_0.pass.cpp
+test_name := utilities/function.objects/bind/func.bind/func.bind.bind/invoke_rvalue
+test_src := invoke_rvalue.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/bind/func.bind/func.bind.bind/copy
 test_src := copy.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/function.objects/bind/func.bind/func.bind.bind/invoke_rvalue
-test_src := invoke_rvalue.pass.cpp
+test_name := utilities/function.objects/bind/func.bind/func.bind.bind/invoke_lvalue
+test_src := invoke_lvalue.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/function.objects/bind/func.bind/func.bind.bind/nested
+test_src := nested.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/bind/func.bind/func.bind.bind/invoke_void_0
 test_src := invoke_void_0.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/function.objects/bind/func.bind/func.bind.bind/nested
-test_src := nested.pass.cpp
+test_name := utilities/function.objects/bind/func.bind/func.bind.bind/invoke_int_0
+test_src := invoke_int_0.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

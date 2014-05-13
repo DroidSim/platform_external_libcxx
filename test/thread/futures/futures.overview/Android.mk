@@ -14,18 +14,17 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/thread/futures/futures.overview/Android.mk
 
 test_name := thread/futures/futures.overview/future_errc
 test_src := future_errc.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := thread/futures/futures.overview/future_status
-test_src := future_status.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := thread/futures/futures.overview/launch
 test_src := launch.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := thread/futures/futures.overview/future_status
+test_src := future_status.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := thread/futures/futures.overview/is_error_code_enum_future_errc

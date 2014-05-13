@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/time/time.point/time.point.cons/Android.mk
 
 test_name := utilities/time/time.point/time.point.cons/default
 test_src := default.pass.cpp

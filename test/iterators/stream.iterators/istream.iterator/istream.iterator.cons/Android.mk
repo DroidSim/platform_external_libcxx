@@ -14,18 +14,17 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/iterators/stream.iterators/istream.iterator/istream.iterator.cons/Android.mk
 
 test_name := iterators/stream.iterators/istream.iterator/istream.iterator.cons/default
 test_src := default.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := iterators/stream.iterators/istream.iterator/istream.iterator.cons/copy
-test_src := copy.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := iterators/stream.iterators/istream.iterator/istream.iterator.cons/istream
 test_src := istream.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := iterators/stream.iterators/istream.iterator/istream.iterator.cons/copy
+test_src := copy.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

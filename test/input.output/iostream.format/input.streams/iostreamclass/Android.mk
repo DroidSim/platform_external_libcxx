@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/iostream.format/input.streams/iostreamclass/Android.mk
 
 test_name := input.output/iostream.format/input.streams/iostreamclass/types
 test_src := types.pass.cpp

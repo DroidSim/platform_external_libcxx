@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/numarray/template.gslice.array/Android.mk
 
 test_name := numerics/numarray/template.gslice.array/types
 test_src := types.pass.cpp

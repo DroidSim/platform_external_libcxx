@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/iterators/stream.iterators/ostreambuf.iterator/ostreambuf.iter.cons/Android.mk
 
 test_name := iterators/stream.iterators/ostreambuf.iterator/ostreambuf.iter.cons/ostream
 test_src := ostream.pass.cpp

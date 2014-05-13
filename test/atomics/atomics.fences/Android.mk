@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/atomics/atomics.fences/Android.mk
-
-test_name := atomics/atomics.fences/atomic_signal_fence
-test_src := atomic_signal_fence.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := atomics/atomics.fences/atomic_thread_fence
 test_src := atomic_thread_fence.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := atomics/atomics.fences/atomic_signal_fence
+test_src := atomic_signal_fence.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

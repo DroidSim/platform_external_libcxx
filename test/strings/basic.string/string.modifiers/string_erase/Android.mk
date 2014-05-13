@@ -14,42 +14,41 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/strings/basic.string/string.modifiers/string_erase/Android.mk
 
 test_name := strings/basic.string/string.modifiers/string_erase/iter_iter
 test_src := iter_iter.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := strings/basic.string/string.modifiers/string_erase/erase_iter_iter_db4
-test_src := erase_iter_iter_db4.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := strings/basic.string/string.modifiers/string_erase/iter
-test_src := iter.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := strings/basic.string/string.modifiers/string_erase/pop_back
-test_src := pop_back.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := strings/basic.string/string.modifiers/string_erase/erase_iter_iter_db1
 test_src := erase_iter_iter_db1.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := strings/basic.string/string.modifiers/string_erase/erase_iter_db1
+test_src := erase_iter_db1.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := strings/basic.string/string.modifiers/string_erase/pop_back
+test_src := pop_back.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := strings/basic.string/string.modifiers/string_erase/erase_iter_iter_db4
+test_src := erase_iter_iter_db4.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := strings/basic.string/string.modifiers/string_erase/erase_iter_iter_db3
 test_src := erase_iter_iter_db3.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := strings/basic.string/string.modifiers/string_erase/erase_iter_db2
-test_src := erase_iter_db2.pass.cpp
+test_name := strings/basic.string/string.modifiers/string_erase/iter
+test_src := iter.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := strings/basic.string/string.modifiers/string_erase/size_size
 test_src := size_size.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := strings/basic.string/string.modifiers/string_erase/erase_iter_db1
-test_src := erase_iter_db1.pass.cpp
+test_name := strings/basic.string/string.modifiers/string_erase/erase_iter_db2
+test_src := erase_iter_db2.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := strings/basic.string/string.modifiers/string_erase/erase_iter_iter_db2

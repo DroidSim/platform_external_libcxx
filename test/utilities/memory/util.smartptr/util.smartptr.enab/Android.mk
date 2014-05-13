@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/util.smartptr/util.smartptr.enab/Android.mk
 
 test_name := utilities/memory/util.smartptr/util.smartptr.enab/enable_shared_from_this
 test_src := enable_shared_from_this.pass.cpp

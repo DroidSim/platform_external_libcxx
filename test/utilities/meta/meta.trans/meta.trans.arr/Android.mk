@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/meta/meta.trans/meta.trans.arr/Android.mk
-
-test_name := utilities/meta/meta.trans/meta.trans.arr/remove_all_extents
-test_src := remove_all_extents.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/meta/meta.trans/meta.trans.arr/remove_extent
 test_src := remove_extent.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/meta/meta.trans/meta.trans.arr/remove_all_extents
+test_src := remove_all_extents.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

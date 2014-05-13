@@ -14,26 +14,25 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/stream.buffers/streambuf/streambuf.members/streambuf.pub.get/Android.mk
-
-test_name := input.output/stream.buffers/streambuf/streambuf.members/streambuf.pub.get/in_avail
-test_src := in_avail.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := input.output/stream.buffers/streambuf/streambuf.members/streambuf.pub.get/sgetn
 test_src := sgetn.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := input.output/stream.buffers/streambuf/streambuf.members/streambuf.pub.get/sbumpc
-test_src := sbumpc.pass.cpp
+test_name := input.output/stream.buffers/streambuf/streambuf.members/streambuf.pub.get/in_avail
+test_src := in_avail.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/stream.buffers/streambuf/streambuf.members/streambuf.pub.get/snextc
+test_src := snextc.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := input.output/stream.buffers/streambuf/streambuf.members/streambuf.pub.get/sgetc
 test_src := sgetc.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := input.output/stream.buffers/streambuf/streambuf.members/streambuf.pub.get/snextc
-test_src := snextc.pass.cpp
+test_name := input.output/stream.buffers/streambuf/streambuf.members/streambuf.pub.get/sbumpc
+test_src := sbumpc.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

@@ -14,22 +14,21 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/associative/Android.mk
 
-test_name := containers/associative/tree_left_rotate
-test_src := tree_left_rotate.pass.cpp
+test_name := containers/associative/tree_balance_after_insert
+test_src := tree_balance_after_insert.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := containers/associative/tree_remove
 test_src := tree_remove.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := containers/associative/tree_balance_after_insert
-test_src := tree_balance_after_insert.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := containers/associative/tree_right_rotate
 test_src := tree_right_rotate.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/associative/tree_left_rotate
+test_src := tree_left_rotate.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

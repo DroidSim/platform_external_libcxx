@@ -14,7 +14,10 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/re/re.alg/re.alg.replace/Android.mk
+
+test_name := re/re.alg/re.alg.replace/test6
+test_src := test6.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := re/re.alg/re.alg.replace/test2
 test_src := test2.pass.cpp
@@ -24,20 +27,16 @@ test_name := re/re.alg/re.alg.replace/test3
 test_src := test3.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := re/re.alg/re.alg.replace/test4
+test_src := test4.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := re/re.alg/re.alg.replace/test5
 test_src := test5.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := re/re.alg/re.alg.replace/test1
 test_src := test1.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := re/re.alg/re.alg.replace/test6
-test_src := test6.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := re/re.alg/re.alg.replace/test4
-test_src := test4.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

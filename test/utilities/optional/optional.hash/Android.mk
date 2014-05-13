@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/optional/optional.hash/Android.mk
 
 test_name := utilities/optional/optional.hash/hash
 test_src := hash.pass.cpp

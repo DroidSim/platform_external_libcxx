@@ -14,11 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/utility/forward/Android.mk
-
-test_name := utilities/utility/forward/forward
-test_src := forward.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/utility/forward/move_if_noexcept
 test_src := move_if_noexcept.pass.cpp
@@ -26,6 +21,10 @@ include external/libcxx/test/Android.build.mk
 
 test_name := utilities/utility/forward/move_only
 test_src := move_only.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/utility/forward/forward
+test_src := forward.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/utility/forward/move_copy

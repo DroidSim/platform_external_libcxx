@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/localization/locale.categories/category.time/locale.time.put/locale.time.put.members/Android.mk
 
 test_name := localization/locale.categories/category.time/locale.time.put/locale.time.put.members/put1
 test_src := put1.pass.cpp

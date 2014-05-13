@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/stream.buffers/streambuf/streambuf.virtuals/streambuf.virt.put/Android.mk
-
-test_name := input.output/stream.buffers/streambuf/streambuf.virtuals/streambuf.virt.put/xsputn
-test_src := xsputn.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := input.output/stream.buffers/streambuf/streambuf.virtuals/streambuf.virt.put/overflow
 test_src := overflow.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/stream.buffers/streambuf/streambuf.virtuals/streambuf.virt.put/xsputn
+test_src := xsputn.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

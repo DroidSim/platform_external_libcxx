@@ -14,18 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/localization/locale.categories/category.time/locale.time.get.byname/Android.mk
 
 test_name := localization/locale.categories/category.time/locale.time.get.byname/get_monthname
 test_src := get_monthname.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := localization/locale.categories/category.time/locale.time.get.byname/get_weekday_wide
-test_src := get_weekday_wide.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := localization/locale.categories/category.time/locale.time.get.byname/get_one
-test_src := get_one.pass.cpp
+test_name := localization/locale.categories/category.time/locale.time.get.byname/get_monthname_wide
+test_src := get_monthname_wide.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := localization/locale.categories/category.time/locale.time.get.byname/get_time
@@ -36,40 +31,44 @@ test_name := localization/locale.categories/category.time/locale.time.get.byname
 test_src := get_weekday.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := localization/locale.categories/category.time/locale.time.get.byname/get_date_wide
-test_src := get_date_wide.pass.cpp
+test_name := localization/locale.categories/category.time/locale.time.get.byname/get_year
+test_src := get_year.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := localization/locale.categories/category.time/locale.time.get.byname/get_one
+test_src := get_one.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := localization/locale.categories/category.time/locale.time.get.byname/get_date
 test_src := get_date.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := localization/locale.categories/category.time/locale.time.get.byname/get_time_wide
-test_src := get_time_wide.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := localization/locale.categories/category.time/locale.time.get.byname/date_order
-test_src := date_order.pass.cpp
+test_name := localization/locale.categories/category.time/locale.time.get.byname/get_date_wide
+test_src := get_date_wide.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := localization/locale.categories/category.time/locale.time.get.byname/get_year_wide
 test_src := get_year_wide.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := localization/locale.categories/category.time/locale.time.get.byname/get_monthname_wide
-test_src := get_monthname_wide.pass.cpp
+test_name := localization/locale.categories/category.time/locale.time.get.byname/get_weekday_wide
+test_src := get_weekday_wide.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := localization/locale.categories/category.time/locale.time.get.byname/get_year
-test_src := get_year.pass.cpp
+test_name := localization/locale.categories/category.time/locale.time.get.byname/date_order_wide
+test_src := date_order_wide.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := localization/locale.categories/category.time/locale.time.get.byname/get_time_wide
+test_src := get_time_wide.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := localization/locale.categories/category.time/locale.time.get.byname/get_one_wide
 test_src := get_one_wide.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := localization/locale.categories/category.time/locale.time.get.byname/date_order_wide
-test_src := date_order_wide.pass.cpp
+test_name := localization/locale.categories/category.time/locale.time.get.byname/date_order
+test_src := date_order.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

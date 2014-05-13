@@ -14,7 +14,14 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/function.objects/logical.operations/Android.mk
+
+test_name := utilities/function.objects/logical.operations/transparent
+test_src := transparent.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/function.objects/logical.operations/logical_not
+test_src := logical_not.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/logical.operations/logical_or
 test_src := logical_or.pass.cpp
@@ -22,14 +29,6 @@ include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/logical.operations/logical_and
 test_src := logical_and.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/function.objects/logical.operations/logical_not
-test_src := logical_not.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/function.objects/logical.operations/transparent
-test_src := transparent.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/numarray/template.valarray/valarray.access/Android.mk
 
 test_name := numerics/numarray/template.valarray/valarray.access/access
 test_src := access.pass.cpp

@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/utility/pairs/pairs.spec/Android.mk
-
-test_name := utilities/utility/pairs/pairs.spec/make_pair
-test_src := make_pair.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/utility/pairs/pairs.spec/comparison
 test_src := comparison.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/utility/pairs/pairs.spec/make_pair
+test_src := make_pair.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/utility/pairs/pairs.spec/non_member_swap

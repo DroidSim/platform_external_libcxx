@@ -14,10 +14,9 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/unique.ptr/unique.ptr.runtime/Android.mk
 
-test_name := utilities/memory/unique.ptr/unique.ptr.runtime/null_asgn
-test_src := null_asgn.pass.cpp
+test_name := utilities/memory/unique.ptr/unique.ptr.runtime/pointer_type
+test_src := pointer_type.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/unique.ptr/unique.ptr.runtime/null_ctor
@@ -32,8 +31,8 @@ test_name := utilities/memory/unique.ptr/unique.ptr.runtime/nullptr_asgn
 test_src := nullptr_asgn.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/memory/unique.ptr/unique.ptr.runtime/pointer_type
-test_src := pointer_type.pass.cpp
+test_name := utilities/memory/unique.ptr/unique.ptr.runtime/null_asgn
+test_src := null_asgn.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/language.support/support.rtti/Android.mk
 
 test_name := language.support/support.rtti/version
 test_src := version.pass.cpp

@@ -14,34 +14,33 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/iostream.format/std.manip/Android.mk
 
-test_name := input.output/iostream.format/std.manip/setbase
-test_src := setbase.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/iostream.format/std.manip/setprecision
-test_src := setprecision.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/iostream.format/std.manip/setfill
-test_src := setfill.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/iostream.format/std.manip/version
-test_src := version.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/iostream.format/std.manip/setiosflags
-test_src := setiosflags.pass.cpp
+test_name := input.output/iostream.format/std.manip/resetiosflags
+test_src := resetiosflags.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostream.format/std.manip/setw
 test_src := setw.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := input.output/iostream.format/std.manip/resetiosflags
-test_src := resetiosflags.pass.cpp
+test_name := input.output/iostream.format/std.manip/version
+test_src := version.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostream.format/std.manip/setprecision
+test_src := setprecision.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostream.format/std.manip/setiosflags
+test_src := setiosflags.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostream.format/std.manip/setbase
+test_src := setbase.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostream.format/std.manip/setfill
+test_src := setfill.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

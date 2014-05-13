@@ -14,11 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/optional/optional.object/optional.object.ctor/Android.mk
-
-test_name := utilities/optional/optional.object/optional.object.ctor/rvalue_T
-test_src := rvalue_T.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/optional/optional.object/optional.object.ctor/default
 test_src := default.pass.cpp
@@ -28,16 +23,20 @@ test_name := utilities/optional/optional.object/optional.object.ctor/copy
 test_src := copy.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := utilities/optional/optional.object/optional.object.ctor/rvalue_T
+test_src := rvalue_T.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/optional/optional.object/optional.object.ctor/initializer_list
+test_src := initializer_list.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := utilities/optional/optional.object/optional.object.ctor/const_T
 test_src := const_T.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/optional/optional.object/optional.object.ctor/move
 test_src := move.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/optional/optional.object/optional.object.ctor/initializer_list
-test_src := initializer_list.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/optional/optional.object/optional.object.ctor/nullopt_t

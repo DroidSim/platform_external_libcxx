@@ -14,7 +14,10 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/diagnostics/syserr/syserr.errcondition/syserr.errcondition.modifiers/Android.mk
+
+test_name := diagnostics/syserr/syserr.errcondition/syserr.errcondition.modifiers/assign
+test_src := assign.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := diagnostics/syserr/syserr.errcondition/syserr.errcondition.modifiers/clear
 test_src := clear.pass.cpp
@@ -22,10 +25,6 @@ include external/libcxx/test/Android.build.mk
 
 test_name := diagnostics/syserr/syserr.errcondition/syserr.errcondition.modifiers/ErrorConditionEnum
 test_src := ErrorConditionEnum.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := diagnostics/syserr/syserr.errcondition/syserr.errcondition.modifiers/assign
-test_src := assign.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

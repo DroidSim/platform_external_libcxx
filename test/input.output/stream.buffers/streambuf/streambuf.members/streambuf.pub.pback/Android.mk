@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/stream.buffers/streambuf/streambuf.members/streambuf.pub.pback/Android.mk
 
 test_name := input.output/stream.buffers/streambuf/streambuf.members/streambuf.pub.pback/sungetc
 test_src := sungetc.pass.cpp

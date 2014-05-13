@@ -14,22 +14,21 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/thread/thread.threads/thread.thread.this/Android.mk
-
-test_name := thread/thread.threads/thread.thread.this/yield
-test_src := yield.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := thread/thread.threads/thread.thread.this/sleep_until
 test_src := sleep_until.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := thread/thread.threads/thread.thread.this/get_id
+test_src := get_id.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := thread/thread.threads/thread.thread.this/sleep_for
 test_src := sleep_for.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := thread/thread.threads/thread.thread.this/get_id
-test_src := get_id.pass.cpp
+test_name := thread/thread.threads/thread.thread.this/yield
+test_src := yield.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

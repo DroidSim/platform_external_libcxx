@@ -14,22 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.obs/Android.mk
-
-test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.obs/owner_before_shared_ptr
-test_src := owner_before_shared_ptr.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.obs/dereference
-test_src := dereference.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.obs/arrow
-test_src := arrow.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.obs/op_bool
 test_src := op_bool.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.obs/owner_before_shared_ptr
+test_src := owner_before_shared_ptr.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.obs/owner_before_weak_ptr
@@ -38,6 +29,14 @@ include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.obs/unique
 test_src := unique.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.obs/arrow
+test_src := arrow.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.obs/dereference
+test_src := dereference.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

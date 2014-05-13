@@ -14,30 +14,29 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/string.streams/stringbuf/stringbuf.virtuals/Android.mk
 
 test_name := input.output/string.streams/stringbuf/stringbuf.virtuals/seekpos
 test_src := seekpos.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/string.streams/stringbuf/stringbuf.virtuals/overflow
-test_src := overflow.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/string.streams/stringbuf/stringbuf.virtuals/pbackfail
-test_src := pbackfail.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/string.streams/stringbuf/stringbuf.virtuals/underflow
-test_src := underflow.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := input.output/string.streams/stringbuf/stringbuf.virtuals/setbuf
 test_src := setbuf.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := input.output/string.streams/stringbuf/stringbuf.virtuals/overflow
+test_src := overflow.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := input.output/string.streams/stringbuf/stringbuf.virtuals/seekoff
 test_src := seekoff.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/string.streams/stringbuf/stringbuf.virtuals/underflow
+test_src := underflow.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/string.streams/stringbuf/stringbuf.virtuals/pbackfail
+test_src := pbackfail.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

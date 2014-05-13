@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/iterators/predef.iterators/insert.iterators/insert.iter.ops/insert.iter.op++/Android.mk
-
-test_name := iterators/predef.iterators/insert.iterators/insert.iter.ops/insert.iter.op++/post
-test_src := post.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := iterators/predef.iterators/insert.iterators/insert.iter.ops/insert.iter.op++/pre
 test_src := pre.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := iterators/predef.iterators/insert.iterators/insert.iter.ops/insert.iter.op++/post
+test_src := post.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

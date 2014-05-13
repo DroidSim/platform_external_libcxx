@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/pointer.traits/pointer.traits.functions/Android.mk
 
 test_name := utilities/memory/pointer.traits/pointer.traits.functions/pointer_to
 test_src := pointer_to.pass.cpp

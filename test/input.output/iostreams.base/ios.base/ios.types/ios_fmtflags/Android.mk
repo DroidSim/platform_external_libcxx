@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/iostreams.base/ios.base/ios.types/ios_fmtflags/Android.mk
 
 test_name := input.output/iostreams.base/ios.base/ios.types/ios_fmtflags/fmtflags
 test_src := fmtflags.pass.cpp

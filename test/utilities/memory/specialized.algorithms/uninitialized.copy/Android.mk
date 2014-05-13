@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/specialized.algorithms/uninitialized.copy/Android.mk
 
 test_name := utilities/memory/specialized.algorithms/uninitialized.copy/uninitialized_copy
 test_src := uninitialized_copy.pass.cpp

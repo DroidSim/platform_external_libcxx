@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/container.adaptors/priority.queue/Android.mk
 
 test_name := containers/container.adaptors/priority.queue/types
 test_src := types.pass.cpp

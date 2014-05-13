@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/iostreams.base/ios/basic.ios.cons/Android.mk
 
 test_name := input.output/iostreams.base/ios/basic.ios.cons/ctor_streambuf
 test_src := ctor_streambuf.pass.cpp

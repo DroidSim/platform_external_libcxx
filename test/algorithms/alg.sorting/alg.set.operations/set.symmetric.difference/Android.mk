@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/algorithms/alg.sorting/alg.set.operations/set.symmetric.difference/Android.mk
 
 test_name := algorithms/alg.sorting/alg.set.operations/set.symmetric.difference/set_symmetric_difference
 test_src := set_symmetric_difference.pass.cpp

@@ -14,7 +14,18 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/time/Android.mk
+
+test_name := utilities/time/seconds
+test_src := seconds.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/time/nanoseconds
+test_src := nanoseconds.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/time/version
+test_src := version.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := utilities/time/milliseconds
 test_src := milliseconds.pass.cpp
@@ -26,18 +37,6 @@ include external/libcxx/test/Android.build.mk
 
 test_name := utilities/time/minutes
 test_src := minutes.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/time/version
-test_src := version.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/time/nanoseconds
-test_src := nanoseconds.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/time/seconds
-test_src := seconds.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/time/microseconds

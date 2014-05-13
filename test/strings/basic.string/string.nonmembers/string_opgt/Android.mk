@@ -14,11 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/strings/basic.string/string.nonmembers/string_opgt/Android.mk
-
-test_name := strings/basic.string/string.nonmembers/string_opgt/pointer_string
-test_src := pointer_string.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := strings/basic.string/string.nonmembers/string_opgt/string_string
 test_src := string_string.pass.cpp
@@ -26,6 +21,10 @@ include external/libcxx/test/Android.build.mk
 
 test_name := strings/basic.string/string.nonmembers/string_opgt/string_pointer
 test_src := string_pointer.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := strings/basic.string/string.nonmembers/string_opgt/pointer_string
+test_src := pointer_string.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

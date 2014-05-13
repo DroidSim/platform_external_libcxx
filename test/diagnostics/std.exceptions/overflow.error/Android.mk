@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/diagnostics/std.exceptions/overflow.error/Android.mk
 
 test_name := diagnostics/std.exceptions/overflow.error/overflow_error
 test_src := overflow_error.pass.cpp

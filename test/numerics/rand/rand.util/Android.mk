@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/rand/rand.util/Android.mk
 
 test_name := numerics/rand/rand.util/nothing_to_do
 test_src := nothing_to_do.pass.cpp

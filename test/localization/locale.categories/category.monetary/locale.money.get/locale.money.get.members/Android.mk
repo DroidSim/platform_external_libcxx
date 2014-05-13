@@ -14,26 +14,25 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/localization/locale.categories/category.monetary/locale.money.get/locale.money.get.members/Android.mk
+
+test_name := localization/locale.categories/category.monetary/locale.money.get/locale.money.get.members/get_long_double_ru_RU
+test_src := get_long_double_ru_RU.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := localization/locale.categories/category.monetary/locale.money.get/locale.money.get.members/get_long_double_zh_CN
 test_src := get_long_double_zh_CN.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := localization/locale.categories/category.monetary/locale.money.get/locale.money.get.members/get_long_double_fr_FR
-test_src := get_long_double_fr_FR.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := localization/locale.categories/category.monetary/locale.money.get/locale.money.get.members/get_long_double_en_US
 test_src := get_long_double_en_US.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := localization/locale.categories/category.monetary/locale.money.get/locale.money.get.members/get_string_en_US
-test_src := get_string_en_US.pass.cpp
+test_name := localization/locale.categories/category.monetary/locale.money.get/locale.money.get.members/get_long_double_fr_FR
+test_src := get_long_double_fr_FR.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := localization/locale.categories/category.monetary/locale.money.get/locale.money.get.members/get_long_double_ru_RU
-test_src := get_long_double_ru_RU.pass.cpp
+test_name := localization/locale.categories/category.monetary/locale.money.get/locale.money.get.members/get_string_en_US
+test_src := get_string_en_US.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

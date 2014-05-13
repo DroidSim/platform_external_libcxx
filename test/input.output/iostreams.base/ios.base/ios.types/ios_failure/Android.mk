@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/iostreams.base/ios.base/ios.types/ios_failure/Android.mk
-
-test_name := input.output/iostreams.base/ios.base/ios.types/ios_failure/ctor_string_error_code
-test_src := ctor_string_error_code.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostreams.base/ios.base/ios.types/ios_failure/ctor_char_pointer_error_code
 test_src := ctor_char_pointer_error_code.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostreams.base/ios.base/ios.types/ios_failure/ctor_string_error_code
+test_src := ctor_string_error_code.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

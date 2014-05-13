@@ -14,11 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/function.objects/unord.hash/Android.mk
-
-test_name := utilities/function.objects/unord.hash/pointer
-test_src := pointer.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/unord.hash/enum
 test_src := enum.pass.cpp
@@ -26,6 +21,10 @@ include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/unord.hash/floating
 test_src := floating.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/function.objects/unord.hash/pointer
+test_src := pointer.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/unord.hash/integral

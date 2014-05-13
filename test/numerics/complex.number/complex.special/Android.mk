@@ -14,26 +14,25 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/complex.number/complex.special/Android.mk
 
-test_name := numerics/complex.number/complex.special/long_double_float_implicit
-test_src := long_double_float_implicit.pass.cpp
+test_name := numerics/complex.number/complex.special/double_long_double_explicit
+test_src := double_long_double_explicit.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/complex.number/complex.special/long_double_double_implicit
 test_src := long_double_double_implicit.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := numerics/complex.number/complex.special/double_float_explicit
+test_src := double_float_explicit.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/complex.number/complex.special/long_double_float_implicit
+test_src := long_double_float_implicit.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := numerics/complex.number/complex.special/float_double_explicit
 test_src := float_double_explicit.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/complex.number/complex.special/long_double_double_explicit
-test_src := long_double_double_explicit.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/complex.number/complex.special/double_long_double_explicit
-test_src := double_long_double_explicit.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/complex.number/complex.special/double_float_implicit
@@ -44,12 +43,12 @@ test_name := numerics/complex.number/complex.special/float_long_double_explicit
 test_src := float_long_double_explicit.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/complex.number/complex.special/double_float_explicit
-test_src := double_float_explicit.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := numerics/complex.number/complex.special/long_double_float_explicit
 test_src := long_double_float_explicit.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/complex.number/complex.special/long_double_double_explicit
+test_src := long_double_double_explicit.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

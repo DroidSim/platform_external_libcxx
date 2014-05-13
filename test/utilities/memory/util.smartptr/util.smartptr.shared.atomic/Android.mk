@@ -14,7 +14,26 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/util.smartptr/util.smartptr.shared.atomic/Android.mk
+
+test_name := utilities/memory/util.smartptr/util.smartptr.shared.atomic/atomic_compare_exchange_weak_explicit
+test_src := atomic_compare_exchange_weak_explicit.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/util.smartptr/util.smartptr.shared.atomic/atomic_compare_exchange_strong
+test_src := atomic_compare_exchange_strong.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/util.smartptr/util.smartptr.shared.atomic/atomic_is_lock_free
+test_src := atomic_is_lock_free.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/util.smartptr/util.smartptr.shared.atomic/atomic_load_explicit
+test_src := atomic_load_explicit.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/util.smartptr/util.smartptr.shared.atomic/atomic_store
+test_src := atomic_store.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/util.smartptr/util.smartptr.shared.atomic/atomic_compare_exchange_strong_explicit
 test_src := atomic_compare_exchange_strong_explicit.pass.cpp
@@ -24,40 +43,20 @@ test_name := utilities/memory/util.smartptr/util.smartptr.shared.atomic/atomic_e
 test_src := atomic_exchange.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/memory/util.smartptr/util.smartptr.shared.atomic/atomic_compare_exchange_weak_explicit
-test_src := atomic_compare_exchange_weak_explicit.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/memory/util.smartptr/util.smartptr.shared.atomic/atomic_is_lock_free
-test_src := atomic_is_lock_free.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/memory/util.smartptr/util.smartptr.shared.atomic/atomic_store
-test_src := atomic_store.pass.cpp
+test_name := utilities/memory/util.smartptr/util.smartptr.shared.atomic/atomic_exchange_explicit
+test_src := atomic_exchange_explicit.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/util.smartptr/util.smartptr.shared.atomic/atomic_load
 test_src := atomic_load.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/memory/util.smartptr/util.smartptr.shared.atomic/atomic_load_explicit
-test_src := atomic_load_explicit.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/memory/util.smartptr/util.smartptr.shared.atomic/atomic_store_explicit
-test_src := atomic_store_explicit.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := utilities/memory/util.smartptr/util.smartptr.shared.atomic/atomic_compare_exchange_weak
 test_src := atomic_compare_exchange_weak.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/memory/util.smartptr/util.smartptr.shared.atomic/atomic_compare_exchange_strong
-test_src := atomic_compare_exchange_strong.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/memory/util.smartptr/util.smartptr.shared.atomic/atomic_exchange_explicit
-test_src := atomic_exchange_explicit.pass.cpp
+test_name := utilities/memory/util.smartptr/util.smartptr.shared.atomic/atomic_store_explicit
+test_src := atomic_store_explicit.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

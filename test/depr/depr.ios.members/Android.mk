@@ -14,11 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/depr/depr.ios.members/Android.mk
-
-test_name := depr/depr.ios.members/streampos
-test_src := streampos.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := depr/depr.ios.members/seek_dir
 test_src := seek_dir.pass.cpp
@@ -28,12 +23,16 @@ test_name := depr/depr.ios.members/io_state
 test_src := io_state.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := depr/depr.ios.members/open_mode
-test_src := open_mode.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := depr/depr.ios.members/streamoff
 test_src := streamoff.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := depr/depr.ios.members/streampos
+test_src := streampos.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := depr/depr.ios.members/open_mode
+test_src := open_mode.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

@@ -14,7 +14,18 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/strings/basic.string/string.modifiers/string_append/Android.mk
+
+test_name := strings/basic.string/string.modifiers/string_append/iterator
+test_src := iterator.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := strings/basic.string/string.modifiers/string_append/initializer_list
+test_src := initializer_list.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := strings/basic.string/string.modifiers/string_append/pointer_size
+test_src := pointer_size.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := strings/basic.string/string.modifiers/string_append/string
 test_src := string.pass.cpp
@@ -28,24 +39,12 @@ test_name := strings/basic.string/string.modifiers/string_append/pointer
 test_src := pointer.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := strings/basic.string/string.modifiers/string_append/pointer_size
-test_src := pointer_size.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := strings/basic.string/string.modifiers/string_append/iterator
-test_src := iterator.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := strings/basic.string/string.modifiers/string_append/push_back
-test_src := push_back.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := strings/basic.string/string.modifiers/string_append/string_size_size
 test_src := string_size_size.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := strings/basic.string/string.modifiers/string_append/initializer_list
-test_src := initializer_list.pass.cpp
+test_name := strings/basic.string/string.modifiers/string_append/push_back
+test_src := push_back.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

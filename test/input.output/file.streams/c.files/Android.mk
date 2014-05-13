@@ -14,11 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/file.streams/c.files/Android.mk
-
-test_name := input.output/file.streams/c.files/cinttypes
-test_src := cinttypes.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := input.output/file.streams/c.files/version_cinttypes
 test_src := version_cinttypes.pass.cpp
@@ -26,6 +21,10 @@ include external/libcxx/test/Android.build.mk
 
 test_name := input.output/file.streams/c.files/version_ccstdio
 test_src := version_ccstdio.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/file.streams/c.files/cinttypes
+test_src := cinttypes.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

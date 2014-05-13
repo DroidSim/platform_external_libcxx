@@ -14,18 +14,17 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/depr/depr.function.objects/depr.adaptors/depr.function.pointer.adaptors/Android.mk
 
-test_name := depr/depr.function.objects/depr.adaptors/depr.function.pointer.adaptors/ptr_fun1
-test_src := ptr_fun1.pass.cpp
+test_name := depr/depr.function.objects/depr.adaptors/depr.function.pointer.adaptors/ptr_fun2
+test_src := ptr_fun2.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := depr/depr.function.objects/depr.adaptors/depr.function.pointer.adaptors/pointer_to_binary_function
 test_src := pointer_to_binary_function.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := depr/depr.function.objects/depr.adaptors/depr.function.pointer.adaptors/ptr_fun2
-test_src := ptr_fun2.pass.cpp
+test_name := depr/depr.function.objects/depr.adaptors/depr.function.pointer.adaptors/ptr_fun1
+test_src := ptr_fun1.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := depr/depr.function.objects/depr.adaptors/depr.function.pointer.adaptors/pointer_to_unary_function

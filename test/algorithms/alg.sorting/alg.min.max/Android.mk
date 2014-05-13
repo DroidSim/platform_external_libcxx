@@ -14,62 +14,9 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/algorithms/alg.sorting/alg.min.max/Android.mk
-
-test_name := algorithms/alg.sorting/alg.min.max/max_element
-test_src := max_element.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := algorithms/alg.sorting/alg.min.max/minmax_init_list_comp
-test_src := minmax_init_list_comp.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := algorithms/alg.sorting/alg.min.max/min_element_comp
-test_src := min_element_comp.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := algorithms/alg.sorting/alg.min.max/min_comp
 test_src := min_comp.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := algorithms/alg.sorting/alg.min.max/minmax_element
-test_src := minmax_element.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := algorithms/alg.sorting/alg.min.max/minmax_init_list
-test_src := minmax_init_list.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := algorithms/alg.sorting/alg.min.max/min
-test_src := min.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := algorithms/alg.sorting/alg.min.max/minmax
-test_src := minmax.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := algorithms/alg.sorting/alg.min.max/max_comp
-test_src := max_comp.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := algorithms/alg.sorting/alg.min.max/max_init_list
-test_src := max_init_list.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := algorithms/alg.sorting/alg.min.max/minmax_comp
-test_src := minmax_comp.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := algorithms/alg.sorting/alg.min.max/max_init_list_comp
-test_src := max_init_list_comp.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := algorithms/alg.sorting/alg.min.max/min_init_list_comp
-test_src := min_init_list_comp.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := algorithms/alg.sorting/alg.min.max/min_element
-test_src := min_element.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := algorithms/alg.sorting/alg.min.max/min_init_list
@@ -80,12 +27,64 @@ test_name := algorithms/alg.sorting/alg.min.max/max
 test_src := max.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := algorithms/alg.sorting/alg.min.max/max_element_comp
-test_src := max_element_comp.pass.cpp
+test_name := algorithms/alg.sorting/alg.min.max/minmax
+test_src := minmax.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := algorithms/alg.sorting/alg.min.max/max_comp
+test_src := max_comp.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := algorithms/alg.sorting/alg.min.max/minmax_comp
+test_src := minmax_comp.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := algorithms/alg.sorting/alg.min.max/max_init_list
+test_src := max_init_list.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := algorithms/alg.sorting/alg.min.max/minmax_init_list
+test_src := minmax_init_list.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := algorithms/alg.sorting/alg.min.max/minmax_element_comp
 test_src := minmax_element_comp.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := algorithms/alg.sorting/alg.min.max/min_init_list_comp
+test_src := min_init_list_comp.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := algorithms/alg.sorting/alg.min.max/min_element_comp
+test_src := min_element_comp.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := algorithms/alg.sorting/alg.min.max/max_init_list_comp
+test_src := max_init_list_comp.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := algorithms/alg.sorting/alg.min.max/minmax_init_list_comp
+test_src := minmax_init_list_comp.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := algorithms/alg.sorting/alg.min.max/min_element
+test_src := min_element.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := algorithms/alg.sorting/alg.min.max/min
+test_src := min.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := algorithms/alg.sorting/alg.min.max/minmax_element
+test_src := minmax_element.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := algorithms/alg.sorting/alg.min.max/max_element_comp
+test_src := max_element_comp.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := algorithms/alg.sorting/alg.min.max/max_element
+test_src := max_element.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

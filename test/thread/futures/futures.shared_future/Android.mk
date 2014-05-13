@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/thread/futures/futures.shared_future/Android.mk
 
 test_name := thread/futures/futures.shared_future/default
 test_src := default.pass.cpp
@@ -24,12 +23,8 @@ test_name := thread/futures/futures.shared_future/move_ctor
 test_src := move_ctor.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := thread/futures/futures.shared_future/copy_ctor
-test_src := copy_ctor.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := thread/futures/futures.shared_future/dtor
-test_src := dtor.pass.cpp
+test_name := thread/futures/futures.shared_future/ctor_future
+test_src := ctor_future.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := thread/futures/futures.shared_future/wait_until
@@ -44,16 +39,20 @@ test_name := thread/futures/futures.shared_future/wait
 test_src := wait.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := thread/futures/futures.shared_future/ctor_future
-test_src := ctor_future.pass.cpp
+test_name := thread/futures/futures.shared_future/copy_assign
+test_src := copy_assign.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := thread/futures/futures.shared_future/move_assign
 test_src := move_assign.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := thread/futures/futures.shared_future/copy_assign
-test_src := copy_assign.pass.cpp
+test_name := thread/futures/futures.shared_future/dtor
+test_src := dtor.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := thread/futures/futures.shared_future/copy_ctor
+test_src := copy_ctor.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := thread/futures/futures.shared_future/wait_for

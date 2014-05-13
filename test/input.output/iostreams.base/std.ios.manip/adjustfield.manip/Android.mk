@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/iostreams.base/std.ios.manip/adjustfield.manip/Android.mk
-
-test_name := input.output/iostreams.base/std.ios.manip/adjustfield.manip/internal
-test_src := internal.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostreams.base/std.ios.manip/adjustfield.manip/right
 test_src := right.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostreams.base/std.ios.manip/adjustfield.manip/internal
+test_src := internal.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostreams.base/std.ios.manip/adjustfield.manip/left

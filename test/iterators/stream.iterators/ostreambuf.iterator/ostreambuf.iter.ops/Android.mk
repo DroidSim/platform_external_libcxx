@@ -14,18 +14,17 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/iterators/stream.iterators/ostreambuf.iterator/ostreambuf.iter.ops/Android.mk
 
 test_name := iterators/stream.iterators/ostreambuf.iterator/ostreambuf.iter.ops/assign_c
 test_src := assign_c.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := iterators/stream.iterators/ostreambuf.iterator/ostreambuf.iter.ops/increment
-test_src := increment.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := iterators/stream.iterators/ostreambuf.iterator/ostreambuf.iter.ops/failed
 test_src := failed.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := iterators/stream.iterators/ostreambuf.iterator/ostreambuf.iter.ops/increment
+test_src := increment.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := iterators/stream.iterators/ostreambuf.iterator/ostreambuf.iter.ops/deref

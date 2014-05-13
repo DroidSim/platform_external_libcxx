@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/thread/thread.mutex/thread.once/thread.once.onceflag/Android.mk
 
 test_name := thread/thread.mutex/thread.once/thread.once.onceflag/default
 test_src := default.pass.cpp

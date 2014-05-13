@@ -14,26 +14,25 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/rand/rand.util/rand.util.seedseq/Android.mk
 
-test_name := numerics/rand/rand.util/rand.util.seedseq/default
-test_src := default.pass.cpp
+test_name := numerics/rand/rand.util/rand.util.seedseq/types
+test_src := types.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/rand/rand.util/rand.util.seedseq/iterator
 test_src := iterator.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/rand/rand.util/rand.util.seedseq/generate
-test_src := generate.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/rand/rand.util/rand.util.seedseq/types
-test_src := types.pass.cpp
+test_name := numerics/rand/rand.util/rand.util.seedseq/default
+test_src := default.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/rand/rand.util/rand.util.seedseq/initializer_list
 test_src := initializer_list.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/rand/rand.util/rand.util.seedseq/generate
+test_src := generate.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

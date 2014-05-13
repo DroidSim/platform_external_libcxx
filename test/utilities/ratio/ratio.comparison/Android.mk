@@ -14,30 +14,29 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/ratio/ratio.comparison/Android.mk
 
-test_name := utilities/ratio/ratio.comparison/ratio_not_equal
-test_src := ratio_not_equal.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/ratio/ratio.comparison/ratio_greater_equal
-test_src := ratio_greater_equal.pass.cpp
+test_name := utilities/ratio/ratio.comparison/ratio_less
+test_src := ratio_less.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/ratio/ratio.comparison/ratio_equal
 test_src := ratio_equal.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/ratio/ratio.comparison/ratio_less
-test_src := ratio_less.pass.cpp
+test_name := utilities/ratio/ratio.comparison/ratio_less_equal
+test_src := ratio_less_equal.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/ratio/ratio.comparison/ratio_greater_equal
+test_src := ratio_greater_equal.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/ratio/ratio.comparison/ratio_not_equal
+test_src := ratio_not_equal.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/ratio/ratio.comparison/ratio_greater
 test_src := ratio_greater.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/ratio/ratio.comparison/ratio_less_equal
-test_src := ratio_less_equal.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

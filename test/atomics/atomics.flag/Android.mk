@@ -14,30 +14,29 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/atomics/atomics.flag/Android.mk
 
 test_name := atomics/atomics.flag/default
 test_src := default.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := atomics/atomics.flag/atomic_flag_clear
-test_src := atomic_flag_clear.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := atomics/atomics.flag/atomic_flag_test_and_set_explicit
-test_src := atomic_flag_test_and_set_explicit.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := atomics/atomics.flag/atomic_flag_test_and_set
 test_src := atomic_flag_test_and_set.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := atomics/atomics.flag/init
-test_src := init.pass.cpp
+test_name := atomics/atomics.flag/atomic_flag_test_and_set_explicit
+test_src := atomic_flag_test_and_set_explicit.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := atomics/atomics.flag/clear
 test_src := clear.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := atomics/atomics.flag/init
+test_src := init.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := atomics/atomics.flag/atomic_flag_clear
+test_src := atomic_flag_clear.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := atomics/atomics.flag/test_and_set

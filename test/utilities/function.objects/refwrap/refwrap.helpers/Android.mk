@@ -14,22 +14,21 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/function.objects/refwrap/refwrap.helpers/Android.mk
+
+test_name := utilities/function.objects/refwrap/refwrap.helpers/ref_2
+test_src := ref_2.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/refwrap/refwrap.helpers/cref_2
 test_src := cref_2.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/function.objects/refwrap/refwrap.helpers/cref_1
-test_src := cref_1.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/refwrap/refwrap.helpers/ref_1
 test_src := ref_1.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/function.objects/refwrap/refwrap.helpers/ref_2
-test_src := ref_2.pass.cpp
+test_name := utilities/function.objects/refwrap/refwrap.helpers/cref_1
+test_src := cref_1.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

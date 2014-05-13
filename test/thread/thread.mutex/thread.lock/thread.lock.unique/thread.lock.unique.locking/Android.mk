@@ -14,22 +14,21 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/thread/thread.mutex/thread.lock/thread.lock.unique/thread.lock.unique.locking/Android.mk
 
-test_name := thread/thread.mutex/thread.lock/thread.lock.unique/thread.lock.unique.locking/lock
-test_src := lock.pass.cpp
+test_name := thread/thread.mutex/thread.lock/thread.lock.unique/thread.lock.unique.locking/try_lock_for
+test_src := try_lock_for.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := thread/thread.mutex/thread.lock/thread.lock.unique/thread.lock.unique.locking/unlock
 test_src := unlock.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := thread/thread.mutex/thread.lock/thread.lock.unique/thread.lock.unique.locking/try_lock_until
-test_src := try_lock_until.pass.cpp
+test_name := thread/thread.mutex/thread.lock/thread.lock.unique/thread.lock.unique.locking/lock
+test_src := lock.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := thread/thread.mutex/thread.lock/thread.lock.unique/thread.lock.unique.locking/try_lock_for
-test_src := try_lock_for.pass.cpp
+test_name := thread/thread.mutex/thread.lock/thread.lock.unique/thread.lock.unique.locking/try_lock_until
+test_src := try_lock_until.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := thread/thread.mutex/thread.lock/thread.lock.unique/thread.lock.unique.locking/try_lock

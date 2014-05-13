@@ -14,18 +14,17 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.cast/Android.mk
 
 test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.cast/static_pointer_cast
 test_src := static_pointer_cast.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.cast/const_pointer_cast
-test_src := const_pointer_cast.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.cast/dynamic_pointer_cast
 test_src := dynamic_pointer_cast.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.cast/const_pointer_cast
+test_src := const_pointer_cast.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

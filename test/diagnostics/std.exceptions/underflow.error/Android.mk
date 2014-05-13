@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/diagnostics/std.exceptions/underflow.error/Android.mk
 
 test_name := diagnostics/std.exceptions/underflow.error/underflow_error
 test_src := underflow_error.pass.cpp

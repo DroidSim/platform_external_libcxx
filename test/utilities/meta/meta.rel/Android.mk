@@ -14,11 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/meta/meta.rel/Android.mk
-
-test_name := utilities/meta/meta.rel/is_same
-test_src := is_same.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/meta/meta.rel/is_convertible
 test_src := is_convertible.pass.cpp
@@ -26,6 +21,10 @@ include external/libcxx/test/Android.build.mk
 
 test_name := utilities/meta/meta.rel/is_base_of
 test_src := is_base_of.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/meta/meta.rel/is_same
+test_src := is_same.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

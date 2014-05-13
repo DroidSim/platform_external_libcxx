@@ -14,18 +14,17 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/util.dynamic.safety/Android.mk
 
-test_name := utilities/memory/util.dynamic.safety/get_pointer_safety
-test_src := get_pointer_safety.pass.cpp
+test_name := utilities/memory/util.dynamic.safety/declare_reachable
+test_src := declare_reachable.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/util.dynamic.safety/declare_no_pointers
 test_src := declare_no_pointers.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/memory/util.dynamic.safety/declare_reachable
-test_src := declare_reachable.pass.cpp
+test_name := utilities/memory/util.dynamic.safety/get_pointer_safety
+test_src := get_pointer_safety.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

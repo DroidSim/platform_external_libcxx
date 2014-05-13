@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/function.objects/bind/func.bind/func.bind.isbind/Android.mk
-
-test_name := utilities/function.objects/bind/func.bind/func.bind.isbind/is_bind_expression
-test_src := is_bind_expression.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/bind/func.bind/func.bind.isbind/is_placeholder
 test_src := is_placeholder.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/function.objects/bind/func.bind/func.bind.isbind/is_bind_expression
+test_src := is_bind_expression.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

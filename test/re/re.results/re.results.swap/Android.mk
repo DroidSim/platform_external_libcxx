@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/re/re.results/re.results.swap/Android.mk
-
-test_name := re/re.results/re.results.swap/member_swap
-test_src := member_swap.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := re/re.results/re.results.swap/non_member_swap
 test_src := non_member_swap.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := re/re.results/re.results.swap/member_swap
+test_src := member_swap.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

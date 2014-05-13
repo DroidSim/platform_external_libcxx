@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/thread/thread.mutex/thread.mutex.requirements/thread.sharedtimedmutex.requirements/Android.mk
 
 test_name := thread/thread.mutex/thread.mutex.requirements/thread.sharedtimedmutex.requirements/nothing_to_do
 test_src := nothing_to_do.pass.cpp

@@ -14,30 +14,29 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/numarray/template.valarray/valarray.cons/Android.mk
+
+test_name := numerics/numarray/template.valarray/valarray.cons/mask_array
+test_src := mask_array.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := numerics/numarray/template.valarray/valarray.cons/default
 test_src := default.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/numarray/template.valarray/valarray.cons/indirect_array
-test_src := indirect_array.pass.cpp
+test_name := numerics/numarray/template.valarray/valarray.cons/size
+test_src := size.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/numarray/template.valarray/valarray.cons/pointer_size
-test_src := pointer_size.pass.cpp
+test_name := numerics/numarray/template.valarray/valarray.cons/slice_array
+test_src := slice_array.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/numarray/template.valarray/valarray.cons/copy
 test_src := copy.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/numarray/template.valarray/valarray.cons/move
-test_src := move.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/numarray/template.valarray/valarray.cons/size
-test_src := size.pass.cpp
+test_name := numerics/numarray/template.valarray/valarray.cons/value_size
+test_src := value_size.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/numarray/template.valarray/valarray.cons/initializer_list
@@ -48,16 +47,16 @@ test_name := numerics/numarray/template.valarray/valarray.cons/gslice_array
 test_src := gslice_array.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/numarray/template.valarray/valarray.cons/mask_array
-test_src := mask_array.pass.cpp
+test_name := numerics/numarray/template.valarray/valarray.cons/pointer_size
+test_src := pointer_size.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/numarray/template.valarray/valarray.cons/slice_array
-test_src := slice_array.pass.cpp
+test_name := numerics/numarray/template.valarray/valarray.cons/move
+test_src := move.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/numarray/template.valarray/valarray.cons/value_size
-test_src := value_size.pass.cpp
+test_name := numerics/numarray/template.valarray/valarray.cons/indirect_array
+test_src := indirect_array.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

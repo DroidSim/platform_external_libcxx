@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/language.support/support.limits/limits/numeric.limits/Android.mk
 
 test_name := language.support/support.limits/limits/numeric.limits/default
 test_src := default.pass.cpp

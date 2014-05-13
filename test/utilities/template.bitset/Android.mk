@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/template.bitset/Android.mk
-
-test_name := utilities/template.bitset/includes
-test_src := includes.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/template.bitset/version
 test_src := version.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/template.bitset/includes
+test_src := includes.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

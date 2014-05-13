@@ -14,34 +14,33 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/iostreams.base/fpos/fpos.operations/Android.mk
 
-test_name := input.output/iostreams.base/fpos/fpos.operations/offset
-test_src := offset.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/iostreams.base/fpos/fpos.operations/addition
-test_src := addition.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/iostreams.base/fpos/fpos.operations/subtraction
-test_src := subtraction.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/iostreams.base/fpos/fpos.operations/streamsize
-test_src := streamsize.pass.cpp
+test_name := input.output/iostreams.base/fpos/fpos.operations/difference
+test_src := difference.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostreams.base/fpos/fpos.operations/eq_int
 test_src := eq_int.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := input.output/iostreams.base/fpos/fpos.operations/streamsize
+test_src := streamsize.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostreams.base/fpos/fpos.operations/addition
+test_src := addition.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostreams.base/fpos/fpos.operations/offset
+test_src := offset.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := input.output/iostreams.base/fpos/fpos.operations/ctor_int
 test_src := ctor_int.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := input.output/iostreams.base/fpos/fpos.operations/difference
-test_src := difference.pass.cpp
+test_name := input.output/iostreams.base/fpos/fpos.operations/subtraction
+test_src := subtraction.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

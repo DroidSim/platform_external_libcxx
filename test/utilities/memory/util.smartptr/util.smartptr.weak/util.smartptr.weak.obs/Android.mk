@@ -14,22 +14,21 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/util.smartptr/util.smartptr.weak/util.smartptr.weak.obs/Android.mk
-
-test_name := utilities/memory/util.smartptr/util.smartptr.weak/util.smartptr.weak.obs/lock
-test_src := lock.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/util.smartptr/util.smartptr.weak/util.smartptr.weak.obs/owner_before_shared_ptr
 test_src := owner_before_shared_ptr.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/memory/util.smartptr/util.smartptr.weak/util.smartptr.weak.obs/expired
-test_src := expired.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := utilities/memory/util.smartptr/util.smartptr.weak/util.smartptr.weak.obs/owner_before_weak_ptr
 test_src := owner_before_weak_ptr.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/util.smartptr/util.smartptr.weak/util.smartptr.weak.obs/lock
+test_src := lock.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/util.smartptr/util.smartptr.weak/util.smartptr.weak.obs/expired
+test_src := expired.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

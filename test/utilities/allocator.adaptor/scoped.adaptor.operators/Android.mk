@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/allocator.adaptor/scoped.adaptor.operators/Android.mk
 
 test_name := utilities/allocator.adaptor/scoped.adaptor.operators/eq
 test_src := eq.pass.cpp

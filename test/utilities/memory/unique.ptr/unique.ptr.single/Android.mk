@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/unique.ptr/unique.ptr.single/Android.mk
 
 test_name := utilities/memory/unique.ptr/unique.ptr.single/pointer_type
 test_src := pointer_type.pass.cpp

@@ -14,26 +14,25 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/template.bitset/bitset.operators/Android.mk
-
-test_name := utilities/template.bitset/bitset.operators/op_or
-test_src := op_or.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/template.bitset/bitset.operators/op_and
 test_src := op_and.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/template.bitset/bitset.operators/stream_out
-test_src := stream_out.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/template.bitset/bitset.operators/stream_in
 test_src := stream_in.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := utilities/template.bitset/bitset.operators/stream_out
+test_src := stream_out.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := utilities/template.bitset/bitset.operators/op_not
 test_src := op_not.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/template.bitset/bitset.operators/op_or
+test_src := op_or.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

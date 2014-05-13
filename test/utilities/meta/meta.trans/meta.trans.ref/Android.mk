@@ -14,7 +14,10 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/meta/meta.trans/meta.trans.ref/Android.mk
+
+test_name := utilities/meta/meta.trans/meta.trans.ref/add_lvalue_ref
+test_src := add_lvalue_ref.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := utilities/meta/meta.trans/meta.trans.ref/add_rvalue_ref
 test_src := add_rvalue_ref.pass.cpp
@@ -22,10 +25,6 @@ include external/libcxx/test/Android.build.mk
 
 test_name := utilities/meta/meta.trans/meta.trans.ref/remove_ref
 test_src := remove_ref.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/meta/meta.trans/meta.trans.ref/add_lvalue_ref
-test_src := add_lvalue_ref.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

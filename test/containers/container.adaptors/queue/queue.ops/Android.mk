@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/container.adaptors/queue/queue.ops/Android.mk
-
-test_name := containers/container.adaptors/queue/queue.ops/lt
-test_src := lt.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := containers/container.adaptors/queue/queue.ops/eq
 test_src := eq.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/container.adaptors/queue/queue.ops/lt
+test_src := lt.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

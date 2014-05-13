@@ -14,34 +14,33 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/time/time.duration/time.duration.nonmember/Android.mk
-
-test_name := utilities/time/time.duration/time.duration.nonmember/op_times_rep
-test_src := op_times_rep.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/time/time.duration/time.duration.nonmember/op_mod_rep
 test_src := op_mod_rep.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/time/time.duration/time.duration.nonmember/op_+
-test_src := op_+.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/time/time.duration/time.duration.nonmember/op_-
-test_src := op_-.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/time/time.duration/time.duration.nonmember/op_divide_rep
-test_src := op_divide_rep.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/time/time.duration/time.duration.nonmember/op_mod_duration
 test_src := op_mod_duration.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := utilities/time/time.duration/time.duration.nonmember/op_-
+test_src := op_-.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := utilities/time/time.duration/time.duration.nonmember/op_divide_duration
 test_src := op_divide_duration.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/time/time.duration/time.duration.nonmember/op_times_rep
+test_src := op_times_rep.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/time/time.duration/time.duration.nonmember/op_+
+test_src := op_+.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/time/time.duration/time.duration.nonmember/op_divide_rep
+test_src := op_divide_rep.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

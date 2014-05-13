@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/ratio/ratio.ratio/Android.mk
 
 test_name := utilities/ratio/ratio.ratio/ratio
 test_src := ratio.pass.cpp

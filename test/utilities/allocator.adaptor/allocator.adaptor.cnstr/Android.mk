@@ -14,26 +14,25 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/allocator.adaptor/allocator.adaptor.cnstr/Android.mk
 
 test_name := utilities/allocator.adaptor/allocator.adaptor.cnstr/default
 test_src := default.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/allocator.adaptor/allocator.adaptor.cnstr/converting_move
-test_src := converting_move.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/allocator.adaptor/allocator.adaptor.cnstr/allocs
-test_src := allocs.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/allocator.adaptor/allocator.adaptor.cnstr/copy
 test_src := copy.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := utilities/allocator.adaptor/allocator.adaptor.cnstr/converting_move
+test_src := converting_move.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := utilities/allocator.adaptor/allocator.adaptor.cnstr/converting_copy
 test_src := converting_copy.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/allocator.adaptor/allocator.adaptor.cnstr/allocs
+test_src := allocs.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

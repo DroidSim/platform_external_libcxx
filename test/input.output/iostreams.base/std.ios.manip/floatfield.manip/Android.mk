@@ -14,14 +14,9 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/iostreams.base/std.ios.manip/floatfield.manip/Android.mk
 
 test_name := input.output/iostreams.base/std.ios.manip/floatfield.manip/fixed
 test_src := fixed.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/iostreams.base/std.ios.manip/floatfield.manip/hexfloat
-test_src := hexfloat.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostreams.base/std.ios.manip/floatfield.manip/scientific
@@ -30,6 +25,10 @@ include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostreams.base/std.ios.manip/floatfield.manip/defaultfloat
 test_src := defaultfloat.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostreams.base/std.ios.manip/floatfield.manip/hexfloat
+test_src := hexfloat.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

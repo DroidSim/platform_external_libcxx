@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/algorithms/alg.modifying.operations/alg.fill/Android.mk
 
 test_name := algorithms/alg.modifying.operations/alg.fill/fill_n
 test_src := fill_n.pass.cpp

@@ -14,102 +14,101 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/Android.mk
 
-test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/io
-test_src := io.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/param_ctor_default
-test_src := param_ctor_default.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/param_copy
-test_src := param_copy.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/param_ctor_iterator
-test_src := param_ctor_iterator.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/eval
-test_src := eval.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/min
-test_src := min.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/ctor_param
-test_src := ctor_param.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/copy
-test_src := copy.pass.cpp
+test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/assign
+test_src := assign.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/param_types
 test_src := param_types.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/param_ctor_init_func
-test_src := param_ctor_init_func.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/get_param
-test_src := get_param.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/set_param
-test_src := set_param.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/assign
-test_src := assign.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/ctor_init_func
-test_src := ctor_init_func.pass.cpp
+test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/ctor_param
+test_src := ctor_param.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/types
 test_src := types.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/eval_param
-test_src := eval_param.pass.cpp
+test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/eq
+test_src := eq.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/ctor_func
-test_src := ctor_func.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/param_ctor_func
-test_src := param_ctor_func.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/ctor_iterator
-test_src := ctor_iterator.pass.cpp
+test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/ctor_default
+test_src := ctor_default.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/max
 test_src := max.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/eq
-test_src := eq.pass.cpp
+test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/copy
+test_src := copy.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/param_assign
-test_src := param_assign.pass.cpp
+test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/param_ctor_func
+test_src := param_ctor_func.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/get_param
+test_src := get_param.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/param_eq
 test_src := param_eq.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/ctor_default
-test_src := ctor_default.pass.cpp
+test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/ctor_iterator
+test_src := ctor_iterator.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/set_param
+test_src := set_param.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/param_ctor_default
+test_src := param_ctor_default.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/eval_param
+test_src := eval_param.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/param_ctor_init_func
+test_src := param_ctor_init_func.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/param_assign
+test_src := param_assign.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/eval
+test_src := eval.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/ctor_func
+test_src := ctor_func.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/min
+test_src := min.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/io
+test_src := io.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/ctor_init_func
+test_src := ctor_init_func.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/param_ctor_iterator
+test_src := param_ctor_iterator.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/rand/rand.dis/rand.dist.samp/rand.dist.samp.plinear/param_copy
+test_src := param_copy.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

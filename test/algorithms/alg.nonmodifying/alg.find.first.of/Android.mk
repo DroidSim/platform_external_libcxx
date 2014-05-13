@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/algorithms/alg.nonmodifying/alg.find.first.of/Android.mk
-
-test_name := algorithms/alg.nonmodifying/alg.find.first.of/find_first_of_pred
-test_src := find_first_of_pred.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := algorithms/alg.nonmodifying/alg.find.first.of/find_first_of
 test_src := find_first_of.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := algorithms/alg.nonmodifying/alg.find.first.of/find_first_of_pred
+test_src := find_first_of_pred.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

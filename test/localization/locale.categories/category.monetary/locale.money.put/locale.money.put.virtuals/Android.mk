@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/localization/locale.categories/category.monetary/locale.money.put/locale.money.put.virtuals/Android.mk
 
 test_name := localization/locale.categories/category.monetary/locale.money.put/locale.money.put.virtuals/tested_elsewhere
 test_src := tested_elsewhere.pass.cpp

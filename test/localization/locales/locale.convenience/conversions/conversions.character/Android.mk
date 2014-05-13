@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/localization/locales/locale.convenience/conversions/conversions.character/Android.mk
-
-test_name := localization/locales/locale.convenience/conversions/conversions.character/toupper
-test_src := toupper.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := localization/locales/locale.convenience/conversions/conversions.character/tolower
 test_src := tolower.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := localization/locales/locale.convenience/conversions/conversions.character/toupper
+test_src := toupper.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

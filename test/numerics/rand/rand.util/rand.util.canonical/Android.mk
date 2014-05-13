@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/rand/rand.util/rand.util.canonical/Android.mk
 
 test_name := numerics/rand/rand.util/rand.util.canonical/generate_canonical
 test_src := generate_canonical.pass.cpp

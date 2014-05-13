@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/numeric.ops/partial.sum/Android.mk
-
-test_name := numerics/numeric.ops/partial.sum/partial_sum_op
-test_src := partial_sum_op.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := numerics/numeric.ops/partial.sum/partial_sum
 test_src := partial_sum.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/numeric.ops/partial.sum/partial_sum_op
+test_src := partial_sum_op.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

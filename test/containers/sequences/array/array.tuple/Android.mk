@@ -14,7 +14,14 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/sequences/array/array.tuple/Android.mk
+
+test_name := containers/sequences/array/array.tuple/get_rv
+test_src := get_rv.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/array/array.tuple/get_const
+test_src := get_const.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := containers/sequences/array/array.tuple/get
 test_src := get.pass.cpp
@@ -26,14 +33,6 @@ include external/libcxx/test/Android.build.mk
 
 test_name := containers/sequences/array/array.tuple/tuple_size
 test_src := tuple_size.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/array/array.tuple/get_const
-test_src := get_const.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/array/array.tuple/get_rv
-test_src := get_rv.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

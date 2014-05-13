@@ -14,30 +14,29 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/diagnostics/syserr/syserr.syserr/syserr.syserr.members/Android.mk
 
-test_name := diagnostics/syserr/syserr.syserr/syserr.syserr.members/ctor_error_code_string
-test_src := ctor_error_code_string.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := diagnostics/syserr/syserr.syserr/syserr.syserr.members/ctor_error_code_const_char_pointer
-test_src := ctor_error_code_const_char_pointer.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := diagnostics/syserr/syserr.syserr/syserr.syserr.members/ctor_int_error_category_const_char_pointer
-test_src := ctor_int_error_category_const_char_pointer.pass.cpp
+test_name := diagnostics/syserr/syserr.syserr/syserr.syserr.members/ctor_int_error_category
+test_src := ctor_int_error_category.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := diagnostics/syserr/syserr.syserr/syserr.syserr.members/ctor_error_code
 test_src := ctor_error_code.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := diagnostics/syserr/syserr.syserr/syserr.syserr.members/ctor_error_code_const_char_pointer
+test_src := ctor_error_code_const_char_pointer.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := diagnostics/syserr/syserr.syserr/syserr.syserr.members/ctor_int_error_category_string
 test_src := ctor_int_error_category_string.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := diagnostics/syserr/syserr.syserr/syserr.syserr.members/ctor_int_error_category
-test_src := ctor_int_error_category.pass.cpp
+test_name := diagnostics/syserr/syserr.syserr/syserr.syserr.members/ctor_error_code_string
+test_src := ctor_error_code_string.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := diagnostics/syserr/syserr.syserr/syserr.syserr.members/ctor_int_error_category_const_char_pointer
+test_src := ctor_int_error_category_const_char_pointer.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

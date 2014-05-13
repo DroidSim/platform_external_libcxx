@@ -14,10 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/allocator.traits/allocator.traits.members/Android.mk
 
-test_name := utilities/memory/allocator.traits/allocator.traits.members/construct
-test_src := construct.pass.cpp
+test_name := utilities/memory/allocator.traits/allocator.traits.members/deallocate
+test_src := deallocate.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/allocator.traits/allocator.traits.members/max_size
+test_src := max_size.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/allocator.traits/allocator.traits.members/allocate_hint
@@ -28,20 +31,16 @@ test_name := utilities/memory/allocator.traits/allocator.traits.members/allocate
 test_src := allocate.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := utilities/memory/allocator.traits/allocator.traits.members/construct
+test_src := construct.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := utilities/memory/allocator.traits/allocator.traits.members/destroy
 test_src := destroy.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/allocator.traits/allocator.traits.members/select_on_container_copy_construction
 test_src := select_on_container_copy_construction.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/memory/allocator.traits/allocator.traits.members/max_size
-test_src := max_size.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/memory/allocator.traits/allocator.traits.members/deallocate
-test_src := deallocate.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

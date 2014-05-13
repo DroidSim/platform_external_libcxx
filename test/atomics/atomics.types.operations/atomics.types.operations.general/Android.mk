@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/atomics/atomics.types.operations/atomics.types.operations.general/Android.mk
 
 test_name := atomics/atomics.types.operations/atomics.types.operations.general/nothing_to_do
 test_src := nothing_to_do.pass.cpp

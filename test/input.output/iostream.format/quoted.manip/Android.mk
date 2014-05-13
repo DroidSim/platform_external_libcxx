@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/iostream.format/quoted.manip/Android.mk
 
 test_name := input.output/iostream.format/quoted.manip/quoted
 test_src := quoted.pass.cpp

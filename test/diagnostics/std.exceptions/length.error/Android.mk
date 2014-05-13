@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/diagnostics/std.exceptions/length.error/Android.mk
 
 test_name := diagnostics/std.exceptions/length.error/length_error
 test_src := length_error.pass.cpp

@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/language.support/support.initlist/support.initlist.cons/Android.mk
 
 test_name := language.support/support.initlist/support.initlist.cons/default
 test_src := default.pass.cpp

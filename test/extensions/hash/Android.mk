@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/extensions/hash/Android.mk
 
 test_name := extensions/hash/specializations
 test_src := specializations.pass.cpp

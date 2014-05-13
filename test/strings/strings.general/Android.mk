@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/strings/strings.general/Android.mk
 
 test_name := strings/strings.general/nothing_to_do
 test_src := nothing_to_do.pass.cpp

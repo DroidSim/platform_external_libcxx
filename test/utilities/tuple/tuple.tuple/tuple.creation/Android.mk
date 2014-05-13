@@ -14,22 +14,21 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/tuple/tuple.tuple/tuple.creation/Android.mk
 
-test_name := utilities/tuple/tuple.tuple/tuple.creation/forward_as_tuple
-test_src := forward_as_tuple.pass.cpp
+test_name := utilities/tuple/tuple.tuple/tuple.creation/make_tuple
+test_src := make_tuple.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/tuple/tuple.tuple/tuple.creation/tie
 test_src := tie.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/tuple/tuple.tuple/tuple.creation/tuple_cat
-test_src := tuple_cat.pass.cpp
+test_name := utilities/tuple/tuple.tuple/tuple.creation/forward_as_tuple
+test_src := forward_as_tuple.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/tuple/tuple.tuple/tuple.creation/make_tuple
-test_src := make_tuple.pass.cpp
+test_name := utilities/tuple/tuple.tuple/tuple.creation/tuple_cat
+test_src := tuple_cat.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

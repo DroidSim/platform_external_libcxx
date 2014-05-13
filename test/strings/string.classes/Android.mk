@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/strings/string.classes/Android.mk
 
 test_name := strings/string.classes/typedefs
 test_src := typedefs.pass.cpp

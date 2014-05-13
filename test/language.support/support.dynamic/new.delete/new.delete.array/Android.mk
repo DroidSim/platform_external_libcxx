@@ -14,22 +14,21 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/language.support/support.dynamic/new.delete/new.delete.array/Android.mk
 
-test_name := language.support/support.dynamic/new.delete/new.delete.array/new_array_replace
-test_src := new_array_replace.pass.cpp
+test_name := language.support/support.dynamic/new.delete/new.delete.array/new_array_nothrow
+test_src := new_array_nothrow.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := language.support/support.dynamic/new.delete/new.delete.array/new_array
 test_src := new_array.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := language.support/support.dynamic/new.delete/new.delete.array/new_array_nothrow_replace
-test_src := new_array_nothrow_replace.pass.cpp
+test_name := language.support/support.dynamic/new.delete/new.delete.array/new_array_replace
+test_src := new_array_replace.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := language.support/support.dynamic/new.delete/new.delete.array/new_array_nothrow
-test_src := new_array_nothrow.pass.cpp
+test_name := language.support/support.dynamic/new.delete/new.delete.array/new_array_nothrow_replace
+test_src := new_array_nothrow_replace.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

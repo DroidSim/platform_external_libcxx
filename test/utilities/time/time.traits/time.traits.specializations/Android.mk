@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/time/time.traits/time.traits.specializations/Android.mk
 
 test_name := utilities/time/time.traits/time.traits.specializations/time_point
 test_src := time_point.pass.cpp

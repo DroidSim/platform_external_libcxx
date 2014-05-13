@@ -14,19 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/iterators/stream.iterators/istream.iterator/istream.iterator.ops/Android.mk
-
-test_name := iterators/stream.iterators/istream.iterator/istream.iterator.ops/post_increment
-test_src := post_increment.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := iterators/stream.iterators/istream.iterator/istream.iterator.ops/pre_increment
-test_src := pre_increment.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := iterators/stream.iterators/istream.iterator/istream.iterator.ops/dereference
-test_src := dereference.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := iterators/stream.iterators/istream.iterator/istream.iterator.ops/arrow
 test_src := arrow.pass.cpp
@@ -34,6 +21,18 @@ include external/libcxx/test/Android.build.mk
 
 test_name := iterators/stream.iterators/istream.iterator/istream.iterator.ops/equal
 test_src := equal.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := iterators/stream.iterators/istream.iterator/istream.iterator.ops/dereference
+test_src := dereference.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := iterators/stream.iterators/istream.iterator/istream.iterator.ops/post_increment
+test_src := post_increment.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := iterators/stream.iterators/istream.iterator/istream.iterator.ops/pre_increment
+test_src := pre_increment.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

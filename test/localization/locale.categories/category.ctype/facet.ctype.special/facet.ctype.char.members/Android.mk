@@ -14,58 +14,57 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.members/Android.mk
-
-test_name := localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.members/widen_many
-test_src := widen_many.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.members/scan_is
-test_src := scan_is.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.members/narrow_many
-test_src := narrow_many.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.members/scan_not
 test_src := scan_not.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.members/toupper_many
-test_src := toupper_many.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.members/toupper_1
-test_src := toupper_1.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.members/widen_1
-test_src := widen_1.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.members/tolower_1
-test_src := tolower_1.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.members/is_many
-test_src := is_many.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.members/is_1
-test_src := is_1.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.members/tolower_many
-test_src := tolower_many.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.members/narrow_1
 test_src := narrow_1.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.members/tolower_many
+test_src := tolower_many.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.members/widen_1
+test_src := widen_1.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.members/scan_is
+test_src := scan_is.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.members/widen_many
+test_src := widen_many.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.members/ctor
 test_src := ctor.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.members/is_1
+test_src := is_1.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.members/toupper_1
+test_src := toupper_1.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.members/toupper_many
+test_src := toupper_many.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.members/tolower_1
+test_src := tolower_1.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.members/narrow_many
+test_src := narrow_many.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.members/is_many
+test_src := is_many.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.members/table

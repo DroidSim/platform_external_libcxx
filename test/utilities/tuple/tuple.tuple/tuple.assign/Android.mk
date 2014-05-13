@@ -14,30 +14,29 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/tuple/tuple.tuple/tuple.assign/Android.mk
 
-test_name := utilities/tuple/tuple.tuple/tuple.assign/convert_copy
-test_src := convert_copy.pass.cpp
+test_name := utilities/tuple/tuple.tuple/tuple.assign/convert_move
+test_src := convert_move.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/tuple/tuple.tuple/tuple.assign/copy
 test_src := copy.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/tuple/tuple.tuple/tuple.assign/convert_move
-test_src := convert_move.pass.cpp
+test_name := utilities/tuple/tuple.tuple/tuple.assign/const_pair
+test_src := const_pair.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/tuple/tuple.tuple/tuple.assign/move
 test_src := move.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/tuple/tuple.tuple/tuple.assign/const_pair
-test_src := const_pair.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := utilities/tuple/tuple.tuple/tuple.assign/move_pair
 test_src := move_pair.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/tuple/tuple.tuple/tuple.assign/convert_copy
+test_src := convert_copy.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

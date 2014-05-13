@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/function.objects/func.wrap/Android.mk
 
 test_name := utilities/function.objects/func.wrap/nothing_to_do
 test_src := nothing_to_do.pass.cpp

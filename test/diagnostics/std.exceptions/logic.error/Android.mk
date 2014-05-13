@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/diagnostics/std.exceptions/logic.error/Android.mk
 
 test_name := diagnostics/std.exceptions/logic.error/logic_error
 test_src := logic_error.pass.cpp

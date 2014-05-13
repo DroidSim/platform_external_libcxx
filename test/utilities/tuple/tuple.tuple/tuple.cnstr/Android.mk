@@ -14,18 +14,41 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/tuple/tuple.tuple/tuple.cnstr/Android.mk
+
+test_name := utilities/tuple/tuple.tuple/tuple.cnstr/alloc
+test_src := alloc.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/tuple/tuple.tuple/tuple.cnstr/const_Types
+test_src := const_Types.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := utilities/tuple/tuple.tuple/tuple.cnstr/default
 test_src := default.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/tuple/tuple.tuple/tuple.cnstr/convert_copy
-test_src := convert_copy.pass.cpp
+test_name := utilities/tuple/tuple.tuple/tuple.cnstr/alloc_const_pair
+test_src := alloc_const_pair.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/tuple/tuple.tuple/tuple.cnstr/alloc
-test_src := alloc.pass.cpp
+test_name := utilities/tuple/tuple.tuple/tuple.cnstr/convert_move
+test_src := convert_move.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/tuple/tuple.tuple/tuple.cnstr/copy
+test_src := copy.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/tuple/tuple.tuple/tuple.cnstr/alloc_convert_move
+test_src := alloc_convert_move.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/tuple/tuple.tuple/tuple.cnstr/UTypes
+test_src := UTypes.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/tuple/tuple.tuple/tuple.cnstr/alloc_move_pair
+test_src := alloc_move_pair.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/tuple/tuple.tuple/tuple.cnstr/alloc_UTypes
@@ -36,56 +59,32 @@ test_name := utilities/tuple/tuple.tuple/tuple.cnstr/alloc_const_Types
 test_src := alloc_const_Types.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/tuple/tuple.tuple/tuple.cnstr/alloc_move_pair
-test_src := alloc_move_pair.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/tuple/tuple.tuple/tuple.cnstr/alloc_move
-test_src := alloc_move.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/tuple/tuple.tuple/tuple.cnstr/UTypes
-test_src := UTypes.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/tuple/tuple.tuple/tuple.cnstr/copy
-test_src := copy.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/tuple/tuple.tuple/tuple.cnstr/convert_move
-test_src := convert_move.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/tuple/tuple.tuple/tuple.cnstr/move
-test_src := move.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := utilities/tuple/tuple.tuple/tuple.cnstr/const_pair
 test_src := const_pair.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/tuple/tuple.tuple/tuple.cnstr/alloc_convert_copy
-test_src := alloc_convert_copy.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/tuple/tuple.tuple/tuple.cnstr/alloc_copy
 test_src := alloc_copy.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/tuple/tuple.tuple/tuple.cnstr/const_Types
-test_src := const_Types.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/tuple/tuple.tuple/tuple.cnstr/alloc_convert_move
-test_src := alloc_convert_move.pass.cpp
+test_name := utilities/tuple/tuple.tuple/tuple.cnstr/move
+test_src := move.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/tuple/tuple.tuple/tuple.cnstr/move_pair
 test_src := move_pair.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/tuple/tuple.tuple/tuple.cnstr/alloc_const_pair
-test_src := alloc_const_pair.pass.cpp
+test_name := utilities/tuple/tuple.tuple/tuple.cnstr/alloc_convert_copy
+test_src := alloc_convert_copy.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/tuple/tuple.tuple/tuple.cnstr/alloc_move
+test_src := alloc_move.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/tuple/tuple.tuple/tuple.cnstr/convert_copy
+test_src := convert_copy.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

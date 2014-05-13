@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/sequences/array/array.swap/Android.mk
 
 test_name := containers/sequences/array/array.swap/swap
 test_src := swap.pass.cpp

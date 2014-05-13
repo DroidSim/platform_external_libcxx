@@ -14,23 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/sequences/list/Android.mk
-
-test_name := containers/sequences/list/db_iterators_7
-test_src := db_iterators_7.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/list/db_front
-test_src := db_front.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/list/db_cback
-test_src := db_cback.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/list/version
-test_src := version.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := containers/sequences/list/iterators
 test_src := iterators.pass.cpp
@@ -40,24 +23,40 @@ test_name := containers/sequences/list/types
 test_src := types.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := containers/sequences/list/db_iterators_9
-test_src := db_iterators_9.pass.cpp
+test_name := containers/sequences/list/db_iterators_7
+test_src := db_iterators_7.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := containers/sequences/list/db_iterators_8
-test_src := db_iterators_8.pass.cpp
+test_name := containers/sequences/list/version
+test_src := version.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := containers/sequences/list/db_back
-test_src := db_back.pass.cpp
+test_name := containers/sequences/list/db_cback
+test_src := db_cback.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/list/db_iterators_6
+test_src := db_iterators_6.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := containers/sequences/list/db_cfront
 test_src := db_cfront.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := containers/sequences/list/db_iterators_6
-test_src := db_iterators_6.pass.cpp
+test_name := containers/sequences/list/db_iterators_8
+test_src := db_iterators_8.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/list/db_iterators_9
+test_src := db_iterators_9.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/list/db_back
+test_src := db_back.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/list/db_front
+test_src := db_front.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

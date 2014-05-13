@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/iterators/predef.iterators/insert.iterators/back.insert.iter.ops/back.inserter/Android.mk
 
 test_name := iterators/predef.iterators/insert.iterators/back.insert.iter.ops/back.inserter/test
 test_src := test.pass.cpp

@@ -14,11 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/associative/multiset/multiset.special/Android.mk
-
-test_name := containers/associative/multiset/multiset.special/member_swap
-test_src := member_swap.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := containers/associative/multiset/multiset.special/swap_noexcept
 test_src := swap_noexcept.pass.cpp
@@ -26,6 +21,10 @@ include external/libcxx/test/Android.build.mk
 
 test_name := containers/associative/multiset/multiset.special/non_member_swap
 test_src := non_member_swap.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/associative/multiset/multiset.special/member_swap
+test_src := member_swap.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

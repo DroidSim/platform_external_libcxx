@@ -14,11 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/function.objects/func.memfn/Android.mk
-
-test_name := utilities/function.objects/func.memfn/member_data
-test_src := member_data.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/func.memfn/member_function_const
 test_src := member_function_const.pass.cpp
@@ -34,6 +29,10 @@ include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/func.memfn/member_function_const_volatile
 test_src := member_function_const_volatile.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/function.objects/func.memfn/member_data
+test_src := member_data.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/algorithms/alg.sorting/alg.binary.search/lower.bound/Android.mk
 
 test_name := algorithms/alg.sorting/alg.binary.search/lower.bound/lower_bound
 test_src := lower_bound.pass.cpp

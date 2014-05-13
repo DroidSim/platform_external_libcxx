@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/iterators/stream.iterators/istreambuf.iterator/istreambuf.iterator_proxy/Android.mk
 
 test_name := iterators/stream.iterators/istreambuf.iterator/istreambuf.iterator_proxy/proxy
 test_src := proxy.pass.cpp

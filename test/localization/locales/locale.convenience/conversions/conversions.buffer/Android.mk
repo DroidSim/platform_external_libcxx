@@ -14,38 +14,37 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/localization/locales/locale.convenience/conversions/conversions.buffer/Android.mk
 
-test_name := localization/locales/locale.convenience/conversions/conversions.buffer/state
-test_src := state.pass.cpp
+test_name := localization/locales/locale.convenience/conversions/conversions.buffer/ctor
+test_src := ctor.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := localization/locales/locale.convenience/conversions/conversions.buffer/overflow
 test_src := overflow.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := localization/locales/locale.convenience/conversions/conversions.buffer/seekoff
+test_src := seekoff.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := localization/locales/locale.convenience/conversions/conversions.buffer/rdbuf
 test_src := rdbuf.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := localization/locales/locale.convenience/conversions/conversions.buffer/test
-test_src := test.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := localization/locales/locale.convenience/conversions/conversions.buffer/pbackfail
-test_src := pbackfail.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := localization/locales/locale.convenience/conversions/conversions.buffer/underflow
 test_src := underflow.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := localization/locales/locale.convenience/conversions/conversions.buffer/ctor
-test_src := ctor.pass.cpp
+test_name := localization/locales/locale.convenience/conversions/conversions.buffer/pbackfail
+test_src := pbackfail.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := localization/locales/locale.convenience/conversions/conversions.buffer/seekoff
-test_src := seekoff.pass.cpp
+test_name := localization/locales/locale.convenience/conversions/conversions.buffer/test
+test_src := test.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := localization/locales/locale.convenience/conversions/conversions.buffer/state
+test_src := state.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

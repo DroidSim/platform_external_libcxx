@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/re/re.regex/re.regex.swap/Android.mk
 
 test_name := re/re.regex/re.regex.swap/swap
 test_src := swap.pass.cpp

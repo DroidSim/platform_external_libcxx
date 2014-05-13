@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/allocator.uses/allocator.uses.trait/Android.mk
 
 test_name := utilities/memory/allocator.uses/allocator.uses.trait/uses_allocator
 test_src := uses_allocator.pass.cpp

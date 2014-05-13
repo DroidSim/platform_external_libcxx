@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/time/time.traits/time.traits.is_fp/Android.mk
 
 test_name := utilities/time/time.traits/time.traits.is_fp/treat_as_floating_point
 test_src := treat_as_floating_point.pass.cpp

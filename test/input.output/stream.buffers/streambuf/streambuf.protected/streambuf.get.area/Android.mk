@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/stream.buffers/streambuf/streambuf.protected/streambuf.get.area/Android.mk
 
 test_name := input.output/stream.buffers/streambuf/streambuf.protected/streambuf.get.area/gbump
 test_src := gbump.pass.cpp

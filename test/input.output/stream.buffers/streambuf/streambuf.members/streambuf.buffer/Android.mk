@@ -14,22 +14,21 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/stream.buffers/streambuf/streambuf.members/streambuf.buffer/Android.mk
-
-test_name := input.output/stream.buffers/streambuf/streambuf.members/streambuf.buffer/pubseekpos
-test_src := pubseekpos.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/stream.buffers/streambuf/streambuf.members/streambuf.buffer/pubsync
-test_src := pubsync.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := input.output/stream.buffers/streambuf/streambuf.members/streambuf.buffer/pubsetbuf
 test_src := pubsetbuf.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := input.output/stream.buffers/streambuf/streambuf.members/streambuf.buffer/pubseekpos
+test_src := pubseekpos.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := input.output/stream.buffers/streambuf/streambuf.members/streambuf.buffer/pubseekoff
 test_src := pubseekoff.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/stream.buffers/streambuf/streambuf.members/streambuf.buffer/pubsync
+test_src := pubsync.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

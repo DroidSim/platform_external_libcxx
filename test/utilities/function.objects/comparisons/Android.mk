@@ -14,26 +14,25 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/function.objects/comparisons/Android.mk
+
+test_name := utilities/function.objects/comparisons/transparent
+test_src := transparent.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/comparisons/less
 test_src := less.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/function.objects/comparisons/not_equal_to
-test_src := not_equal_to.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/comparisons/greater_equal
 test_src := greater_equal.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/function.objects/comparisons/less_equal
-test_src := less_equal.pass.cpp
+test_name := utilities/function.objects/comparisons/not_equal_to
+test_src := not_equal_to.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/function.objects/comparisons/transparent
-test_src := transparent.pass.cpp
+test_name := utilities/function.objects/comparisons/less_equal
+test_src := less_equal.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/comparisons/equal_to

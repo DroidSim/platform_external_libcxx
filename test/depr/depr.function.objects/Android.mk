@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/depr/depr.function.objects/Android.mk
 
 test_name := depr/depr.function.objects/nothing_to_do
 test_src := nothing_to_do.pass.cpp

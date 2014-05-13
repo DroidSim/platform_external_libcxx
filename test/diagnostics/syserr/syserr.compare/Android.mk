@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/diagnostics/syserr/syserr.compare/Android.mk
 
 test_name := diagnostics/syserr/syserr.compare/eq_error_code_error_code
 test_src := eq_error_code_error_code.pass.cpp

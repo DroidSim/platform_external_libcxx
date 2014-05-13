@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/atomics/atomics.lockfree/Android.mk
 
 test_name := atomics/atomics.lockfree/lockfree
 test_src := lockfree.pass.cpp

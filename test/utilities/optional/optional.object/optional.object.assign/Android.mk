@@ -14,26 +14,25 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/optional/optional.object/optional.object.assign/Android.mk
 
-test_name := utilities/optional/optional.object/optional.object.assign/assign_value
-test_src := assign_value.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/optional/optional.object/optional.object.assign/emplace_initializer_list
-test_src := emplace_initializer_list.pass.cpp
+test_name := utilities/optional/optional.object/optional.object.assign/emplace
+test_src := emplace.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/optional/optional.object/optional.object.assign/copy
 test_src := copy.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := utilities/optional/optional.object/optional.object.assign/emplace_initializer_list
+test_src := emplace_initializer_list.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := utilities/optional/optional.object/optional.object.assign/move
 test_src := move.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/optional/optional.object/optional.object.assign/emplace
-test_src := emplace.pass.cpp
+test_name := utilities/optional/optional.object/optional.object.assign/assign_value
+test_src := assign_value.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/optional/optional.object/optional.object.assign/nullopt_t

@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/cfenv/cfenv.syn/Android.mk
 
 test_name := numerics/cfenv/cfenv.syn/cfenv
 test_src := cfenv.pass.cpp

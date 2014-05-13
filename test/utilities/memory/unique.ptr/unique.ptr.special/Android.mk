@@ -14,7 +14,10 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/unique.ptr/unique.ptr.special/Android.mk
+
+test_name := utilities/memory/unique.ptr/unique.ptr.special/eq
+test_src := eq.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/unique.ptr/unique.ptr.special/cmp_nullptr
 test_src := cmp_nullptr.pass.cpp
@@ -22,10 +25,6 @@ include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/unique.ptr/unique.ptr.special/swap
 test_src := swap.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/memory/unique.ptr/unique.ptr.special/eq
-test_src := eq.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/unique.ptr/unique.ptr.special/rel

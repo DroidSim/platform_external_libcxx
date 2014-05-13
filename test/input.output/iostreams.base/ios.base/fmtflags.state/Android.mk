@@ -14,34 +14,25 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/iostreams.base/ios.base/fmtflags.state/Android.mk
 
 test_name := input.output/iostreams.base/ios.base/fmtflags.state/unsetf_mask
 test_src := unsetf_mask.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/iostreams.base/ios.base/fmtflags.state/width
-test_src := width.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/iostreams.base/ios.base/fmtflags.state/precision
-test_src := precision.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/iostreams.base/ios.base/fmtflags.state/setf_fmtflags
-test_src := setf_fmtflags.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostreams.base/ios.base/fmtflags.state/flags_fmtflags
 test_src := flags_fmtflags.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := input.output/iostreams.base/ios.base/fmtflags.state/flags
-test_src := flags.pass.cpp
+test_name := input.output/iostreams.base/ios.base/fmtflags.state/setf_fmtflags
+test_src := setf_fmtflags.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := input.output/iostreams.base/ios.base/fmtflags.state/width_streamsize
-test_src := width_streamsize.pass.cpp
+test_name := input.output/iostreams.base/ios.base/fmtflags.state/precision
+test_src := precision.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostreams.base/ios.base/fmtflags.state/width
+test_src := width.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostreams.base/ios.base/fmtflags.state/setf_fmtflags_mask
@@ -50,6 +41,14 @@ include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostreams.base/ios.base/fmtflags.state/precision_streamsize
 test_src := precision_streamsize.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostreams.base/ios.base/fmtflags.state/flags
+test_src := flags.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostreams.base/ios.base/fmtflags.state/width_streamsize
+test_src := width_streamsize.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

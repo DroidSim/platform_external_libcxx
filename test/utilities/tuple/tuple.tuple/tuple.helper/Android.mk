@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/tuple/tuple.tuple/tuple.helper/Android.mk
 
 test_name := utilities/tuple/tuple.tuple/tuple.helper/tuple_element
 test_src := tuple_element.pass.cpp

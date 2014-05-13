@@ -14,10 +14,9 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/iostream.objects/narrow.stream.objects/Android.mk
 
-test_name := input.output/iostream.objects/narrow.stream.objects/cout
-test_src := cout.pass.cpp
+test_name := input.output/iostream.objects/narrow.stream.objects/cin
+test_src := cin.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostream.objects/narrow.stream.objects/cerr
@@ -28,8 +27,8 @@ test_name := input.output/iostream.objects/narrow.stream.objects/clog
 test_src := clog.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := input.output/iostream.objects/narrow.stream.objects/cin
-test_src := cin.pass.cpp
+test_name := input.output/iostream.objects/narrow.stream.objects/cout
+test_src := cout.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

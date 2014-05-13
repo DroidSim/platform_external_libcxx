@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/algorithms/alg.nonmodifying/alg.any_of/Android.mk
 
 test_name := algorithms/alg.nonmodifying/alg.any_of/any_of
 test_src := any_of.pass.cpp

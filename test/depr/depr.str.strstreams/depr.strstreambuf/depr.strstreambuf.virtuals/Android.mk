@@ -14,30 +14,29 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.virtuals/Android.mk
 
 test_name := depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.virtuals/seekpos
 test_src := seekpos.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.virtuals/overflow
-test_src := overflow.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.virtuals/pbackfail
-test_src := pbackfail.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.virtuals/underflow
-test_src := underflow.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.virtuals/setbuf
 test_src := setbuf.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.virtuals/overflow
+test_src := overflow.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.virtuals/seekoff
 test_src := seekoff.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.virtuals/underflow
+test_src := underflow.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.virtuals/pbackfail
+test_src := pbackfail.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

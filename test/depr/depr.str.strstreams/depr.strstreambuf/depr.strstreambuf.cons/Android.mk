@@ -14,30 +14,21 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.cons/Android.mk
-
-test_name := depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.cons/default
-test_src := default.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.cons/ccp_size
-test_src := ccp_size.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.cons/cp_size_cp
 test_src := cp_size_cp.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.cons/cucp_size
-test_src := cucp_size.pass.cpp
+test_name := depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.cons/default
+test_src := default.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.cons/custom_alloc
 test_src := custom_alloc.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.cons/ucp_size_ucp
-test_src := ucp_size_ucp.pass.cpp
+test_name := depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.cons/cucp_size
+test_src := cucp_size.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.cons/scp_size_scp
@@ -46,6 +37,14 @@ include external/libcxx/test/Android.build.mk
 
 test_name := depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.cons/cscp_size
 test_src := cscp_size.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.cons/ucp_size_ucp
+test_src := ucp_size_ucp.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.cons/ccp_size
+test_src := ccp_size.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

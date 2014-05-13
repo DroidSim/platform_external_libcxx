@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/utility/operators/Android.mk
 
 test_name := utilities/utility/operators/rel_ops
 test_src := rel_ops.pass.cpp

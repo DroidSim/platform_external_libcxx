@@ -14,14 +14,17 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/strings/basic.string/string.ops/string_compare/Android.mk
 
-test_name := strings/basic.string/string.ops/string_compare/string
-test_src := string.pass.cpp
+test_name := strings/basic.string/string.ops/string_compare/size_size_string
+test_src := size_size_string.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := strings/basic.string/string.ops/string_compare/size_size_pointer
 test_src := size_size_pointer.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := strings/basic.string/string.ops/string_compare/string
+test_src := string.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := strings/basic.string/string.ops/string_compare/pointer
@@ -30,10 +33,6 @@ include external/libcxx/test/Android.build.mk
 
 test_name := strings/basic.string/string.ops/string_compare/size_size_pointer_size
 test_src := size_size_pointer_size.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := strings/basic.string/string.ops/string_compare/size_size_string
-test_src := size_size_string.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := strings/basic.string/string.ops/string_compare/size_size_string_size_size

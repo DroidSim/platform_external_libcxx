@@ -14,18 +14,25 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/numarray/template.valarray/valarray.members/Android.mk
 
-test_name := numerics/numarray/template.valarray/valarray.members/apply_value
-test_src := apply_value.pass.cpp
+test_name := numerics/numarray/template.valarray/valarray.members/size
+test_src := size.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/numarray/template.valarray/valarray.members/shift
-test_src := shift.pass.cpp
+test_name := numerics/numarray/template.valarray/valarray.members/max
+test_src := max.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/numarray/template.valarray/valarray.members/resize
+test_src := resize.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/numarray/template.valarray/valarray.members/sum
 test_src := sum.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/numarray/template.valarray/valarray.members/cshift
+test_src := cshift.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/numarray/template.valarray/valarray.members/swap
@@ -36,20 +43,12 @@ test_name := numerics/numarray/template.valarray/valarray.members/min
 test_src := min.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/numarray/template.valarray/valarray.members/cshift
-test_src := cshift.pass.cpp
+test_name := numerics/numarray/template.valarray/valarray.members/apply_value
+test_src := apply_value.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/numarray/template.valarray/valarray.members/size
-test_src := size.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/numarray/template.valarray/valarray.members/resize
-test_src := resize.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/numarray/template.valarray/valarray.members/max
-test_src := max.pass.cpp
+test_name := numerics/numarray/template.valarray/valarray.members/shift
+test_src := shift.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/numarray/template.valarray/valarray.members/apply_cref

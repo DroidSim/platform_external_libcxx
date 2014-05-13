@@ -14,78 +14,65 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/Android.mk
-
-test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/move_convert04
-test_src := move_convert04.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/pointer01
-test_src := pointer01.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/move_convert07
-test_src := move_convert07.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/pointer_deleter03
-test_src := pointer_deleter03.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/pointer03
 test_src := pointer03.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/pointer_deleter04
-test_src := pointer_deleter04.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/move02
-test_src := move02.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/pointer02
-test_src := pointer02.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/move_convert05
-test_src := move_convert05.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/move01
-test_src := move01.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/move_convert01
 test_src := move_convert01.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/move_convert06
-test_src := move_convert06.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/pointer_deleter02
 test_src := pointer_deleter02.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/default01
-test_src := default01.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/pointer_deleter05
 test_src := pointer_deleter05.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/default02
-test_src := default02.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/auto_pointer
 test_src := auto_pointer.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/pointer_deleter06
-test_src := pointer_deleter06.pass.cpp
+test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/pointer_deleter04
+test_src := pointer_deleter04.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/move01
+test_src := move01.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/move_convert02
+test_src := move_convert02.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/pointer_deleter03
+test_src := pointer_deleter03.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/default01
+test_src := default01.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/pointer_deleter01
+test_src := pointer_deleter01.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/move02
+test_src := move02.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/move_convert04
+test_src := move_convert04.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/move_convert07
+test_src := move_convert07.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/pointer01
+test_src := pointer01.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/move_convert03
@@ -96,12 +83,24 @@ test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.cto
 test_src := nullptr.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/move_convert02
-test_src := move_convert02.pass.cpp
+test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/pointer_deleter06
+test_src := pointer_deleter06.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/pointer_deleter01
-test_src := pointer_deleter01.pass.cpp
+test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/pointer02
+test_src := pointer02.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/default02
+test_src := default02.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/move_convert06
+test_src := move_convert06.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.ctor/move_convert05
+test_src := move_convert05.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

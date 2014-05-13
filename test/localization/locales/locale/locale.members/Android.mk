@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/localization/locales/locale/locale.members/Android.mk
 
 test_name := localization/locales/locale/locale.members/combine
 test_src := combine.pass.cpp

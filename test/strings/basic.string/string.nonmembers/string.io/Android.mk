@@ -14,22 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/strings/basic.string/string.nonmembers/string.io/Android.mk
-
-test_name := strings/basic.string/string.nonmembers/string.io/get_line_delim_rv
-test_src := get_line_delim_rv.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := strings/basic.string/string.nonmembers/string.io/get_line_delim
-test_src := get_line_delim.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := strings/basic.string/string.nonmembers/string.io/get_line_rv
-test_src := get_line_rv.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := strings/basic.string/string.nonmembers/string.io/stream_extract
 test_src := stream_extract.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := strings/basic.string/string.nonmembers/string.io/get_line_delim_rv
+test_src := get_line_delim_rv.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := strings/basic.string/string.nonmembers/string.io/stream_insert
@@ -38,6 +29,14 @@ include external/libcxx/test/Android.build.mk
 
 test_name := strings/basic.string/string.nonmembers/string.io/get_line
 test_src := get_line.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := strings/basic.string/string.nonmembers/string.io/get_line_rv
+test_src := get_line_rv.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := strings/basic.string/string.nonmembers/string.io/get_line_delim
+test_src := get_line_delim.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

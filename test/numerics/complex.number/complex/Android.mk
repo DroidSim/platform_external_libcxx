@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/complex.number/complex/Android.mk
 
 test_name := numerics/complex.number/complex/types
 test_src := types.pass.cpp

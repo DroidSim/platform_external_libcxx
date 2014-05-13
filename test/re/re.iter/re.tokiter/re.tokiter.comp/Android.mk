@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/re/re.iter/re.tokiter/re.tokiter.comp/Android.mk
 
 test_name := re/re.iter/re.tokiter/re.tokiter.comp/equal
 test_src := equal.pass.cpp

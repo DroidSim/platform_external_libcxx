@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/re/re.const/re.matchflag/Android.mk
 
 test_name := re/re.const/re.matchflag/match_flag_type
 test_src := match_flag_type.pass.cpp

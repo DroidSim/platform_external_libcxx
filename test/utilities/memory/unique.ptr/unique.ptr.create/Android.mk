@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/unique.ptr/unique.ptr.create/Android.mk
-
-test_name := utilities/memory/unique.ptr/unique.ptr.create/make_unique.single
-test_src := make_unique.single.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/unique.ptr/unique.ptr.create/make_unique.array
 test_src := make_unique.array.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/unique.ptr/unique.ptr.create/make_unique.single
+test_src := make_unique.single.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

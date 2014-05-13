@@ -14,34 +14,33 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/sequences/array/Android.mk
 
-test_name := containers/sequences/array/begin
-test_src := begin.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/array/at
-test_src := at.pass.cpp
+test_name := containers/sequences/array/iterators
+test_src := iterators.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := containers/sequences/array/front_back
 test_src := front_back.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := containers/sequences/array/version
-test_src := version.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/array/iterators
-test_src := iterators.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := containers/sequences/array/types
 test_src := types.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := containers/sequences/array/begin
+test_src := begin.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/array/version
+test_src := version.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := containers/sequences/array/indexing
 test_src := indexing.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/array/at
+test_src := at.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

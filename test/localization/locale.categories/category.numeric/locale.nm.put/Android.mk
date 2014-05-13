@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/localization/locale.categories/category.numeric/locale.nm.put/Android.mk
 
 test_name := localization/locale.categories/category.numeric/locale.nm.put/types
 test_src := types.pass.cpp

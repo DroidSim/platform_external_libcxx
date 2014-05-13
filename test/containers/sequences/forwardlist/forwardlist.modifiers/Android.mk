@@ -14,22 +14,33 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/sequences/forwardlist/forwardlist.modifiers/Android.mk
+
+test_name := containers/sequences/forwardlist/forwardlist.modifiers/insert_after_init
+test_src := insert_after_init.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/forwardlist/forwardlist.modifiers/resize_size_value
+test_src := resize_size_value.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := containers/sequences/forwardlist/forwardlist.modifiers/insert_after_range
 test_src := insert_after_range.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := containers/sequences/forwardlist/forwardlist.modifiers/push_front_const
+test_src := push_front_const.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/forwardlist/forwardlist.modifiers/clear
+test_src := clear.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/forwardlist/forwardlist.modifiers/resize_size
+test_src := resize_size.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := containers/sequences/forwardlist/forwardlist.modifiers/insert_after_rv
 test_src := insert_after_rv.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/forwardlist/forwardlist.modifiers/insert_after_size_value
-test_src := insert_after_size_value.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/forwardlist/forwardlist.modifiers/push_front_rv
-test_src := push_front_rv.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := containers/sequences/forwardlist/forwardlist.modifiers/emplace_after
@@ -40,44 +51,32 @@ test_name := containers/sequences/forwardlist/forwardlist.modifiers/erase_after_
 test_src := erase_after_one.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := containers/sequences/forwardlist/forwardlist.modifiers/insert_after_init
-test_src := insert_after_init.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/forwardlist/forwardlist.modifiers/resize_size_value
-test_src := resize_size_value.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/forwardlist/forwardlist.modifiers/clear
-test_src := clear.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/forwardlist/forwardlist.modifiers/insert_after_const
-test_src := insert_after_const.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := containers/sequences/forwardlist/forwardlist.modifiers/push_front_exception_safety
 test_src := push_front_exception_safety.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/forwardlist/forwardlist.modifiers/erase_after_many
-test_src := erase_after_many.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/forwardlist/forwardlist.modifiers/push_front_const
-test_src := push_front_const.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/forwardlist/forwardlist.modifiers/emplace_front
-test_src := emplace_front.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := containers/sequences/forwardlist/forwardlist.modifiers/pop_front
 test_src := pop_front.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := containers/sequences/forwardlist/forwardlist.modifiers/resize_size
-test_src := resize_size.pass.cpp
+test_name := containers/sequences/forwardlist/forwardlist.modifiers/insert_after_size_value
+test_src := insert_after_size_value.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/forwardlist/forwardlist.modifiers/emplace_front
+test_src := emplace_front.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/forwardlist/forwardlist.modifiers/insert_after_const
+test_src := insert_after_const.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/forwardlist/forwardlist.modifiers/push_front_rv
+test_src := push_front_rv.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/forwardlist/forwardlist.modifiers/erase_after_many
+test_src := erase_after_many.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

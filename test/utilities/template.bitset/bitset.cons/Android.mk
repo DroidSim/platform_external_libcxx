@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/template.bitset/bitset.cons/Android.mk
 
 test_name := utilities/template.bitset/bitset.cons/default
 test_src := default.pass.cpp
@@ -24,12 +23,12 @@ test_name := utilities/template.bitset/bitset.cons/ull_ctor
 test_src := ull_ctor.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/template.bitset/bitset.cons/char_ptr_ctor
-test_src := char_ptr_ctor.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := utilities/template.bitset/bitset.cons/string_ctor
 test_src := string_ctor.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/template.bitset/bitset.cons/char_ptr_ctor
+test_src := char_ptr_ctor.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

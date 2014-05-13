@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/function.objects/func.wrap/func.wrap.badcall/func.wrap.badcall.const/Android.mk
 
 test_name := utilities/function.objects/func.wrap/func.wrap.badcall/func.wrap.badcall.const/bad_function_call_ctor
 test_src := bad_function_call_ctor.pass.cpp

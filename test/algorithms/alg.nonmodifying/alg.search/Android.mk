@@ -14,7 +14,14 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/algorithms/alg.nonmodifying/alg.search/Android.mk
+
+test_name := algorithms/alg.nonmodifying/alg.search/search_pred
+test_src := search_pred.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := algorithms/alg.nonmodifying/alg.search/search_n_pred
+test_src := search_n_pred.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := algorithms/alg.nonmodifying/alg.search/search
 test_src := search.pass.cpp
@@ -22,14 +29,6 @@ include external/libcxx/test/Android.build.mk
 
 test_name := algorithms/alg.nonmodifying/alg.search/search_n
 test_src := search_n.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := algorithms/alg.nonmodifying/alg.search/search_n_pred
-test_src := search_n_pred.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := algorithms/alg.nonmodifying/alg.search/search_pred
-test_src := search_pred.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

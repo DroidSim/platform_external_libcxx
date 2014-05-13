@@ -14,18 +14,17 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/meta/meta.unary.prop.query/Android.mk
 
 test_name := utilities/meta/meta.unary.prop.query/alignment_of
 test_src := alignment_of.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/meta/meta.unary.prop.query/rank
-test_src := rank.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := utilities/meta/meta.unary.prop.query/extent
 test_src := extent.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/meta/meta.unary.prop.query/rank
+test_src := rank.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

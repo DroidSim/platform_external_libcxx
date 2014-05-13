@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/unord/unord.map/unord.map.elem/Android.mk
 
 test_name := containers/unord/unord.map/unord.map.elem/at
 test_src := at.pass.cpp

@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/algorithms/alg.nonmodifying/alg.none_of/Android.mk
 
 test_name := algorithms/alg.nonmodifying/alg.none_of/none_of
 test_src := none_of.pass.cpp

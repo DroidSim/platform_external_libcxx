@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.dtor/Android.mk
 
 test_name := localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.dtor/dtor
 test_src := dtor.pass.cpp

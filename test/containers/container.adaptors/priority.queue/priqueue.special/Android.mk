@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/container.adaptors/priority.queue/priqueue.special/Android.mk
 
 test_name := containers/container.adaptors/priority.queue/priqueue.special/swap
 test_src := swap.pass.cpp

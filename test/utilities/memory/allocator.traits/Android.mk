@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/allocator.traits/Android.mk
 
 test_name := utilities/memory/allocator.traits/rebind_traits
 test_src := rebind_traits.pass.cpp

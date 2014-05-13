@@ -14,22 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/sequences/deque/deque.special/Android.mk
 
-test_name := containers/sequences/deque/deque.special/copy_backward
-test_src := copy_backward.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/deque/deque.special/move_backward
-test_src := move_backward.pass.cpp
+test_name := containers/sequences/deque/deque.special/copy
+test_src := copy.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := containers/sequences/deque/deque.special/swap
 test_src := swap.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/deque/deque.special/copy
-test_src := copy.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := containers/sequences/deque/deque.special/swap_noexcept
@@ -38,6 +29,14 @@ include external/libcxx/test/Android.build.mk
 
 test_name := containers/sequences/deque/deque.special/move
 test_src := move.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/deque/deque.special/copy_backward
+test_src := copy_backward.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/deque/deque.special/move_backward
+test_src := move_backward.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

@@ -14,46 +14,45 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/re/re.regex/re.regex.assign/Android.mk
 
-test_name := re/re.regex/re.regex.assign/string
-test_src := string.pass.cpp
+test_name := re/re.regex/re.regex.assign/assign
+test_src := assign.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := re/re.regex/re.regex.assign/assign_ptr_size_flag
-test_src := assign_ptr_size_flag.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := re/re.regex/re.regex.assign/il
-test_src := il.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := re/re.regex/re.regex.assign/assign_ptr_flag
-test_src := assign_ptr_flag.pass.cpp
+test_name := re/re.regex/re.regex.assign/assign_string_flag
+test_src := assign_string_flag.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := re/re.regex/re.regex.assign/copy
 test_src := copy.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := re/re.regex/re.regex.assign/assign
-test_src := assign.pass.cpp
+test_name := re/re.regex/re.regex.assign/assign.il
+test_src := assign.il.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := re/re.regex/re.regex.assign/assign_iter_iter_flag
 test_src := assign_iter_iter_flag.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := re/re.regex/re.regex.assign/string
+test_src := string.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := re/re.regex/re.regex.assign/ptr
 test_src := ptr.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := re/re.regex/re.regex.assign/assign.il
-test_src := assign.il.pass.cpp
+test_name := re/re.regex/re.regex.assign/assign_ptr_flag
+test_src := assign_ptr_flag.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := re/re.regex/re.regex.assign/assign_string_flag
-test_src := assign_string_flag.pass.cpp
+test_name := re/re.regex/re.regex.assign/il
+test_src := il.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := re/re.regex/re.regex.assign/assign_ptr_size_flag
+test_src := assign_ptr_size_flag.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

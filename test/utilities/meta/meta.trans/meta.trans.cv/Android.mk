@@ -14,11 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/meta/meta.trans/meta.trans.cv/Android.mk
-
-test_name := utilities/meta/meta.trans/meta.trans.cv/remove_const
-test_src := remove_const.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/meta/meta.trans/meta.trans.cv/remove_volatile
 test_src := remove_volatile.pass.cpp
@@ -28,16 +23,20 @@ test_name := utilities/meta/meta.trans/meta.trans.cv/add_cv
 test_src := add_cv.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/meta/meta.trans/meta.trans.cv/remove_cv
-test_src := remove_cv.pass.cpp
+test_name := utilities/meta/meta.trans/meta.trans.cv/add_volatile
+test_src := add_volatile.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/meta/meta.trans/meta.trans.cv/add_const
 test_src := add_const.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/meta/meta.trans/meta.trans.cv/add_volatile
-test_src := add_volatile.pass.cpp
+test_name := utilities/meta/meta.trans/meta.trans.cv/remove_const
+test_src := remove_const.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/meta/meta.trans/meta.trans.cv/remove_cv
+test_src := remove_cv.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

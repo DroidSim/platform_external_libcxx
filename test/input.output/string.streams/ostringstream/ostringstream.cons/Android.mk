@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/string.streams/ostringstream/ostringstream.cons/Android.mk
 
 test_name := input.output/string.streams/ostringstream/ostringstream.cons/default
 test_src := default.pass.cpp

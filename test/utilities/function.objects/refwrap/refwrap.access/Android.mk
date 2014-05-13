@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/function.objects/refwrap/refwrap.access/Android.mk
 
 test_name := utilities/function.objects/refwrap/refwrap.access/conversion
 test_src := conversion.pass.cpp

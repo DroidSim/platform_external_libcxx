@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/temporary.buffer/Android.mk
 
 test_name := utilities/memory/temporary.buffer/temporary_buffer
 test_src := temporary_buffer.pass.cpp

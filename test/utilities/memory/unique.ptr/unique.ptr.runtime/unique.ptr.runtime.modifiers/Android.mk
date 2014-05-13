@@ -14,18 +14,17 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/unique.ptr/unique.ptr.runtime/unique.ptr.runtime.modifiers/Android.mk
 
-test_name := utilities/memory/unique.ptr/unique.ptr.runtime/unique.ptr.runtime.modifiers/release
-test_src := release.pass.cpp
+test_name := utilities/memory/unique.ptr/unique.ptr.runtime/unique.ptr.runtime.modifiers/reset1
+test_src := reset1.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/unique.ptr/unique.ptr.runtime/unique.ptr.runtime.modifiers/swap
 test_src := swap.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/memory/unique.ptr/unique.ptr.runtime/unique.ptr.runtime.modifiers/reset1
-test_src := reset1.pass.cpp
+test_name := utilities/memory/unique.ptr/unique.ptr.runtime/unique.ptr.runtime.modifiers/release
+test_src := release.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

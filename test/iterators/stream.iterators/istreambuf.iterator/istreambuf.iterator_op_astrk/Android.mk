@@ -14,7 +14,10 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/iterators/stream.iterators/istreambuf.iterator/istreambuf.iterator_op_astrk/Android.mk
+
+test_name := iterators/stream.iterators/istreambuf.iterator/istreambuf.iterator_op_astrk/arrow
+test_src := arrow.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := iterators/stream.iterators/istreambuf.iterator/istreambuf.iterator_op_astrk/post_increment
 test_src := post_increment.pass.cpp
@@ -22,10 +25,6 @@ include external/libcxx/test/Android.build.mk
 
 test_name := iterators/stream.iterators/istreambuf.iterator/istreambuf.iterator_op_astrk/pre_increment
 test_src := pre_increment.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := iterators/stream.iterators/istreambuf.iterator/istreambuf.iterator_op_astrk/arrow
-test_src := arrow.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

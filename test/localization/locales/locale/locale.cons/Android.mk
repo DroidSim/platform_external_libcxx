@@ -14,10 +14,25 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/localization/locales/locale/locale.cons/Android.mk
+
+test_name := localization/locales/locale/locale.cons/assign
+test_src := assign.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := localization/locales/locale/locale.cons/default
 test_src := default.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := localization/locales/locale/locale.cons/copy
+test_src := copy.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := localization/locales/locale/locale.cons/locale_locale_cat
+test_src := locale_locale_cat.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := localization/locales/locale/locale.cons/char_pointer
+test_src := char_pointer.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := localization/locales/locale/locale.cons/string
@@ -28,24 +43,8 @@ test_name := localization/locales/locale/locale.cons/locale_string_cat
 test_src := locale_string_cat.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := localization/locales/locale/locale.cons/copy
-test_src := copy.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := localization/locales/locale/locale.cons/assign
-test_src := assign.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := localization/locales/locale/locale.cons/char_pointer
-test_src := char_pointer.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := localization/locales/locale/locale.cons/locale_facetptr
 test_src := locale_facetptr.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := localization/locales/locale/locale.cons/locale_locale_cat
-test_src := locale_locale_cat.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := localization/locales/locale/locale.cons/locale_char_pointer_cat

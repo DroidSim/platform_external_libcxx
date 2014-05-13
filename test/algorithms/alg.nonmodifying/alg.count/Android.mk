@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/algorithms/alg.nonmodifying/alg.count/Android.mk
 
 test_name := algorithms/alg.nonmodifying/alg.count/count_if
 test_src := count_if.pass.cpp

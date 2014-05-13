@@ -14,10 +14,21 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/thread/thread.threads/thread.thread.class/thread.thread.id/Android.mk
+
+test_name := thread/thread.threads/thread.thread.class/thread.thread.id/assign
+test_src := assign.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := thread/thread.threads/thread.thread.class/thread.thread.id/default
 test_src := default.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := thread/thread.threads/thread.thread.class/thread.thread.id/eq
+test_src := eq.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := thread/thread.threads/thread.thread.class/thread.thread.id/copy
+test_src := copy.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := thread/thread.threads/thread.thread.class/thread.thread.id/thread_id
@@ -28,20 +39,8 @@ test_name := thread/thread.threads/thread.thread.class/thread.thread.id/lt
 test_src := lt.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := thread/thread.threads/thread.thread.class/thread.thread.id/copy
-test_src := copy.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := thread/thread.threads/thread.thread.class/thread.thread.id/assign
-test_src := assign.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := thread/thread.threads/thread.thread.class/thread.thread.id/stream
 test_src := stream.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := thread/thread.threads/thread.thread.class/thread.thread.id/eq
-test_src := eq.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

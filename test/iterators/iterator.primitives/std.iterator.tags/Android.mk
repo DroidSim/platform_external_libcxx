@@ -14,10 +14,9 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/iterators/iterator.primitives/std.iterator.tags/Android.mk
 
-test_name := iterators/iterator.primitives/std.iterator.tags/input_iterator_tag
-test_src := input_iterator_tag.pass.cpp
+test_name := iterators/iterator.primitives/std.iterator.tags/bidirectional_iterator_tag
+test_src := bidirectional_iterator_tag.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := iterators/iterator.primitives/std.iterator.tags/output_iterator_tag
@@ -28,8 +27,8 @@ test_name := iterators/iterator.primitives/std.iterator.tags/forward_iterator_ta
 test_src := forward_iterator_tag.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := iterators/iterator.primitives/std.iterator.tags/bidirectional_iterator_tag
-test_src := bidirectional_iterator_tag.pass.cpp
+test_name := iterators/iterator.primitives/std.iterator.tags/input_iterator_tag
+test_src := input_iterator_tag.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := iterators/iterator.primitives/std.iterator.tags/random_access_iterator_tag

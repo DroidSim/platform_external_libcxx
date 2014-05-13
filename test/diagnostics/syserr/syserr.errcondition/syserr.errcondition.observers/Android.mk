@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/diagnostics/syserr/syserr.errcondition/syserr.errcondition.observers/Android.mk
 
 test_name := diagnostics/syserr/syserr.errcondition/syserr.errcondition.observers/bool
 test_src := bool.pass.cpp

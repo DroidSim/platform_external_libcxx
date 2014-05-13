@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/function.objects/func.wrap/func.wrap.func/func.wrap.func.cap/Android.mk
 
 test_name := utilities/function.objects/func.wrap/func.wrap.func/func.wrap.func.cap/operator_bool
 test_src := operator_bool.pass.cpp

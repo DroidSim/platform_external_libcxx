@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/algorithms/alg.nonmodifying/alg.foreach/Android.mk
 
 test_name := algorithms/alg.nonmodifying/alg.foreach/test
 test_src := test.pass.cpp

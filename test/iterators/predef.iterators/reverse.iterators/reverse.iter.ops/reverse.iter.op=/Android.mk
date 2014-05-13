@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/iterators/predef.iterators/reverse.iterators/reverse.iter.ops/reverse.iter.op=/Android.mk
 
 test_name := iterators/predef.iterators/reverse.iterators/reverse.iter.ops/reverse.iter.op=/reverse_iterator
 test_src := reverse_iterator.pass.cpp

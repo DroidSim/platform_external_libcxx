@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.statics/Android.mk
 
 test_name := localization/locale.categories/category.ctype/facet.ctype.special/facet.ctype.char.statics/classic_table
 test_src := classic_table.pass.cpp

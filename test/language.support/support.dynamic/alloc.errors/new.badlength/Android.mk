@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/language.support/support.dynamic/alloc.errors/new.badlength/Android.mk
-
-test_name := language.support/support.dynamic/alloc.errors/new.badlength/bad_array_new_length
-test_src := bad_array_new_length.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := language.support/support.dynamic/alloc.errors/new.badlength/bad_array_length
 test_src := bad_array_length.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := language.support/support.dynamic/alloc.errors/new.badlength/bad_array_new_length
+test_src := bad_array_new_length.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

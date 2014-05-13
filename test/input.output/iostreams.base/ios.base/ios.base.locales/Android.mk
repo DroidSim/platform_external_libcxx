@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/iostreams.base/ios.base/ios.base.locales/Android.mk
-
-test_name := input.output/iostreams.base/ios.base/ios.base.locales/imbue
-test_src := imbue.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostreams.base/ios.base/ios.base.locales/getloc
 test_src := getloc.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostreams.base/ios.base/ios.base.locales/imbue
+test_src := imbue.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

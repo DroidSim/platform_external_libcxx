@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/re/re.iter/re.regiter/re.regiter.cnstr/Android.mk
 
 test_name := re/re.iter/re.regiter/re.regiter.cnstr/default
 test_src := default.pass.cpp

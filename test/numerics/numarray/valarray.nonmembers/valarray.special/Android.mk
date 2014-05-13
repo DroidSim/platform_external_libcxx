@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/numarray/valarray.nonmembers/valarray.special/Android.mk
 
 test_name := numerics/numarray/valarray.nonmembers/valarray.special/swap
 test_src := swap.pass.cpp

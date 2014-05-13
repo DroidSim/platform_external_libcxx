@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/re/re.submatch/re.submatch.op/Android.mk
 
 test_name := re/re.submatch/re.submatch.op/compare
 test_src := compare.pass.cpp

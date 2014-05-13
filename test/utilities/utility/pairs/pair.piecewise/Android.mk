@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/utility/pairs/pair.piecewise/Android.mk
 
 test_name := utilities/utility/pairs/pair.piecewise/piecewise_construct
 test_src := piecewise_construct.pass.cpp

@@ -14,11 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/sequences/deque/Android.mk
-
-test_name := containers/sequences/deque/version
-test_src := version.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := containers/sequences/deque/iterators
 test_src := iterators.pass.cpp
@@ -26,6 +21,10 @@ include external/libcxx/test/Android.build.mk
 
 test_name := containers/sequences/deque/types
 test_src := types.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/deque/version
+test_src := version.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/iostreams.base/fpos/fpos.members/Android.mk
 
 test_name := input.output/iostreams.base/fpos/fpos.members/state
 test_src := state.pass.cpp

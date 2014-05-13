@@ -14,14 +14,17 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/container.adaptors/priority.queue/priqueue.members/Android.mk
 
 test_name := containers/container.adaptors/priority.queue/priqueue.members/push
 test_src := push.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := containers/container.adaptors/priority.queue/priqueue.members/top
-test_src := top.pass.cpp
+test_name := containers/container.adaptors/priority.queue/priqueue.members/emplace
+test_src := emplace.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/container.adaptors/priority.queue/priqueue.members/size
+test_src := size.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := containers/container.adaptors/priority.queue/priqueue.members/swap
@@ -32,20 +35,16 @@ test_name := containers/container.adaptors/priority.queue/priqueue.members/pop
 test_src := pop.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := containers/container.adaptors/priority.queue/priqueue.members/size
-test_src := size.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/container.adaptors/priority.queue/priqueue.members/emplace
-test_src := emplace.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/container.adaptors/priority.queue/priqueue.members/push_rvalue
-test_src := push_rvalue.pass.cpp
+test_name := containers/container.adaptors/priority.queue/priqueue.members/top
+test_src := top.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := containers/container.adaptors/priority.queue/priqueue.members/empty
 test_src := empty.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/container.adaptors/priority.queue/priqueue.members/push_rvalue
+test_src := push_rvalue.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

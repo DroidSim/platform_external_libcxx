@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/re/re.results/re.results.size/Android.mk
 
 test_name := re/re.results/re.results.size/max_size
 test_src := max_size.pass.cpp

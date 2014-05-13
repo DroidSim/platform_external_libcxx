@@ -14,50 +14,49 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.arithmetic/Android.mk
 
 test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.arithmetic/bool
 test_src := bool.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.arithmetic/unsigned_short
-test_src := unsigned_short.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.arithmetic/pointer
-test_src := pointer.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.arithmetic/int
-test_src := int.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.arithmetic/long_double
-test_src := long_double.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.arithmetic/short
-test_src := short.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.arithmetic/unsigned_int
 test_src := unsigned_int.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.arithmetic/unsigned_long
-test_src := unsigned_long.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.arithmetic/long_long
-test_src := long_long.pass.cpp
+test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.arithmetic/long_double
+test_src := long_double.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.arithmetic/float
 test_src := float.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.arithmetic/long_long
+test_src := long_long.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.arithmetic/int
+test_src := int.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.arithmetic/unsigned_long_long
 test_src := unsigned_long_long.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.arithmetic/pointer
+test_src := pointer.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.arithmetic/unsigned_short
+test_src := unsigned_short.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.arithmetic/unsigned_long
+test_src := unsigned_long.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.arithmetic/short
+test_src := short.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.arithmetic/double

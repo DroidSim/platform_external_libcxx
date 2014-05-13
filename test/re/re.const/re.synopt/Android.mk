@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/re/re.const/re.synopt/Android.mk
 
 test_name := re/re.const/re.synopt/syntax_option_type
 test_src := syntax_option_type.pass.cpp

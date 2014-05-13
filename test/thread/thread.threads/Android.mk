@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/thread/thread.threads/Android.mk
 
 test_name := thread/thread.threads/version
 test_src := version.pass.cpp

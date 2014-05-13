@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/localization/locales/locale.global.templates/Android.mk
-
-test_name := localization/locales/locale.global.templates/use_facet
-test_src := use_facet.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := localization/locales/locale.global.templates/has_facet
 test_src := has_facet.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := localization/locales/locale.global.templates/use_facet
+test_src := use_facet.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

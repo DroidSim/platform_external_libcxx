@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/language.support/support.dynamic/alloc.errors/bad.alloc/Android.mk
 
 test_name := language.support/support.dynamic/alloc.errors/bad.alloc/bad_alloc
 test_src := bad_alloc.pass.cpp

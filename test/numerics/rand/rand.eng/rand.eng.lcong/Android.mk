@@ -14,10 +14,37 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/rand/rand.eng/rand.eng.lcong/Android.mk
+
+test_name := numerics/rand/rand.eng/rand.eng.lcong/assign
+test_src := assign.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := numerics/rand/rand.eng/rand.eng.lcong/default
 test_src := default.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/rand/rand.eng/rand.eng.lcong/ctor_sseq
+test_src := ctor_sseq.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/rand/rand.eng/rand.eng.lcong/copy
+test_src := copy.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/rand/rand.eng/rand.eng.lcong/ctor_result_type
+test_src := ctor_result_type.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/rand/rand.eng/rand.eng.lcong/seed_sseq
+test_src := seed_sseq.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/rand/rand.eng/rand.eng.lcong/result_type
+test_src := result_type.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/rand/rand.eng/rand.eng.lcong/eval
+test_src := eval.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/rand/rand.eng/rand.eng.lcong/discard
@@ -28,40 +55,12 @@ test_name := numerics/rand/rand.eng/rand.eng.lcong/io
 test_src := io.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/rand/rand.eng/rand.eng.lcong/result_type
-test_src := result_type.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/rand/rand.eng/rand.eng.lcong/ctor_result_type
-test_src := ctor_result_type.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/rand/rand.eng/rand.eng.lcong/eval
-test_src := eval.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/rand/rand.eng/rand.eng.lcong/copy
-test_src := copy.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/rand/rand.eng/rand.eng.lcong/assign
-test_src := assign.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := numerics/rand/rand.eng/rand.eng.lcong/values
 test_src := values.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/rand/rand.eng/rand.eng.lcong/ctor_sseq
-test_src := ctor_sseq.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := numerics/rand/rand.eng/rand.eng.lcong/seed_result_type
 test_src := seed_result_type.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/rand/rand.eng/rand.eng.lcong/seed_sseq
-test_src := seed_sseq.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

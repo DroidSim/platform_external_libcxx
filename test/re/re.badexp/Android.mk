@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/re/re.badexp/Android.mk
 
 test_name := re/re.badexp/regex_error
 test_src := regex_error.pass.cpp

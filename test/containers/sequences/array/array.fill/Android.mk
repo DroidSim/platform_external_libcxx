@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/sequences/array/array.fill/Android.mk
 
 test_name := containers/sequences/array/array.fill/fill
 test_src := fill.pass.cpp

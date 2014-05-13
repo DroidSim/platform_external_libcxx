@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/time/time.clock/time.clock.steady/Android.mk
 
 test_name := utilities/time/time.clock/time.clock.steady/now
 test_src := now.pass.cpp

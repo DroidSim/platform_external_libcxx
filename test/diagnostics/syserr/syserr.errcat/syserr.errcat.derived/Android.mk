@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/diagnostics/syserr/syserr.errcat/syserr.errcat.derived/Android.mk
 
 test_name := diagnostics/syserr/syserr.errcat/syserr.errcat.derived/message
 test_src := message.pass.cpp

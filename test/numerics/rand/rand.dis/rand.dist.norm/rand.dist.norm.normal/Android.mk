@@ -14,34 +14,33 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/Android.mk
 
-test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/io
-test_src := io.pass.cpp
+test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/assign
+test_src := assign.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/param_copy
-test_src := param_copy.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/eval
-test_src := eval.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/min
-test_src := min.pass.cpp
+test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/param_types
+test_src := param_types.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/ctor_param
 test_src := ctor_param.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/copy
-test_src := copy.pass.cpp
+test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/types
+test_src := types.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/param_types
-test_src := param_types.pass.cpp
+test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/eq
+test_src := eq.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/max
+test_src := max.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/copy
+test_src := copy.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/get_param
@@ -52,40 +51,40 @@ test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/ctor_do
 test_src := ctor_double_double.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/param_eq
+test_src := param_eq.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/set_param
 test_src := set_param.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/assign
-test_src := assign.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/types
-test_src := types.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/eval_param
-test_src := eval_param.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/param_ctor
 test_src := param_ctor.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/max
-test_src := max.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/eq
-test_src := eq.pass.cpp
+test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/eval_param
+test_src := eval_param.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/param_assign
 test_src := param_assign.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/param_eq
-test_src := param_eq.pass.cpp
+test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/eval
+test_src := eval.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/min
+test_src := min.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/io
+test_src := io.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/rand/rand.dis/rand.dist.norm/rand.dist.norm.normal/param_copy
+test_src := param_copy.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

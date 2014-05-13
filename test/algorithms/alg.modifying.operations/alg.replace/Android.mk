@@ -14,7 +14,10 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/algorithms/alg.modifying.operations/alg.replace/Android.mk
+
+test_name := algorithms/alg.modifying.operations/alg.replace/replace_if
+test_src := replace_if.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := algorithms/alg.modifying.operations/alg.replace/replace_copy_if
 test_src := replace_copy_if.pass.cpp
@@ -22,10 +25,6 @@ include external/libcxx/test/Android.build.mk
 
 test_name := algorithms/alg.modifying.operations/alg.replace/replace_copy
 test_src := replace_copy.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := algorithms/alg.modifying.operations/alg.replace/replace_if
-test_src := replace_if.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := algorithms/alg.modifying.operations/alg.replace/replace

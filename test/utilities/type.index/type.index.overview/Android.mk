@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/type.index/type.index.overview/Android.mk
-
-test_name := utilities/type.index/type.index.overview/copy_ctor
-test_src := copy_ctor.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/type.index/type.index.overview/copy_assign
 test_src := copy_assign.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/type.index/type.index.overview/copy_ctor
+test_src := copy_ctor.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/algorithms/alg.sorting/alg.sort/sort/Android.mk
 
 test_name := algorithms/alg.sorting/alg.sort/sort/sort
 test_src := sort.pass.cpp

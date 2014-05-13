@@ -14,26 +14,25 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/depr/depr.auto.ptr/auto.ptr/auto.ptr.cons/Android.mk
+
+test_name := depr/depr.auto.ptr/auto.ptr/auto.ptr.cons/copy
+test_src := copy.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := depr/depr.auto.ptr/auto.ptr/auto.ptr.cons/convert
 test_src := convert.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := depr/depr.auto.ptr/auto.ptr/auto.ptr.cons/assignment
-test_src := assignment.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := depr/depr.auto.ptr/auto.ptr/auto.ptr.cons/convert_assignment
 test_src := convert_assignment.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := depr/depr.auto.ptr/auto.ptr/auto.ptr.cons/pointer
-test_src := pointer.pass.cpp
+test_name := depr/depr.auto.ptr/auto.ptr/auto.ptr.cons/assignment
+test_src := assignment.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := depr/depr.auto.ptr/auto.ptr/auto.ptr.cons/copy
-test_src := copy.pass.cpp
+test_name := depr/depr.auto.ptr/auto.ptr/auto.ptr.cons/pointer
+test_src := pointer.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/utility/utility.swap/Android.mk
-
-test_name := utilities/utility/utility.swap/swap
-test_src := swap.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/utility/utility.swap/swap_array
 test_src := swap_array.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/utility/utility.swap/swap
+test_src := swap.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

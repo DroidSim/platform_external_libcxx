@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/numarray/template.valarray/Android.mk
 
 test_name := numerics/numarray/template.valarray/types
 test_src := types.pass.cpp

@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/container.requirements/unord.req/Android.mk
 
 test_name := containers/container.requirements/unord.req/nothing_to_do
 test_src := nothing_to_do.pass.cpp

@@ -14,15 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/iostream.objects/wide.stream.objects/Android.mk
-
-test_name := input.output/iostream.objects/wide.stream.objects/wclog
-test_src := wclog.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/iostream.objects/wide.stream.objects/wcerr
-test_src := wcerr.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostream.objects/wide.stream.objects/wcout
 test_src := wcout.pass.cpp
@@ -30,6 +21,14 @@ include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostream.objects/wide.stream.objects/wcin
 test_src := wcin.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostream.objects/wide.stream.objects/wclog
+test_src := wclog.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostream.objects/wide.stream.objects/wcerr
+test_src := wcerr.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

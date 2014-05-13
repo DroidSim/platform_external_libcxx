@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/strings/basic.string.hash/Android.mk
 
 test_name := strings/basic.string.hash/strings
 test_src := strings.pass.cpp

@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.getdeleter/Android.mk
 
 test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.getdeleter/get_deleter
 test_src := get_deleter.pass.cpp

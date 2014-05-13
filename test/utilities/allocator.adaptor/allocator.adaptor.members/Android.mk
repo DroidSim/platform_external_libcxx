@@ -14,22 +14,33 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/allocator.adaptor/allocator.adaptor.members/Android.mk
 
-test_name := utilities/allocator.adaptor/allocator.adaptor.members/construct
-test_src := construct.pass.cpp
+test_name := utilities/allocator.adaptor/allocator.adaptor.members/allocate_size
+test_src := allocate_size.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/allocator.adaptor/allocator.adaptor.members/deallocate
+test_src := deallocate.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/allocator.adaptor/allocator.adaptor.members/outer_allocator
+test_src := outer_allocator.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/allocator.adaptor/allocator.adaptor.members/max_size
+test_src := max_size.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/allocator.adaptor/allocator.adaptor.members/allocate_size_hint
+test_src := allocate_size_hint.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/allocator.adaptor/allocator.adaptor.members/inner_allocator
 test_src := inner_allocator.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/allocator.adaptor/allocator.adaptor.members/allocate_size
-test_src := allocate_size.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/allocator.adaptor/allocator.adaptor.members/allocate_size_hint
-test_src := allocate_size_hint.pass.cpp
+test_name := utilities/allocator.adaptor/allocator.adaptor.members/construct
+test_src := construct.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/allocator.adaptor/allocator.adaptor.members/destroy
@@ -38,18 +49,6 @@ include external/libcxx/test/Android.build.mk
 
 test_name := utilities/allocator.adaptor/allocator.adaptor.members/select_on_container_copy_construction
 test_src := select_on_container_copy_construction.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/allocator.adaptor/allocator.adaptor.members/max_size
-test_src := max_size.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/allocator.adaptor/allocator.adaptor.members/outer_allocator
-test_src := outer_allocator.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/allocator.adaptor/allocator.adaptor.members/deallocate
-test_src := deallocate.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

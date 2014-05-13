@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/sequences/array/array.data/Android.mk
-
-test_name := containers/sequences/array/array.data/data_const
-test_src := data_const.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := containers/sequences/array/array.data/data
 test_src := data.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/array/array.data/data_const
+test_src := data_const.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

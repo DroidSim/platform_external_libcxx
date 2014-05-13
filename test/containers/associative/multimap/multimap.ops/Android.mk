@@ -14,15 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/associative/multimap/multimap.ops/Android.mk
-
-test_name := containers/associative/multimap/multimap.ops/find
-test_src := find.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/associative/multimap/multimap.ops/equal_range
-test_src := equal_range.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := containers/associative/multimap/multimap.ops/lower_bound
 test_src := lower_bound.pass.cpp
@@ -32,8 +23,16 @@ test_name := containers/associative/multimap/multimap.ops/upper_bound
 test_src := upper_bound.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := containers/associative/multimap/multimap.ops/find
+test_src := find.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := containers/associative/multimap/multimap.ops/count
 test_src := count.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/associative/multimap/multimap.ops/equal_range
+test_src := equal_range.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

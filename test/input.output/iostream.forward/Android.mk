@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/iostream.forward/Android.mk
 
 test_name := input.output/iostream.forward/iosfwd
 test_src := iosfwd.pass.cpp

@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/unord/Android.mk
 
 test_name := containers/unord/next_prime
 test_src := next_prime.pass.cpp

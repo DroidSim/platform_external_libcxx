@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/storage.iterator/Android.mk
 
 test_name := utilities/memory/storage.iterator/raw_storag_iterator
 test_src := raw_storag_iterator.pass.cpp

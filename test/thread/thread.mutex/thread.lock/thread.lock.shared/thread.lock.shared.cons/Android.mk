@@ -14,38 +14,37 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/thread/thread.mutex/thread.lock/thread.lock.shared/thread.lock.shared.cons/Android.mk
-
-test_name := thread/thread.mutex/thread.lock/thread.lock.shared/thread.lock.shared.cons/mutex_adopt_lock
-test_src := mutex_adopt_lock.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := thread/thread.mutex/thread.lock/thread.lock.shared/thread.lock.shared.cons/default
 test_src := default.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := thread/thread.mutex/thread.lock/thread.lock.shared/thread.lock.shared.cons/mutex_adopt_lock
+test_src := mutex_adopt_lock.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := thread/thread.mutex/thread.lock/thread.lock.shared/thread.lock.shared.cons/move_ctor
 test_src := move_ctor.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := thread/thread.mutex/thread.lock/thread.lock.shared/thread.lock.shared.cons/mutex_try_to_lock
-test_src := mutex_try_to_lock.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := thread/thread.mutex/thread.lock/thread.lock.shared/thread.lock.shared.cons/mutex_duration
 test_src := mutex_duration.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := thread/thread.mutex/thread.lock/thread.lock.shared/thread.lock.shared.cons/mutex_time_point
-test_src := mutex_time_point.pass.cpp
+test_name := thread/thread.mutex/thread.lock/thread.lock.shared/thread.lock.shared.cons/mutex_try_to_lock
+test_src := mutex_try_to_lock.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := thread/thread.mutex/thread.lock/thread.lock.shared/thread.lock.shared.cons/mutex
+test_src := mutex.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := thread/thread.mutex/thread.lock/thread.lock.shared/thread.lock.shared.cons/move_assign
 test_src := move_assign.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := thread/thread.mutex/thread.lock/thread.lock.shared/thread.lock.shared.cons/mutex
-test_src := mutex.pass.cpp
+test_name := thread/thread.mutex/thread.lock/thread.lock.shared/thread.lock.shared.cons/mutex_time_point
+test_src := mutex_time_point.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := thread/thread.mutex/thread.lock/thread.lock.shared/thread.lock.shared.cons/mutex_defer_lock

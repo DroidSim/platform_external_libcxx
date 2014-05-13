@@ -14,7 +14,10 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/unique.ptr/unique.ptr.runtime/unique.ptr.runtime.observers/Android.mk
+
+test_name := utilities/memory/unique.ptr/unique.ptr.runtime/unique.ptr.runtime.observers/get_deleter
+test_src := get_deleter.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/unique.ptr/unique.ptr.runtime/unique.ptr.runtime.observers/get
 test_src := get.pass.cpp
@@ -26,10 +29,6 @@ include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/unique.ptr/unique.ptr.runtime/unique.ptr.runtime.observers/index
 test_src := index.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/memory/unique.ptr/unique.ptr.runtime/unique.ptr.runtime.observers/get_deleter
-test_src := get_deleter.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

@@ -14,50 +14,49 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/language.support/support.runtime/Android.mk
-
-test_name := language.support/support.runtime/cstdbool
-test_src := cstdbool.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := language.support/support.runtime/cstdarg
-test_src := cstdarg.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := language.support/support.runtime/version_csetjmp
-test_src := version_csetjmp.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := language.support/support.runtime/version_ctime
-test_src := version_ctime.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := language.support/support.runtime/version_cstdlib
-test_src := version_cstdlib.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := language.support/support.runtime/ctime
-test_src := ctime.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := language.support/support.runtime/version_csignal
-test_src := version_csignal.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := language.support/support.runtime/version_cstdarg
 test_src := version_cstdarg.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := language.support/support.runtime/csetjmp
-test_src := csetjmp.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := language.support/support.runtime/version_cstdbool
 test_src := version_cstdbool.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := language.support/support.runtime/version_csetjmp
+test_src := version_csetjmp.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := language.support/support.runtime/version_csignal
+test_src := version_csignal.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := language.support/support.runtime/csignal
 test_src := csignal.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := language.support/support.runtime/cstdarg
+test_src := cstdarg.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := language.support/support.runtime/ctime
+test_src := ctime.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := language.support/support.runtime/csetjmp
+test_src := csetjmp.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := language.support/support.runtime/cstdbool
+test_src := cstdbool.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := language.support/support.runtime/version_cstdlib
+test_src := version_cstdlib.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := language.support/support.runtime/version_ctime
+test_src := version_ctime.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := language.support/support.runtime/cstdlib

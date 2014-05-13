@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/localization/locale.categories/category.messages/locale.messages/locale.messages.members/Android.mk
 
 test_name := localization/locale.categories/category.messages/locale.messages/locale.messages.members/not_testable
 test_src := not_testable.pass.cpp

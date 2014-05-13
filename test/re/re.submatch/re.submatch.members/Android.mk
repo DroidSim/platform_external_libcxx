@@ -14,10 +14,25 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/re/re.submatch/re.submatch.members/Android.mk
 
 test_name := re/re.submatch/re.submatch.members/default
 test_src := default.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := re/re.submatch/re.submatch.members/operator_string
+test_src := operator_string.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := re/re.submatch/re.submatch.members/compare_sub_match
+test_src := compare_sub_match.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := re/re.submatch/re.submatch.members/compare_value_type_ptr
+test_src := compare_value_type_ptr.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := re/re.submatch/re.submatch.members/str
+test_src := str.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := re/re.submatch/re.submatch.members/compare_string_type
@@ -26,22 +41,6 @@ include external/libcxx/test/Android.build.mk
 
 test_name := re/re.submatch/re.submatch.members/length
 test_src := length.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := re/re.submatch/re.submatch.members/operator_string
-test_src := operator_string.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := re/re.submatch/re.submatch.members/compare_value_type_ptr
-test_src := compare_value_type_ptr.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := re/re.submatch/re.submatch.members/compare_sub_match
-test_src := compare_sub_match.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := re/re.submatch/re.submatch.members/str
-test_src := str.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

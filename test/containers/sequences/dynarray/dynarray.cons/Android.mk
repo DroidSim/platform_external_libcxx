@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/sequences/dynarray/dynarray.cons/Android.mk
-
-test_name := containers/sequences/dynarray/dynarray.cons/default
-test_src := default.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := containers/sequences/dynarray/dynarray.cons/alloc
 test_src := alloc.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/dynarray/dynarray.cons/default
+test_src := default.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

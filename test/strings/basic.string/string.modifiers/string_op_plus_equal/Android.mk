@@ -14,22 +14,21 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/strings/basic.string/string.modifiers/string_op_plus_equal/Android.mk
+
+test_name := strings/basic.string/string.modifiers/string_op_plus_equal/initializer_list
+test_src := initializer_list.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := strings/basic.string/string.modifiers/string_op_plus_equal/string
 test_src := string.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := strings/basic.string/string.modifiers/string_op_plus_equal/char
-test_src := char.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := strings/basic.string/string.modifiers/string_op_plus_equal/pointer
 test_src := pointer.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := strings/basic.string/string.modifiers/string_op_plus_equal/initializer_list
-test_src := initializer_list.pass.cpp
+test_name := strings/basic.string/string.modifiers/string_op_plus_equal/char
+test_src := char.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

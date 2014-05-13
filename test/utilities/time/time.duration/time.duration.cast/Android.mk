@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/time/time.duration/time.duration.cast/Android.mk
 
 test_name := utilities/time/time.duration/time.duration.cast/duration_cast
 test_src := duration_cast.pass.cpp

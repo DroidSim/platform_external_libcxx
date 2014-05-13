@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/language.support/support.dynamic/alloc.errors/new.handler/Android.mk
 
 test_name := language.support/support.dynamic/alloc.errors/new.handler/new_handler
 test_src := new_handler.pass.cpp

@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/thread/futures/futures.tas/futures.task.nonmembers/Android.mk
-
-test_name := thread/futures/futures.tas/futures.task.nonmembers/swap
-test_src := swap.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := thread/futures/futures.tas/futures.task.nonmembers/uses_allocator
 test_src := uses_allocator.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := thread/futures/futures.tas/futures.task.nonmembers/swap
+test_src := swap.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

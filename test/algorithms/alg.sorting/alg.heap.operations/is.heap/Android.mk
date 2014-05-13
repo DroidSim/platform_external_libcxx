@@ -14,10 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/algorithms/alg.sorting/alg.heap.operations/is.heap/Android.mk
 
 test_name := algorithms/alg.sorting/alg.heap.operations/is.heap/is_heap_until
 test_src := is_heap_until.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := algorithms/alg.sorting/alg.heap.operations/is.heap/is_heap_until_comp
+test_src := is_heap_until_comp.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := algorithms/alg.sorting/alg.heap.operations/is.heap/is_heap_comp
@@ -26,10 +29,6 @@ include external/libcxx/test/Android.build.mk
 
 test_name := algorithms/alg.sorting/alg.heap.operations/is.heap/is_heap
 test_src := is_heap.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := algorithms/alg.sorting/alg.heap.operations/is.heap/is_heap_until_comp
-test_src := is_heap_until_comp.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

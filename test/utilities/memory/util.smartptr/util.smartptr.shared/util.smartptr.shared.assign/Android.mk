@@ -14,10 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.assign/Android.mk
 
-test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.assign/auto_ptr_Y
-test_src := auto_ptr_Y.pass.cpp
+test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.assign/shared_ptr_Y
+test_src := shared_ptr_Y.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.assign/shared_ptr
+test_src := shared_ptr.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.assign/unique_ptr_Y
@@ -32,12 +35,8 @@ test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.s
 test_src := shared_ptr_rv.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.assign/shared_ptr_Y
-test_src := shared_ptr_Y.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.assign/shared_ptr
-test_src := shared_ptr.pass.cpp
+test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.assign/auto_ptr_Y
+test_src := auto_ptr_Y.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

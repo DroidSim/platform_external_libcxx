@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/iostreams.base/ios.base/ios.base.callback/Android.mk
 
 test_name := input.output/iostreams.base/ios.base/ios.base.callback/register_callback
 test_src := register_callback.pass.cpp

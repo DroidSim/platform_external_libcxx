@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/localization/locale.categories/category.messages/locale.messages/Android.mk
-
-test_name := localization/locale.categories/category.messages/locale.messages/messages_base
-test_src := messages_base.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := localization/locale.categories/category.messages/locale.messages/types
 test_src := types.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := localization/locale.categories/category.messages/locale.messages/messages_base
+test_src := messages_base.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := localization/locale.categories/category.messages/locale.messages/ctor

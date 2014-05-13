@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/language.support/support.limits/limits/denorm.style/Android.mk
 
 test_name := language.support/support.limits/limits/denorm.style/check_values
 test_src := check_values.pass.cpp

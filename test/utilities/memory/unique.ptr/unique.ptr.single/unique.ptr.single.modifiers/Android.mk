@@ -14,26 +14,25 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.modifiers/Android.mk
-
-test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.modifiers/release
-test_src := release.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.modifiers/reset2
 test_src := reset2.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.modifiers/swap
-test_src := swap.pass.cpp
+test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.modifiers/reset1
+test_src := reset1.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.modifiers/reset_self
 test_src := reset_self.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.modifiers/reset1
-test_src := reset1.pass.cpp
+test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.modifiers/swap
+test_src := swap.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.modifiers/release
+test_src := release.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/algorithms/alg.sorting/alg.set.operations/includes/Android.mk
-
-test_name := algorithms/alg.sorting/alg.set.operations/includes/includes
-test_src := includes.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := algorithms/alg.sorting/alg.set.operations/includes/includes_comp
 test_src := includes_comp.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := algorithms/alg.sorting/alg.set.operations/includes/includes
+test_src := includes.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

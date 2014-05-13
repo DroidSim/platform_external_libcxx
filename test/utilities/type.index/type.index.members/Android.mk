@@ -14,19 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/type.index/type.index.members/Android.mk
-
-test_name := utilities/type.index/type.index.members/hash_code
-test_src := hash_code.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/type.index/type.index.members/lt
-test_src := lt.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/type.index/type.index.members/name
-test_src := name.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/type.index/type.index.members/eq
 test_src := eq.pass.cpp
@@ -34,6 +21,18 @@ include external/libcxx/test/Android.build.mk
 
 test_name := utilities/type.index/type.index.members/ctor
 test_src := ctor.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/type.index/type.index.members/lt
+test_src := lt.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/type.index/type.index.members/hash_code
+test_src := hash_code.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/type.index/type.index.members/name
+test_src := name.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

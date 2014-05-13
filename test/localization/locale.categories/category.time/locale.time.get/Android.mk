@@ -14,18 +14,17 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/localization/locale.categories/category.time/locale.time.get/Android.mk
 
 test_name := localization/locale.categories/category.time/locale.time.get/types
 test_src := types.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := localization/locale.categories/category.time/locale.time.get/ctor
-test_src := ctor.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := localization/locale.categories/category.time/locale.time.get/time_base
 test_src := time_base.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := localization/locale.categories/category.time/locale.time.get/ctor
+test_src := ctor.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

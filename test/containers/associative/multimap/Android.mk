@@ -14,7 +14,10 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/associative/multimap/Android.mk
+
+test_name := containers/associative/multimap/types
+test_src := types.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := containers/associative/multimap/iterator
 test_src := iterator.pass.cpp
@@ -24,16 +27,12 @@ test_name := containers/associative/multimap/size
 test_src := size.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := containers/associative/multimap/max_size
-test_src := max_size.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := containers/associative/multimap/scary
 test_src := scary.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := containers/associative/multimap/types
-test_src := types.pass.cpp
+test_name := containers/associative/multimap/max_size
+test_src := max_size.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := containers/associative/multimap/empty

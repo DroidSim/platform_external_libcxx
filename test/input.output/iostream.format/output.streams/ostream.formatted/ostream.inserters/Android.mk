@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters/Android.mk
-
-test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters/ostream
-test_src := ostream.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters/basic_ios
 test_src := basic_ios.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters/ostream
+test_src := ostream.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters/streambuf

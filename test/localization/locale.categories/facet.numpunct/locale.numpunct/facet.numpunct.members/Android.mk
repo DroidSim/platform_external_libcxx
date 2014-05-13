@@ -14,26 +14,25 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/localization/locale.categories/facet.numpunct/locale.numpunct/facet.numpunct.members/Android.mk
+
+test_name := localization/locale.categories/facet.numpunct/locale.numpunct/facet.numpunct.members/truename
+test_src := truename.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := localization/locale.categories/facet.numpunct/locale.numpunct/facet.numpunct.members/grouping
 test_src := grouping.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := localization/locale.categories/facet.numpunct/locale.numpunct/facet.numpunct.members/falsename
-test_src := falsename.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := localization/locale.categories/facet.numpunct/locale.numpunct/facet.numpunct.members/thousands_sep
 test_src := thousands_sep.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := localization/locale.categories/facet.numpunct/locale.numpunct/facet.numpunct.members/decimal_point
-test_src := decimal_point.pass.cpp
+test_name := localization/locale.categories/facet.numpunct/locale.numpunct/facet.numpunct.members/falsename
+test_src := falsename.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := localization/locale.categories/facet.numpunct/locale.numpunct/facet.numpunct.members/truename
-test_src := truename.pass.cpp
+test_name := localization/locale.categories/facet.numpunct/locale.numpunct/facet.numpunct.members/decimal_point
+test_src := decimal_point.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

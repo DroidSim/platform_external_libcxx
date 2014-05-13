@@ -14,11 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/iostream.format/output.streams/ostream.unformatted/Android.mk
-
-test_name := input.output/iostream.format/output.streams/ostream.unformatted/flush
-test_src := flush.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostream.format/output.streams/ostream.unformatted/put
 test_src := put.pass.cpp
@@ -26,6 +21,10 @@ include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostream.format/output.streams/ostream.unformatted/write
 test_src := write.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostream.format/output.streams/ostream.unformatted/flush
+test_src := flush.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/strings/c.strings/Android.mk
 
 test_name := strings/c.strings/cctype
 test_src := cctype.pass.cpp
@@ -24,28 +23,28 @@ test_name := strings/c.strings/version_cwctype
 test_src := version_cwctype.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := strings/c.strings/cwctype
-test_src := cwctype.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := strings/c.strings/cwchar
-test_src := cwchar.pass.cpp
+test_name := strings/c.strings/version_cwchar
+test_src := version_cwchar.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := strings/c.strings/cstring
 test_src := cstring.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := strings/c.strings/version_cwchar
-test_src := version_cwchar.pass.cpp
+test_name := strings/c.strings/version_cstring
+test_src := version_cstring.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := strings/c.strings/cwchar
+test_src := cwchar.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := strings/c.strings/version_cctype
 test_src := version_cctype.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := strings/c.strings/version_cstring
-test_src := version_cstring.pass.cpp
+test_name := strings/c.strings/cwctype
+test_src := cwctype.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

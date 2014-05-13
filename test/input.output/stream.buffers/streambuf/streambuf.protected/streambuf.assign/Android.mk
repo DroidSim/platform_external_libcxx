@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/stream.buffers/streambuf/streambuf.protected/streambuf.assign/Android.mk
-
-test_name := input.output/stream.buffers/streambuf/streambuf.protected/streambuf.assign/swap
-test_src := swap.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := input.output/stream.buffers/streambuf/streambuf.protected/streambuf.assign/assign
 test_src := assign.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/stream.buffers/streambuf/streambuf.protected/streambuf.assign/swap
+test_src := swap.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

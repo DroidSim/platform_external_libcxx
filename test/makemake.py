@@ -26,7 +26,7 @@ def main():
             tests.append((test, out_name))
         with open(os.path.join(root, 'Android.mk'), 'w') as makefile:
             makefile_path = os.path.normpath(os.path.join(
-                    'external/libcxx/test/', root, 'Android.mk'))
+                    '$(LOCAL_PATH)', 'Android.mk'))
             makefile.write('''#
 # Copyright (C) 2014 The Android Open Source Project
 #
@@ -44,7 +44,6 @@ def main():
 #
 ''')
             makefile.write('LOCAL_PATH := $(call my-dir)\n')
-            makefile.write('test_makefile := {}\n'.format(makefile_path))
             if len(tests) > 0:
                 for test, out_name in tests:
                     makefile.write('''

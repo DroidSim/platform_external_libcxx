@@ -14,30 +14,29 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/numarray/template.valarray/valarray.assign/Android.mk
 
 test_name := numerics/numarray/template.valarray/valarray.assign/indirect_array_assign
 test_src := indirect_array_assign.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/numarray/template.valarray/valarray.assign/mask_array_assign
-test_src := mask_array_assign.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/numarray/template.valarray/valarray.assign/initializer_list_assign
 test_src := initializer_list_assign.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := numerics/numarray/template.valarray/valarray.assign/copy_assign
+test_src := copy_assign.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := numerics/numarray/template.valarray/valarray.assign/move_assign
 test_src := move_assign.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/numarray/template.valarray/valarray.assign/gslice_array_assign
-test_src := gslice_array_assign.pass.cpp
+test_name := numerics/numarray/template.valarray/valarray.assign/mask_array_assign
+test_src := mask_array_assign.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/numarray/template.valarray/valarray.assign/copy_assign
-test_src := copy_assign.pass.cpp
+test_name := numerics/numarray/template.valarray/valarray.assign/gslice_array_assign
+test_src := gslice_array_assign.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/numarray/template.valarray/valarray.assign/value_assign

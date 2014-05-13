@@ -14,22 +14,21 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/thread/thread.mutex/thread.mutex.requirements/thread.timedmutex.requirements/thread.timedmutex.recursive/Android.mk
-
-test_name := thread/thread.mutex/thread.mutex.requirements/thread.timedmutex.requirements/thread.timedmutex.recursive/lock
-test_src := lock.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := thread/thread.mutex/thread.mutex.requirements/thread.timedmutex.requirements/thread.timedmutex.recursive/default
 test_src := default.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := thread/thread.mutex/thread.mutex.requirements/thread.timedmutex.requirements/thread.timedmutex.recursive/try_lock_until
-test_src := try_lock_until.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := thread/thread.mutex/thread.mutex.requirements/thread.timedmutex.requirements/thread.timedmutex.recursive/try_lock_for
 test_src := try_lock_for.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := thread/thread.mutex/thread.mutex.requirements/thread.timedmutex.requirements/thread.timedmutex.recursive/lock
+test_src := lock.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := thread/thread.mutex/thread.mutex.requirements/thread.timedmutex.requirements/thread.timedmutex.recursive/try_lock_until
+test_src := try_lock_until.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := thread/thread.mutex/thread.mutex.requirements/thread.timedmutex.requirements/thread.timedmutex.recursive/try_lock

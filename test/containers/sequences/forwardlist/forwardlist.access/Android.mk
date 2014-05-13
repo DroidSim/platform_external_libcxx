@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/sequences/forwardlist/forwardlist.access/Android.mk
 
 test_name := containers/sequences/forwardlist/forwardlist.access/front
 test_src := front.pass.cpp

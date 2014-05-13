@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/algorithms/alg.sorting/alg.set.operations/set.union/Android.mk
 
 test_name := algorithms/alg.sorting/alg.set.operations/set.union/set_union
 test_src := set_union.pass.cpp

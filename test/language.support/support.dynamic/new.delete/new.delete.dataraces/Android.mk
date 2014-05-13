@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/language.support/support.dynamic/new.delete/new.delete.dataraces/Android.mk
 
 test_name := language.support/support.dynamic/new.delete/new.delete.dataraces/not_testable
 test_src := not_testable.pass.cpp

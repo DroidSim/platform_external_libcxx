@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/thread/futures/futures.unique_future/Android.mk
 
 test_name := thread/futures/futures.unique_future/default
 test_src := default.pass.cpp
@@ -24,16 +23,8 @@ test_name := thread/futures/futures.unique_future/move_ctor
 test_src := move_ctor.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := thread/futures/futures.unique_future/dtor
-test_src := dtor.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := thread/futures/futures.unique_future/wait_until
 test_src := wait_until.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := thread/futures/futures.unique_future/share
-test_src := share.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := thread/futures/futures.unique_future/get
@@ -46,6 +37,14 @@ include external/libcxx/test/Android.build.mk
 
 test_name := thread/futures/futures.unique_future/move_assign
 test_src := move_assign.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := thread/futures/futures.unique_future/dtor
+test_src := dtor.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := thread/futures/futures.unique_future/share
+test_src := share.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := thread/futures/futures.unique_future/wait_for

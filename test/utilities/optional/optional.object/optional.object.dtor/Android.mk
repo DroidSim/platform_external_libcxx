@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/optional/optional.object/optional.object.dtor/Android.mk
 
 test_name := utilities/optional/optional.object/optional.object.dtor/dtor
 test_src := dtor.pass.cpp

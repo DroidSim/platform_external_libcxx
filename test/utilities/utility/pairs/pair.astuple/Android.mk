@@ -14,10 +14,21 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/utility/pairs/pair.astuple/Android.mk
+
+test_name := utilities/utility/pairs/pair.astuple/get_rv
+test_src := get_rv.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/utility/pairs/pair.astuple/get_const
+test_src := get_const.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := utilities/utility/pairs/pair.astuple/pairs.by.type
 test_src := pairs.by.type.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/utility/pairs/pair.astuple/get_non_const
+test_src := get_non_const.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/utility/pairs/pair.astuple/tuple_element
@@ -26,18 +37,6 @@ include external/libcxx/test/Android.build.mk
 
 test_name := utilities/utility/pairs/pair.astuple/tuple_size
 test_src := tuple_size.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/utility/pairs/pair.astuple/get_const
-test_src := get_const.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/utility/pairs/pair.astuple/get_non_const
-test_src := get_non_const.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/utility/pairs/pair.astuple/get_rv
-test_src := get_rv.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

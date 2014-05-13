@@ -14,18 +14,37 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.character/Android.mk
 
-test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.character/CharT
-test_src := CharT.pass.cpp
+test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.character/char_to_wide
+test_src := char_to_wide.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.character/signed_char
 test_src := signed_char.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.character/CharT
+test_src := CharT.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.character/char_to_wide_pointer
 test_src := char_to_wide_pointer.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.character/char_pointer
+test_src := char_pointer.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.character/CharT_pointer
+test_src := CharT_pointer.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.character/signed_char_pointer
+test_src := signed_char_pointer.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.character/unsigned_char
+test_src := unsigned_char.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.character/unsigned_char_pointer
@@ -34,26 +53,6 @@ include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.character/char
 test_src := char.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.character/unsigned_char
-test_src := unsigned_char.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.character/char_to_wide
-test_src := char_to_wide.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.character/char_pointer
-test_src := char_pointer.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.character/signed_char_pointer
-test_src := signed_char_pointer.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.character/CharT_pointer
-test_src := CharT_pointer.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

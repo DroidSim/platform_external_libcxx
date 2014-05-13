@@ -14,42 +14,41 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/localization/locale.categories/category.monetary/locale.moneypunct.byname/Android.mk
-
-test_name := localization/locale.categories/category.monetary/locale.moneypunct.byname/neg_format
-test_src := neg_format.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := localization/locale.categories/category.monetary/locale.moneypunct.byname/pos_format
-test_src := pos_format.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := localization/locale.categories/category.monetary/locale.moneypunct.byname/grouping
 test_src := grouping.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := localization/locale.categories/category.monetary/locale.moneypunct.byname/frac_digits
-test_src := frac_digits.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := localization/locale.categories/category.monetary/locale.moneypunct.byname/negative_sign
-test_src := negative_sign.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := localization/locale.categories/category.monetary/locale.moneypunct.byname/thousands_sep
-test_src := thousands_sep.pass.cpp
+test_name := localization/locale.categories/category.monetary/locale.moneypunct.byname/curr_symbol
+test_src := curr_symbol.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := localization/locale.categories/category.monetary/locale.moneypunct.byname/positive_sign
 test_src := positive_sign.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := localization/locale.categories/category.monetary/locale.moneypunct.byname/neg_format
+test_src := neg_format.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := localization/locale.categories/category.monetary/locale.moneypunct.byname/thousands_sep
+test_src := thousands_sep.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := localization/locale.categories/category.monetary/locale.moneypunct.byname/frac_digits
+test_src := frac_digits.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := localization/locale.categories/category.monetary/locale.moneypunct.byname/decimal_point
 test_src := decimal_point.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := localization/locale.categories/category.monetary/locale.moneypunct.byname/curr_symbol
-test_src := curr_symbol.pass.cpp
+test_name := localization/locale.categories/category.monetary/locale.moneypunct.byname/pos_format
+test_src := pos_format.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := localization/locale.categories/category.monetary/locale.moneypunct.byname/negative_sign
+test_src := negative_sign.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

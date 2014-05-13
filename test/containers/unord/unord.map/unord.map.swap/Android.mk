@@ -14,11 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/unord/unord.map/unord.map.swap/Android.mk
-
-test_name := containers/unord/unord.map/unord.map.swap/swap_non_member
-test_src := swap_non_member.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := containers/unord/unord.map/unord.map.swap/swap_noexcept
 test_src := swap_noexcept.pass.cpp
@@ -26,6 +21,10 @@ include external/libcxx/test/Android.build.mk
 
 test_name := containers/unord/unord.map/unord.map.swap/db_swap_1
 test_src := db_swap_1.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/unord/unord.map/unord.map.swap/swap_non_member
+test_src := swap_non_member.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

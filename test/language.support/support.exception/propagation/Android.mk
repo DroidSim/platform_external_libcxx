@@ -14,22 +14,21 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/language.support/support.exception/propagation/Android.mk
-
-test_name := language.support/support.exception/propagation/current_exception
-test_src := current_exception.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := language.support/support.exception/propagation/exception_ptr
 test_src := exception_ptr.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := language.support/support.exception/propagation/rethrow_exception
+test_src := rethrow_exception.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := language.support/support.exception/propagation/make_exception_ptr
 test_src := make_exception_ptr.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := language.support/support.exception/propagation/rethrow_exception
-test_src := rethrow_exception.pass.cpp
+test_name := language.support/support.exception/propagation/current_exception
+test_src := current_exception.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

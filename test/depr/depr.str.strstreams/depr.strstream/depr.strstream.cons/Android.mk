@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/depr/depr.str.strstreams/depr.strstream/depr.strstream.cons/Android.mk
-
-test_name := depr/depr.str.strstreams/depr.strstream/depr.strstream.cons/default
-test_src := default.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := depr/depr.str.strstreams/depr.strstream/depr.strstream.cons/cp_size_mode
 test_src := cp_size_mode.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := depr/depr.str.strstreams/depr.strstream/depr.strstream.cons/default
+test_src := default.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

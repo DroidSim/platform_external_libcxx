@@ -14,18 +14,17 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/c.math/Android.mk
 
 test_name := numerics/c.math/tgmath_h
 test_src := tgmath_h.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/c.math/ctgmath
-test_src := ctgmath.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := numerics/c.math/version_cmath
 test_src := version_cmath.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/c.math/ctgmath
+test_src := ctgmath.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

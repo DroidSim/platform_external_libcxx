@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/util.smartptr/util.smartptr.hash/Android.mk
 
 test_name := utilities/memory/util.smartptr/util.smartptr.hash/hash_unique_ptr
 test_src := hash_unique_ptr.pass.cpp

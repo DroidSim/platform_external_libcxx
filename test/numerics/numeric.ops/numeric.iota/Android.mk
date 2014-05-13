@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/numeric.ops/numeric.iota/Android.mk
 
 test_name := numerics/numeric.ops/numeric.iota/iota
 test_src := iota.pass.cpp

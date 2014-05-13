@@ -14,18 +14,17 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/thread/thread.mutex/thread.lock/thread.lock.unique/thread.lock.unique.obs/Android.mk
 
-test_name := thread/thread.mutex/thread.lock/thread.lock.unique/thread.lock.unique.obs/owns_lock
-test_src := owns_lock.pass.cpp
+test_name := thread/thread.mutex/thread.lock/thread.lock.unique/thread.lock.unique.obs/op_bool
+test_src := op_bool.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := thread/thread.mutex/thread.lock/thread.lock.unique/thread.lock.unique.obs/mutex
 test_src := mutex.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := thread/thread.mutex/thread.lock/thread.lock.unique/thread.lock.unique.obs/op_bool
-test_src := op_bool.pass.cpp
+test_name := thread/thread.mutex/thread.lock/thread.lock.unique/thread.lock.unique.obs/owns_lock
+test_src := owns_lock.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

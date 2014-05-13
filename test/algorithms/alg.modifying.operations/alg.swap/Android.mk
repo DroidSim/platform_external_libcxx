@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/algorithms/alg.modifying.operations/alg.swap/Android.mk
 
 test_name := algorithms/alg.modifying.operations/alg.swap/iter_swap
 test_src := iter_swap.pass.cpp

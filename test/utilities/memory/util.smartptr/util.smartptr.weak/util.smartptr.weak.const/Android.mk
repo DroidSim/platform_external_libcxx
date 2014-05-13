@@ -14,7 +14,10 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/util.smartptr/util.smartptr.weak/util.smartptr.weak.const/Android.mk
+
+test_name := utilities/memory/util.smartptr/util.smartptr.weak/util.smartptr.weak.const/shared_ptr_Y
+test_src := shared_ptr_Y.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/util.smartptr/util.smartptr.weak/util.smartptr.weak.const/default
 test_src := default.pass.cpp
@@ -22,10 +25,6 @@ include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/util.smartptr/util.smartptr.weak/util.smartptr.weak.const/weak_ptr
 test_src := weak_ptr.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/memory/util.smartptr/util.smartptr.weak/util.smartptr.weak.const/shared_ptr_Y
-test_src := shared_ptr_Y.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/util.smartptr/util.smartptr.weak/util.smartptr.weak.const/weak_ptr_Y

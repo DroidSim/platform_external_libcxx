@@ -14,30 +14,29 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/time/time.duration/time.duration.cons/Android.mk
 
 test_name := utilities/time/time.duration/time.duration.cons/default
 test_src := default.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/time/time.duration/time.duration.cons/convert_inexact
-test_src := convert_inexact.pass.cpp
+test_name := utilities/time/time.duration/time.duration.cons/convert_int_to_float
+test_src := convert_int_to_float.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/time/time.duration/time.duration.cons/rep02
 test_src := rep02.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/time/time.duration/time.duration.cons/convert_exact
-test_src := convert_exact.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := utilities/time/time.duration/time.duration.cons/convert_overflow
 test_src := convert_overflow.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/time/time.duration/time.duration.cons/convert_int_to_float
-test_src := convert_int_to_float.pass.cpp
+test_name := utilities/time/time.duration/time.duration.cons/convert_inexact
+test_src := convert_inexact.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/time/time.duration/time.duration.cons/convert_exact
+test_src := convert_exact.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/time/time.duration/time.duration.cons/rep

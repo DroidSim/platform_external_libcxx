@@ -14,18 +14,21 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/container.adaptors/stack/stack.defn/Android.mk
 
 test_name := containers/container.adaptors/stack/stack.defn/push
 test_src := push.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := containers/container.adaptors/stack/stack.defn/top_const
-test_src := top_const.pass.cpp
+test_name := containers/container.adaptors/stack/stack.defn/types
+test_src := types.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := containers/container.adaptors/stack/stack.defn/top
-test_src := top.pass.cpp
+test_name := containers/container.adaptors/stack/stack.defn/emplace
+test_src := emplace.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/container.adaptors/stack/stack.defn/size
+test_src := size.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := containers/container.adaptors/stack/stack.defn/push_rv
@@ -40,20 +43,8 @@ test_name := containers/container.adaptors/stack/stack.defn/pop
 test_src := pop.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := containers/container.adaptors/stack/stack.defn/assign_copy
-test_src := assign_copy.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/container.adaptors/stack/stack.defn/size
-test_src := size.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/container.adaptors/stack/stack.defn/types
-test_src := types.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/container.adaptors/stack/stack.defn/emplace
-test_src := emplace.pass.cpp
+test_name := containers/container.adaptors/stack/stack.defn/top
+test_src := top.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := containers/container.adaptors/stack/stack.defn/empty
@@ -62,6 +53,14 @@ include external/libcxx/test/Android.build.mk
 
 test_name := containers/container.adaptors/stack/stack.defn/assign_move
 test_src := assign_move.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/container.adaptors/stack/stack.defn/assign_copy
+test_src := assign_copy.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/container.adaptors/stack/stack.defn/top_const
+test_src := top_const.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

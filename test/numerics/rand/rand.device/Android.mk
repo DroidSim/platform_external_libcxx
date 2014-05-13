@@ -14,11 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/rand/rand.device/Android.mk
-
-test_name := numerics/rand/rand.device/eval
-test_src := eval.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := numerics/rand/rand.device/entropy
 test_src := entropy.pass.cpp
@@ -26,6 +21,10 @@ include external/libcxx/test/Android.build.mk
 
 test_name := numerics/rand/rand.device/ctor
 test_src := ctor.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/rand/rand.device/eval
+test_src := eval.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

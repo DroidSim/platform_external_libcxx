@@ -14,18 +14,17 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/associative/map/Android.mk
 
-test_name := containers/associative/map/compare
-test_src := compare.pass.cpp
+test_name := containers/associative/map/types
+test_src := types.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := containers/associative/map/version
 test_src := version.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := containers/associative/map/types
-test_src := types.pass.cpp
+test_name := containers/associative/map/compare
+test_src := compare.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

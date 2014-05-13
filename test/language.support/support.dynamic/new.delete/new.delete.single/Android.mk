@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/language.support/support.dynamic/new.delete/new.delete.single/Android.mk
 
 test_name := language.support/support.dynamic/new.delete/new.delete.single/new_nothrow_replace
 test_src := new_nothrow_replace.pass.cpp
@@ -24,12 +23,12 @@ test_name := language.support/support.dynamic/new.delete/new.delete.single/new
 test_src := new.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := language.support/support.dynamic/new.delete/new.delete.single/new_nothrow
-test_src := new_nothrow.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := language.support/support.dynamic/new.delete/new.delete.single/new_replace
 test_src := new_replace.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := language.support/support.dynamic/new.delete/new.delete.single/new_nothrow
+test_src := new_nothrow.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

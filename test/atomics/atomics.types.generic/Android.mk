@@ -14,11 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/atomics/atomics.types.generic/Android.mk
-
-test_name := atomics/atomics.types.generic/address
-test_src := address.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := atomics/atomics.types.generic/bool
 test_src := bool.pass.cpp
@@ -30,6 +25,10 @@ include external/libcxx/test/Android.build.mk
 
 test_name := atomics/atomics.types.generic/integral_typedefs
 test_src := integral_typedefs.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := atomics/atomics.types.generic/address
+test_src := address.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := atomics/atomics.types.generic/integral

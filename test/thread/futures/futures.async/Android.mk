@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/thread/futures/futures.async/Android.mk
 
 test_name := thread/futures/futures.async/async
 test_src := async.pass.cpp

@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/iostream.format/output.streams/ostream.rvalue/Android.mk
 
 test_name := input.output/iostream.format/output.streams/ostream.rvalue/CharT_pointer
 test_src := CharT_pointer.pass.cpp

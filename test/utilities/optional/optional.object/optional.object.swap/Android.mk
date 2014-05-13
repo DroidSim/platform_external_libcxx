@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/optional/optional.object/optional.object.swap/Android.mk
 
 test_name := utilities/optional/optional.object/optional.object.swap/swap
 test_src := swap.pass.cpp

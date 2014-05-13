@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/diagnostics/std.exceptions/range.error/Android.mk
 
 test_name := diagnostics/std.exceptions/range.error/range_error
 test_src := range_error.pass.cpp

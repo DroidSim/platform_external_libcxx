@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/re/re.results/re.results.all/Android.mk
 
 test_name := re/re.results/re.results.all/get_allocator
 test_src := get_allocator.pass.cpp

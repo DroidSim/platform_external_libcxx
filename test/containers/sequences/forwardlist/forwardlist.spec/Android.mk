@@ -14,10 +14,9 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/sequences/forwardlist/forwardlist.spec/Android.mk
 
-test_name := containers/sequences/forwardlist/forwardlist.spec/member_swap
-test_src := member_swap.pass.cpp
+test_name := containers/sequences/forwardlist/forwardlist.spec/relational
+test_src := relational.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := containers/sequences/forwardlist/forwardlist.spec/swap_noexcept
@@ -28,12 +27,12 @@ test_name := containers/sequences/forwardlist/forwardlist.spec/equal
 test_src := equal.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := containers/sequences/forwardlist/forwardlist.spec/relational
-test_src := relational.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := containers/sequences/forwardlist/forwardlist.spec/non_member_swap
 test_src := non_member_swap.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/forwardlist/forwardlist.spec/member_swap
+test_src := member_swap.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

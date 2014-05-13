@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/iterators/predef.iterators/move.iterators/move.iterator/Android.mk
 
 test_name := iterators/predef.iterators/move.iterators/move.iterator/types
 test_src := types.pass.cpp

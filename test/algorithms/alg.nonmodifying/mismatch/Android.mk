@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/algorithms/alg.nonmodifying/mismatch/Android.mk
-
-test_name := algorithms/alg.nonmodifying/mismatch/mismatch_pred
-test_src := mismatch_pred.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := algorithms/alg.nonmodifying/mismatch/mismatch
 test_src := mismatch.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := algorithms/alg.nonmodifying/mismatch/mismatch_pred
+test_src := mismatch_pred.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

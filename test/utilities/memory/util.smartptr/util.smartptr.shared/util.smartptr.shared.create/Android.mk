@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.create/Android.mk
-
-test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.create/make_shared
-test_src := make_shared.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.create/allocate_shared
 test_src := allocate_shared.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.create/make_shared
+test_src := make_shared.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

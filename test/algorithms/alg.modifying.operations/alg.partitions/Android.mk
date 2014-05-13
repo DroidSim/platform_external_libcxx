@@ -14,26 +14,25 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/algorithms/alg.modifying.operations/alg.partitions/Android.mk
 
-test_name := algorithms/alg.modifying.operations/alg.partitions/partition
-test_src := partition.pass.cpp
+test_name := algorithms/alg.modifying.operations/alg.partitions/is_partitioned
+test_src := is_partitioned.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := algorithms/alg.modifying.operations/alg.partitions/partition_copy
 test_src := partition_copy.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := algorithms/alg.modifying.operations/alg.partitions/partition_point
+test_src := partition_point.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := algorithms/alg.modifying.operations/alg.partitions/stable_partition
 test_src := stable_partition.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := algorithms/alg.modifying.operations/alg.partitions/is_partitioned
-test_src := is_partitioned.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := algorithms/alg.modifying.operations/alg.partitions/partition_point
-test_src := partition_point.pass.cpp
+test_name := algorithms/alg.modifying.operations/alg.partitions/partition
+test_src := partition.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

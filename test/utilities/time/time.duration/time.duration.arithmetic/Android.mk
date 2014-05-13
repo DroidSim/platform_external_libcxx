@@ -14,7 +14,18 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/time/time.duration/time.duration.arithmetic/Android.mk
+
+test_name := utilities/time/time.duration/time.duration.arithmetic/op_mod=rep
+test_src := op_mod=rep.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/time/time.duration/time.duration.arithmetic/op_-
+test_src := op_-.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/time/time.duration/time.duration.arithmetic/op_--int
+test_src := op_--int.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := utilities/time/time.duration/time.duration.arithmetic/op_times=
 test_src := op_times=.pass.cpp
@@ -24,44 +35,32 @@ test_name := utilities/time/time.duration/time.duration.arithmetic/op_+
 test_src := op_+.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/time/time.duration/time.duration.arithmetic/op_-
-test_src := op_-.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/time/time.duration/time.duration.arithmetic/op_--
-test_src := op_--.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/time/time.duration/time.duration.arithmetic/op_++
-test_src := op_++.pass.cpp
+test_name := utilities/time/time.duration/time.duration.arithmetic/op_-=
+test_src := op_-=.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/time/time.duration/time.duration.arithmetic/op_++int
 test_src := op_++int.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/time/time.duration/time.duration.arithmetic/op_+=
-test_src := op_+=.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/time/time.duration/time.duration.arithmetic/op_-=
-test_src := op_-=.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/time/time.duration/time.duration.arithmetic/op_mod=rep
-test_src := op_mod=rep.pass.cpp
+test_name := utilities/time/time.duration/time.duration.arithmetic/op_divide=
+test_src := op_divide=.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/time/time.duration/time.duration.arithmetic/op_mod=duration
 test_src := op_mod=duration.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/time/time.duration/time.duration.arithmetic/op_--int
-test_src := op_--int.pass.cpp
+test_name := utilities/time/time.duration/time.duration.arithmetic/op_--
+test_src := op_--.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/time/time.duration/time.duration.arithmetic/op_divide=
-test_src := op_divide=.pass.cpp
+test_name := utilities/time/time.duration/time.duration.arithmetic/op_+=
+test_src := op_+=.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/time/time.duration/time.duration.arithmetic/op_++
+test_src := op_++.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

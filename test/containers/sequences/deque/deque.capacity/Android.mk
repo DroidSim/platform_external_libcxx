@@ -14,22 +14,21 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/sequences/deque/deque.capacity/Android.mk
-
-test_name := containers/sequences/deque/deque.capacity/access
-test_src := access.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/deque/deque.capacity/shrink_to_fit
-test_src := shrink_to_fit.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := containers/sequences/deque/deque.capacity/resize_size_value
 test_src := resize_size_value.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := containers/sequences/deque/deque.capacity/access
+test_src := access.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := containers/sequences/deque/deque.capacity/resize_size
 test_src := resize_size.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/deque/deque.capacity/shrink_to_fit
+test_src := shrink_to_fit.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

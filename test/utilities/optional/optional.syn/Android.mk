@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/optional/optional.syn/Android.mk
 
 test_name := utilities/optional/optional.syn/optional_includes_initializer_list
 test_src := optional_includes_initializer_list.pass.cpp

@@ -14,30 +14,25 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/numarray/template.gslice.array/gslice.array.comp.assign/Android.mk
 
-test_name := numerics/numarray/template.gslice.array/gslice.array.comp.assign/and
-test_src := and.pass.cpp
+test_name := numerics/numarray/template.gslice.array/gslice.array.comp.assign/modulo
+test_src := modulo.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/numarray/template.gslice.array/gslice.array.comp.assign/multiply
 test_src := multiply.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/numarray/template.gslice.array/gslice.array.comp.assign/addition
-test_src := addition.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/numarray/template.gslice.array/gslice.array.comp.assign/subtraction
-test_src := subtraction.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := numerics/numarray/template.gslice.array/gslice.array.comp.assign/divide
 test_src := divide.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/numarray/template.gslice.array/gslice.array.comp.assign/modulo
-test_src := modulo.pass.cpp
+test_name := numerics/numarray/template.gslice.array/gslice.array.comp.assign/or
+test_src := or.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/numarray/template.gslice.array/gslice.array.comp.assign/and
+test_src := and.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/numarray/template.gslice.array/gslice.array.comp.assign/shift_right
@@ -48,12 +43,16 @@ test_name := numerics/numarray/template.gslice.array/gslice.array.comp.assign/xo
 test_src := xor.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := numerics/numarray/template.gslice.array/gslice.array.comp.assign/addition
+test_src := addition.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := numerics/numarray/template.gslice.array/gslice.array.comp.assign/shift_left
 test_src := shift_left.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/numarray/template.gslice.array/gslice.array.comp.assign/or
-test_src := or.pass.cpp
+test_name := numerics/numarray/template.gslice.array/gslice.array.comp.assign/subtraction
+test_src := subtraction.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

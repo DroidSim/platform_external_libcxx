@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/language.support/support.exception/exception.terminate/set.terminate/Android.mk
 
 test_name := language.support/support.exception/exception.terminate/set.terminate/set_terminate
 test_src := set_terminate.pass.cpp

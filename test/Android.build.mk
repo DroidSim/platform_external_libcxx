@@ -13,9 +13,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+LIBCXX_TEST_ROOT := $(call my-dir)
+
 COMMON_C_INCLUDES := \
-	external/libcxx/test/support \
-	external/libcxx/include \
+	$(LIBCXX_TEST_ROOT)/support \
+	$(LIBCXX_TEST_ROOT)/../include \
 
 COMMON_CPPFLAGS := \
 	-std=c++11 \
@@ -24,8 +26,8 @@ COMMON_CPPFLAGS := \
 	-nostdinc++ \
 
 COMMON_DEPS := \
-	external/libcxx/test/Android.build.mk \
-	$(test_makefile) \
+	$(LIBCXX_TEST_ROOT)/Android.build.mk \
+	$(LOCAL_PATH)/Android.mk \
 
 include $(CLEAR_VARS)
 LOCAL_ADDITIONAL_DEPENDENCIES := $(COMMON_DEPS)

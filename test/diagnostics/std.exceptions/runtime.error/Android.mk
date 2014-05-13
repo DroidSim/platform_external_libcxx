@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/diagnostics/std.exceptions/runtime.error/Android.mk
 
 test_name := diagnostics/std.exceptions/runtime.error/runtime_error
 test_src := runtime_error.pass.cpp

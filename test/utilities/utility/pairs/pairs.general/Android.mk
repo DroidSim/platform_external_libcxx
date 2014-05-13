@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/utility/pairs/pairs.general/Android.mk
 
 test_name := utilities/utility/pairs/pairs.general/nothing_to_do
 test_src := nothing_to_do.pass.cpp

@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/re/re.const/re.err/Android.mk
 
 test_name := re/re.const/re.err/error_type
 test_src := error_type.pass.cpp

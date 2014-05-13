@@ -14,18 +14,9 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/optional/optional.bad_optional_access/Android.mk
 
 test_name := utilities/optional/optional.bad_optional_access/default
 test_src := default.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/optional/optional.bad_optional_access/string
-test_src := string.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/optional/optional.bad_optional_access/copy_ctor
-test_src := copy_ctor.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/optional/optional.bad_optional_access/derive
@@ -38,6 +29,14 @@ include external/libcxx/test/Android.build.mk
 
 test_name := utilities/optional/optional.bad_optional_access/copy_assign
 test_src := copy_assign.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/optional/optional.bad_optional_access/string
+test_src := string.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/optional/optional.bad_optional_access/copy_ctor
+test_src := copy_ctor.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

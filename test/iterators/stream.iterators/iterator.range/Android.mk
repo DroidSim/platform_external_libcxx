@@ -14,30 +14,29 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/iterators/stream.iterators/iterator.range/Android.mk
 
-test_name := iterators/stream.iterators/iterator.range/begin_array
-test_src := begin_array.pass.cpp
+test_name := iterators/stream.iterators/iterator.range/end_const
+test_src := end_const.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := iterators/stream.iterators/iterator.range/begin_const
 test_src := begin_const.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := iterators/stream.iterators/iterator.range/end_non_const
-test_src := end_non_const.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := iterators/stream.iterators/iterator.range/end_array
 test_src := end_array.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := iterators/stream.iterators/iterator.range/end_const
-test_src := end_const.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := iterators/stream.iterators/iterator.range/begin_non_const
 test_src := begin_non_const.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := iterators/stream.iterators/iterator.range/begin_array
+test_src := begin_array.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := iterators/stream.iterators/iterator.range/end_non_const
+test_src := end_non_const.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

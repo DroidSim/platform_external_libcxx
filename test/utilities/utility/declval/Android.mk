@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/utility/declval/Android.mk
 
 test_name := utilities/utility/declval/declval
 test_src := declval.pass.cpp

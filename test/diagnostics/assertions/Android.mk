@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/diagnostics/assertions/Android.mk
 
 test_name := diagnostics/assertions/cassert
 test_src := cassert.pass.cpp

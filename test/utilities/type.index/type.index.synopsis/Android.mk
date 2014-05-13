@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/type.index/type.index.synopsis/Android.mk
 
 test_name := utilities/type.index/type.index.synopsis/hash_type_index
 test_src := hash_type_index.pass.cpp

@@ -14,10 +14,53 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/complex.number/complex.transcendentals/Android.mk
+
+test_name := numerics/complex.number/complex.transcendentals/tanh
+test_src := tanh.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/complex.number/complex.transcendentals/sinh
+test_src := sinh.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := numerics/complex.number/complex.transcendentals/cosh
 test_src := cosh.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/complex.number/complex.transcendentals/pow_scalar_complex
+test_src := pow_scalar_complex.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/complex.number/complex.transcendentals/pow_complex_complex
+test_src := pow_complex_complex.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/complex.number/complex.transcendentals/tan
+test_src := tan.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/complex.number/complex.transcendentals/pow_complex_scalar
+test_src := pow_complex_scalar.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/complex.number/complex.transcendentals/atanh
+test_src := atanh.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/complex.number/complex.transcendentals/log10
+test_src := log10.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/complex.number/complex.transcendentals/asinh
+test_src := asinh.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/complex.number/complex.transcendentals/asin
+test_src := asin.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/complex.number/complex.transcendentals/cos
+test_src := cos.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/complex.number/complex.transcendentals/exp
@@ -28,68 +71,24 @@ test_name := numerics/complex.number/complex.transcendentals/log
 test_src := log.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/complex.number/complex.transcendentals/atanh
-test_src := atanh.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/complex.number/complex.transcendentals/pow_complex_scalar
-test_src := pow_complex_scalar.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/complex.number/complex.transcendentals/log10
-test_src := log10.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/complex.number/complex.transcendentals/asin
-test_src := asin.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/complex.number/complex.transcendentals/acos
-test_src := acos.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/complex.number/complex.transcendentals/tan
-test_src := tan.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/complex.number/complex.transcendentals/pow_complex_complex
-test_src := pow_complex_complex.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/complex.number/complex.transcendentals/cos
-test_src := cos.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/complex.number/complex.transcendentals/sinh
-test_src := sinh.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/complex.number/complex.transcendentals/sin
-test_src := sin.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/complex.number/complex.transcendentals/pow_scalar_complex
-test_src := pow_scalar_complex.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/complex.number/complex.transcendentals/sqrt
-test_src := sqrt.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := numerics/complex.number/complex.transcendentals/acosh
 test_src := acosh.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/complex.number/complex.transcendentals/asinh
-test_src := asinh.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := numerics/complex.number/complex.transcendentals/atan
 test_src := atan.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := numerics/complex.number/complex.transcendentals/tanh
-test_src := tanh.pass.cpp
+test_name := numerics/complex.number/complex.transcendentals/sin
+test_src := sin.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/complex.number/complex.transcendentals/sqrt
+test_src := sqrt.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/complex.number/complex.transcendentals/acos
+test_src := acos.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

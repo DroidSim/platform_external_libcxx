@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/algorithms/alg.nonmodifying/alg.find/Android.mk
-
-test_name := algorithms/alg.nonmodifying/alg.find/find_if
-test_src := find_if.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := algorithms/alg.nonmodifying/alg.find/find
 test_src := find.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := algorithms/alg.nonmodifying/alg.find/find_if
+test_src := find_if.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := algorithms/alg.nonmodifying/alg.find/find_if_not

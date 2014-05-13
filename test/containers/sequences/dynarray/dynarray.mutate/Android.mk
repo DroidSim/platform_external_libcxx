@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/sequences/dynarray/dynarray.mutate/Android.mk
 
 test_name := containers/sequences/dynarray/dynarray.mutate/default
 test_src := default.pass.cpp

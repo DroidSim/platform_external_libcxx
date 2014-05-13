@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/diagnostics/errno/Android.mk
 
 test_name := diagnostics/errno/cerrno
 test_src := cerrno.pass.cpp

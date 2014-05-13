@@ -14,26 +14,25 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/function.objects/bitwise.operations/Android.mk
-
-test_name := utilities/function.objects/bitwise.operations/bit_not
-test_src := bit_not.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/function.objects/bitwise.operations/bit_and
-test_src := bit_and.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/bitwise.operations/transparent
 test_src := transparent.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/function.objects/bitwise.operations/bit_or
+test_src := bit_or.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/bitwise.operations/bit_xor
 test_src := bit_xor.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/function.objects/bitwise.operations/bit_or
-test_src := bit_or.pass.cpp
+test_name := utilities/function.objects/bitwise.operations/bit_and
+test_src := bit_and.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/function.objects/bitwise.operations/bit_not
+test_src := bit_not.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

@@ -14,11 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/function.objects/refwrap/refwrap.invoke/Android.mk
-
-test_name := utilities/function.objects/refwrap/refwrap.invoke/invoke_int_0
-test_src := invoke_int_0.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/refwrap/refwrap.invoke/invoke_void_0
 test_src := invoke_void_0.pass.cpp
@@ -26,6 +21,10 @@ include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/refwrap/refwrap.invoke/invoke
 test_src := invoke.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/function.objects/refwrap/refwrap.invoke/invoke_int_0
+test_src := invoke_int_0.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

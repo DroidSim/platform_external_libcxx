@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/specialized.algorithms/specialized.addressof/Android.mk
 
 test_name := utilities/memory/specialized.algorithms/specialized.addressof/addressof
 test_src := addressof.pass.cpp

@@ -14,18 +14,17 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.asgn/Android.mk
 
-test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.asgn/null
-test_src := null.pass.cpp
+test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.asgn/move_convert01
+test_src := move_convert01.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.asgn/move01
 test_src := move01.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.asgn/move_convert01
-test_src := move_convert01.pass.cpp
+test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.asgn/move_convert02
+test_src := move_convert02.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.asgn/move_convert03
@@ -36,8 +35,8 @@ test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.asg
 test_src := nullptr.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.asgn/move_convert02
-test_src := move_convert02.pass.cpp
+test_name := utilities/memory/unique.ptr/unique.ptr.single/unique.ptr.single.asgn/null
+test_src := null.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

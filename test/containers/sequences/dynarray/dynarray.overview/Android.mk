@@ -14,11 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/sequences/dynarray/dynarray.overview/Android.mk
-
-test_name := containers/sequences/dynarray/dynarray.overview/at
-test_src := at.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := containers/sequences/dynarray/dynarray.overview/front_back
 test_src := front_back.pass.cpp
@@ -28,12 +23,16 @@ test_name := containers/sequences/dynarray/dynarray.overview/capacity
 test_src := capacity.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := containers/sequences/dynarray/dynarray.overview/begin_end
+test_src := begin_end.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := containers/sequences/dynarray/dynarray.overview/indexing
 test_src := indexing.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := containers/sequences/dynarray/dynarray.overview/begin_end
-test_src := begin_end.pass.cpp
+test_name := containers/sequences/dynarray/dynarray.overview/at
+test_src := at.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

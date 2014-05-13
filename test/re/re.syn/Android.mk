@@ -14,46 +14,65 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/re/re.syn/Android.mk
 
-test_name := re/re.syn/cregex_iterator
-test_src := cregex_iterator.pass.cpp
+test_name := re/re.syn/cmatch
+test_src := cmatch.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := re/re.syn/wcmatch
-test_src := wcmatch.pass.cpp
+test_name := re/re.syn/wsregex_token_iterator
+test_src := wsregex_token_iterator.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := re/re.syn/wcregex_token_iterator
-test_src := wcregex_token_iterator.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := re/re.syn/ssub_match
-test_src := ssub_match.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := re/re.syn/csub_match
-test_src := csub_match.pass.cpp
+test_name := re/re.syn/regex
+test_src := regex.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := re/re.syn/wsmatch
 test_src := wsmatch.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := re/re.syn/wregex
+test_src := wregex.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := re/re.syn/wcmatch
+test_src := wcmatch.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := re/re.syn/wssub_match
+test_src := wssub_match.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := re/re.syn/csub_match
+test_src := csub_match.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := re/re.syn/ssub_match
+test_src := ssub_match.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := re/re.syn/sregex_token_iterator
+test_src := sregex_token_iterator.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := re/re.syn/wcregex_iterator
 test_src := wcregex_iterator.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := re/re.syn/wregex
-test_src := wregex.pass.cpp
+test_name := re/re.syn/wcregex_token_iterator
+test_src := wcregex_token_iterator.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := re/re.syn/wcsub_match
 test_src := wcsub_match.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := re/re.syn/sregex_token_iterator
-test_src := sregex_token_iterator.pass.cpp
+test_name := re/re.syn/cregex_iterator
+test_src := cregex_iterator.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := re/re.syn/cregex_token_iterator
+test_src := cregex_token_iterator.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := re/re.syn/wsregex_iterator
@@ -64,28 +83,8 @@ test_name := re/re.syn/smatch
 test_src := smatch.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := re/re.syn/wsregex_token_iterator
-test_src := wsregex_token_iterator.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := re/re.syn/cmatch
-test_src := cmatch.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := re/re.syn/wssub_match
-test_src := wssub_match.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := re/re.syn/regex
-test_src := regex.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := re/re.syn/sregex_iterator
 test_src := sregex_iterator.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := re/re.syn/cregex_token_iterator
-test_src := cregex_token_iterator.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

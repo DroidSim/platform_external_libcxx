@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/thread/thread.mutex/thread.once/thread.once.callonce/Android.mk
 
 test_name := thread/thread.mutex/thread.once/thread.once.callonce/call_once
 test_src := call_once.pass.cpp

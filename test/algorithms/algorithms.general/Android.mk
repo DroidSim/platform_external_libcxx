@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/algorithms/algorithms.general/Android.mk
 
 test_name := algorithms/algorithms.general/nothing_to_do
 test_src := nothing_to_do.pass.cpp

@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/function.objects/refwrap/refwrap.const/Android.mk
-
-test_name := utilities/function.objects/refwrap/refwrap.const/copy_ctor
-test_src := copy_ctor.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/refwrap/refwrap.const/type_ctor
 test_src := type_ctor.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/function.objects/refwrap/refwrap.const/copy_ctor
+test_src := copy_ctor.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

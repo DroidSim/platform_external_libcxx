@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/tuple/tuple.tuple/tuple.special/Android.mk
 
 test_name := utilities/tuple/tuple.tuple/tuple.special/non_member_swap
 test_src := non_member_swap.pass.cpp

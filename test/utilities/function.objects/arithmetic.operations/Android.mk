@@ -14,14 +14,25 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/function.objects/arithmetic.operations/Android.mk
+
+test_name := utilities/function.objects/arithmetic.operations/multiplies
+test_src := multiplies.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/function.objects/arithmetic.operations/plus
+test_src := plus.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/function.objects/arithmetic.operations/transparent
+test_src := transparent.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/arithmetic.operations/divides
 test_src := divides.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/function.objects/arithmetic.operations/transparent
-test_src := transparent.pass.cpp
+test_name := utilities/function.objects/arithmetic.operations/minus
+test_src := minus.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/arithmetic.operations/negate
@@ -30,18 +41,6 @@ include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/arithmetic.operations/modulus
 test_src := modulus.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/function.objects/arithmetic.operations/minus
-test_src := minus.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/function.objects/arithmetic.operations/plus
-test_src := plus.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/function.objects/arithmetic.operations/multiplies
-test_src := multiplies.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

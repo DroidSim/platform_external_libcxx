@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/ratio/ratio.arithmetic/Android.mk
 
 test_name := utilities/ratio/ratio.arithmetic/ratio_multiply
 test_src := ratio_multiply.pass.cpp

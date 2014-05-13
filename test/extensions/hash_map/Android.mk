@@ -14,6 +14,5 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/extensions/hash_map/Android.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

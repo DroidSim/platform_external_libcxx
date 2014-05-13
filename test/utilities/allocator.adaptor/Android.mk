@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/allocator.adaptor/Android.mk
 
 test_name := utilities/allocator.adaptor/types
 test_src := types.pass.cpp

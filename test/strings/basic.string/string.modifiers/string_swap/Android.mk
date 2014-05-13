@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/strings/basic.string/string.modifiers/string_swap/Android.mk
 
 test_name := strings/basic.string/string.modifiers/string_swap/swap
 test_src := swap.pass.cpp

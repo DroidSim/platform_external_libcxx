@@ -14,82 +14,81 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/sequences/list/list.cons/Android.mk
 
 test_name := containers/sequences/list/list.cons/default
 test_src := default.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/list/list.cons/size_type
-test_src := size_type.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/list/list.cons/move_noexcept
-test_src := move_noexcept.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/list/list.cons/initializer_list_alloc
-test_src := initializer_list_alloc.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/list/list.cons/default_noexcept
-test_src := default_noexcept.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := containers/sequences/list/list.cons/copy
 test_src := copy.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := containers/sequences/list/list.cons/assign_copy
-test_src := assign_copy.pass.cpp
+test_name := containers/sequences/list/list.cons/move_alloc
+test_src := move_alloc.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := containers/sequences/list/list.cons/move
-test_src := move.pass.cpp
+test_name := containers/sequences/list/list.cons/initializer_list_alloc
+test_src := initializer_list_alloc.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := containers/sequences/list/list.cons/move_assign_noexcept
-test_src := move_assign_noexcept.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/list/list.cons/assign_initializer_list
-test_src := assign_initializer_list.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/list/list.cons/copy_alloc
-test_src := copy_alloc.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/list/list.cons/initializer_list
-test_src := initializer_list.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/list/list.cons/default_stack_alloc
-test_src := default_stack_alloc.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := containers/sequences/list/list.cons/op_equal_initializer_list
-test_src := op_equal_initializer_list.pass.cpp
+test_name := containers/sequences/list/list.cons/size_type
+test_src := size_type.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := containers/sequences/list/list.cons/size_value_alloc
 test_src := size_value_alloc.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := containers/sequences/list/list.cons/dtor_noexcept
-test_src := dtor_noexcept.pass.cpp
+test_name := containers/sequences/list/list.cons/initializer_list
+test_src := initializer_list.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := containers/sequences/list/list.cons/assign_move
-test_src := assign_move.pass.cpp
+test_name := containers/sequences/list/list.cons/op_equal_initializer_list
+test_src := op_equal_initializer_list.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/list/list.cons/move_assign_noexcept
+test_src := move_assign_noexcept.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/list/list.cons/copy_alloc
+test_src := copy_alloc.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/list/list.cons/move_noexcept
+test_src := move_noexcept.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := containers/sequences/list/list.cons/input_iterator
 test_src := input_iterator.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := containers/sequences/list/list.cons/move_alloc
-test_src := move_alloc.pass.cpp
+test_name := containers/sequences/list/list.cons/move
+test_src := move.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/list/list.cons/default_stack_alloc
+test_src := default_stack_alloc.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/list/list.cons/default_noexcept
+test_src := default_noexcept.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/list/list.cons/assign_move
+test_src := assign_move.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/list/list.cons/dtor_noexcept
+test_src := dtor_noexcept.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/list/list.cons/assign_copy
+test_src := assign_copy.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/list/list.cons/assign_initializer_list
+test_src := assign_initializer_list.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/algorithms/alg.sorting/alg.heap.operations/push.heap/Android.mk
 
 test_name := algorithms/alg.sorting/alg.heap.operations/push.heap/push_heap_comp
 test_src := push_heap_comp.pass.cpp

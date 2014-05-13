@@ -14,18 +14,17 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/time/time.duration/time.duration.special/Android.mk
 
-test_name := utilities/time/time.duration/time.duration.special/zero
-test_src := zero.pass.cpp
+test_name := utilities/time/time.duration/time.duration.special/max
+test_src := max.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/time/time.duration/time.duration.special/min
 test_src := min.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/time/time.duration/time.duration.special/max
-test_src := max.pass.cpp
+test_name := utilities/time/time.duration/time.duration.special/zero
+test_src := zero.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

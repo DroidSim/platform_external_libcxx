@@ -14,22 +14,21 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/algorithms/alg.sorting/alg.permutation.generators/Android.mk
-
-test_name := algorithms/alg.sorting/alg.permutation.generators/next_permutation
-test_src := next_permutation.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := algorithms/alg.sorting/alg.permutation.generators/next_permutation_comp
 test_src := next_permutation_comp.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := algorithms/alg.sorting/alg.permutation.generators/prev_permutation_comp
-test_src := prev_permutation_comp.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := algorithms/alg.sorting/alg.permutation.generators/prev_permutation
 test_src := prev_permutation.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := algorithms/alg.sorting/alg.permutation.generators/next_permutation
+test_src := next_permutation.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := algorithms/alg.sorting/alg.permutation.generators/prev_permutation_comp
+test_src := prev_permutation_comp.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

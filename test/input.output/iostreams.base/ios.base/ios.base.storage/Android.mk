@@ -14,11 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/iostreams.base/ios.base/ios.base.storage/Android.mk
-
-test_name := input.output/iostreams.base/ios.base/ios.base.storage/iword
-test_src := iword.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostreams.base/ios.base/ios.base.storage/xalloc
 test_src := xalloc.pass.cpp
@@ -26,6 +21,10 @@ include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostreams.base/ios.base/ios.base.storage/pword
 test_src := pword.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostreams.base/ios.base/ios.base.storage/iword
+test_src := iword.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

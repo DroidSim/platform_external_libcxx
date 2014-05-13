@@ -14,18 +14,9 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/re/re.iter/re.tokiter/re.tokiter.cnstr/Android.mk
 
 test_name := re/re.iter/re.tokiter/re.tokiter.cnstr/default
 test_src := default.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := re/re.iter/re.tokiter/re.tokiter.cnstr/int
-test_src := int.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := re/re.iter/re.tokiter/re.tokiter.cnstr/array
-test_src := array.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := re/re.iter/re.tokiter/re.tokiter.cnstr/init
@@ -34,6 +25,14 @@ include external/libcxx/test/Android.build.mk
 
 test_name := re/re.iter/re.tokiter/re.tokiter.cnstr/vector
 test_src := vector.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := re/re.iter/re.tokiter/re.tokiter.cnstr/int
+test_src := int.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := re/re.iter/re.tokiter/re.tokiter.cnstr/array
+test_src := array.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

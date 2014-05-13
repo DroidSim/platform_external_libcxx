@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/depr/exception.unexpected/unexpected.handler/Android.mk
 
 test_name := depr/exception.unexpected/unexpected.handler/unexpected_handler
 test_src := unexpected_handler.pass.cpp

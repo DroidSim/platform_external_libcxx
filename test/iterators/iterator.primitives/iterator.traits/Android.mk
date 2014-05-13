@@ -14,7 +14,10 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/iterators/iterator.primitives/iterator.traits/Android.mk
+
+test_name := iterators/iterator.primitives/iterator.traits/iterator
+test_src := iterator.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := iterators/iterator.primitives/iterator.traits/const_pointer
 test_src := const_pointer.pass.cpp
@@ -22,10 +25,6 @@ include external/libcxx/test/Android.build.mk
 
 test_name := iterators/iterator.primitives/iterator.traits/pointer
 test_src := pointer.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := iterators/iterator.primitives/iterator.traits/iterator
-test_src := iterator.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := iterators/iterator.primitives/iterator.traits/empty

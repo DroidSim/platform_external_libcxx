@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/ratio/Android.mk
 
 test_name := utilities/ratio/typedefs
 test_src := typedefs.pass.cpp

@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/diagnostics/std.exceptions/invalid.argument/Android.mk
 
 test_name := diagnostics/std.exceptions/invalid.argument/invalid_argument
 test_src := invalid_argument.pass.cpp

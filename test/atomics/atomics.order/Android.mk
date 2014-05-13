@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/atomics/atomics.order/Android.mk
-
-test_name := atomics/atomics.order/memory_order
-test_src := memory_order.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := atomics/atomics.order/kill_dependency
 test_src := kill_dependency.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := atomics/atomics.order/memory_order
+test_src := memory_order.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

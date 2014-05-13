@@ -14,22 +14,21 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/default.allocator/allocator.members/Android.mk
 
 test_name := utilities/memory/default.allocator/allocator.members/address
 test_src := address.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/memory/default.allocator/allocator.members/construct
-test_src := construct.pass.cpp
+test_name := utilities/memory/default.allocator/allocator.members/max_size
+test_src := max_size.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/default.allocator/allocator.members/allocate
 test_src := allocate.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/memory/default.allocator/allocator.members/max_size
-test_src := max_size.pass.cpp
+test_name := utilities/memory/default.allocator/allocator.members/construct
+test_src := construct.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

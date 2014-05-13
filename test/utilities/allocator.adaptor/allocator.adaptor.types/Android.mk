@@ -14,18 +14,9 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/allocator.adaptor/allocator.adaptor.types/Android.mk
 
 test_name := utilities/allocator.adaptor/allocator.adaptor.types/inner_allocator_type
 test_src := inner_allocator_type.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/allocator.adaptor/allocator.adaptor.types/propagate_on_container_copy_assignment
-test_src := propagate_on_container_copy_assignment.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/allocator.adaptor/allocator.adaptor.types/propagate_on_container_swap
-test_src := propagate_on_container_swap.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/allocator.adaptor/allocator.adaptor.types/allocator_pointers
@@ -34,6 +25,14 @@ include external/libcxx/test/Android.build.mk
 
 test_name := utilities/allocator.adaptor/allocator.adaptor.types/propagate_on_container_move_assignment
 test_src := propagate_on_container_move_assignment.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/allocator.adaptor/allocator.adaptor.types/propagate_on_container_copy_assignment
+test_src := propagate_on_container_copy_assignment.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/allocator.adaptor/allocator.adaptor.types/propagate_on_container_swap
+test_src := propagate_on_container_swap.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

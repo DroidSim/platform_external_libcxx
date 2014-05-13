@@ -14,26 +14,29 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/function.objects/func.wrap/func.wrap.func/func.wrap.func.con/Android.mk
-
-test_name := utilities/function.objects/func.wrap/func.wrap.func/func.wrap.func.con/default
-test_src := default.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/func.wrap/func.wrap.func/func.wrap.func.con/alloc
 test_src := alloc.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/function.objects/func.wrap/func.wrap.func/func.wrap.func.con/F_incomplete
-test_src := F_incomplete.pass.cpp
+test_name := utilities/function.objects/func.wrap/func.wrap.func/func.wrap.func.con/default
+test_src := default.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/function.objects/func.wrap/func.wrap.func/func.wrap.func.con/F_assign
-test_src := F_assign.pass.cpp
+test_name := utilities/function.objects/func.wrap/func.wrap.func/func.wrap.func.con/alloc_F
+test_src := alloc_F.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/function.objects/func.wrap/func.wrap.func/func.wrap.func.con/F
-test_src := F.pass.cpp
+test_name := utilities/function.objects/func.wrap/func.wrap.func/func.wrap.func.con/copy
+test_src := copy.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/function.objects/func.wrap/func.wrap.func/func.wrap.func.con/nullptr_t
+test_src := nullptr_t.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/function.objects/func.wrap/func.wrap.func/func.wrap.func.con/alloc_function
+test_src := alloc_function.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/func.wrap/func.wrap.func/func.wrap.func.con/alloc_rfunction
@@ -44,28 +47,24 @@ test_name := utilities/function.objects/func.wrap/func.wrap.func/func.wrap.func.
 test_src := nullptr_t_assign.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/function.objects/func.wrap/func.wrap.func/func.wrap.func.con/alloc_nullptr
-test_src := alloc_nullptr.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := utilities/function.objects/func.wrap/func.wrap.func/func.wrap.func.con/copy
-test_src := copy.pass.cpp
+test_name := utilities/function.objects/func.wrap/func.wrap.func/func.wrap.func.con/F
+test_src := F.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/function.objects/func.wrap/func.wrap.func/func.wrap.func.con/copy_assign
 test_src := copy_assign.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/function.objects/func.wrap/func.wrap.func/func.wrap.func.con/alloc_function
-test_src := alloc_function.pass.cpp
+test_name := utilities/function.objects/func.wrap/func.wrap.func/func.wrap.func.con/alloc_nullptr
+test_src := alloc_nullptr.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/function.objects/func.wrap/func.wrap.func/func.wrap.func.con/alloc_F
-test_src := alloc_F.pass.cpp
+test_name := utilities/function.objects/func.wrap/func.wrap.func/func.wrap.func.con/F_assign
+test_src := F_assign.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/function.objects/func.wrap/func.wrap.func/func.wrap.func.con/nullptr_t
-test_src := nullptr_t.pass.cpp
+test_name := utilities/function.objects/func.wrap/func.wrap.func/func.wrap.func.con/F_incomplete
+test_src := F_incomplete.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

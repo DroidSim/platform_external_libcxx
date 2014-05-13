@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/sequences/forwardlist/forwardlist.iter/Android.mk
-
-test_name := containers/sequences/forwardlist/forwardlist.iter/before_begin
-test_src := before_begin.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := containers/sequences/forwardlist/forwardlist.iter/iterators
 test_src := iterators.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/sequences/forwardlist/forwardlist.iter/before_begin
+test_src := before_begin.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

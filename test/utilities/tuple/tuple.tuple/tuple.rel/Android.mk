@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/tuple/tuple.tuple/tuple.rel/Android.mk
-
-test_name := utilities/tuple/tuple.tuple/tuple.rel/lt
-test_src := lt.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/tuple/tuple.tuple/tuple.rel/eq
 test_src := eq.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/tuple/tuple.tuple/tuple.rel/lt
+test_src := lt.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/sequences/dynarray/Android.mk
 
 test_name := containers/sequences/dynarray/nothing_to_do
 test_src := nothing_to_do.pass.cpp

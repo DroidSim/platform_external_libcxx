@@ -14,30 +14,29 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/iterators/predef.iterators/move.iterators/move.iter.ops/move.iter.op.comp/Android.mk
 
-test_name := iterators/predef.iterators/move.iterators/move.iter.ops/move.iter.op.comp/op_lte
-test_src := op_lte.pass.cpp
+test_name := iterators/predef.iterators/move.iterators/move.iter.ops/move.iter.op.comp/op_gt
+test_src := op_gt.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := iterators/predef.iterators/move.iterators/move.iter.ops/move.iter.op.comp/op_eq
 test_src := op_eq.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := iterators/predef.iterators/move.iterators/move.iter.ops/move.iter.op.comp/op_neq
-test_src := op_neq.pass.cpp
+test_name := iterators/predef.iterators/move.iterators/move.iter.ops/move.iter.op.comp/op_gte
+test_src := op_gte.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := iterators/predef.iterators/move.iterators/move.iter.ops/move.iter.op.comp/op_gt
-test_src := op_gt.pass.cpp
+test_name := iterators/predef.iterators/move.iterators/move.iter.ops/move.iter.op.comp/op_lte
+test_src := op_lte.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := iterators/predef.iterators/move.iterators/move.iter.ops/move.iter.op.comp/op_lt
 test_src := op_lt.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := iterators/predef.iterators/move.iterators/move.iter.ops/move.iter.op.comp/op_gte
-test_src := op_gte.pass.cpp
+test_name := iterators/predef.iterators/move.iterators/move.iter.ops/move.iter.op.comp/op_neq
+test_src := op_neq.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

@@ -14,14 +14,37 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/strings/string.conversions/Android.mk
+
+test_name := strings/string.conversions/stoi
+test_src := stoi.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := strings/string.conversions/stold
+test_src := stold.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := strings/string.conversions/stod
 test_src := stod.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := strings/string.conversions/stold
-test_src := stold.pass.cpp
+test_name := strings/string.conversions/to_string
+test_src := to_string.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := strings/string.conversions/stol
+test_src := stol.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := strings/string.conversions/stof
+test_src := stof.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := strings/string.conversions/stoll
+test_src := stoll.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := strings/string.conversions/stoull
+test_src := stoull.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := strings/string.conversions/to_wstring
@@ -30,30 +53,6 @@ include external/libcxx/test/Android.build.mk
 
 test_name := strings/string.conversions/stoul
 test_src := stoul.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := strings/string.conversions/stol
-test_src := stol.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := strings/string.conversions/stoll
-test_src := stoll.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := strings/string.conversions/to_string
-test_src := to_string.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := strings/string.conversions/stoull
-test_src := stoull.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := strings/string.conversions/stof
-test_src := stof.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := strings/string.conversions/stoi
-test_src := stoi.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

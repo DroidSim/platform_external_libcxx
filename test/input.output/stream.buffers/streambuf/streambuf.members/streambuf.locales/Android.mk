@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/stream.buffers/streambuf/streambuf.members/streambuf.locales/Android.mk
 
 test_name := input.output/stream.buffers/streambuf/streambuf.members/streambuf.locales/locales
 test_src := locales.pass.cpp

@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/file.streams/fstreams/filebuf.cons/Android.mk
 
 test_name := input.output/file.streams/fstreams/filebuf.cons/default
 test_src := default.pass.cpp

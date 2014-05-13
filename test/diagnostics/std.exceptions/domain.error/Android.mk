@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/diagnostics/std.exceptions/domain.error/Android.mk
 
 test_name := diagnostics/std.exceptions/domain.error/domain_error
 test_src := domain_error.pass.cpp

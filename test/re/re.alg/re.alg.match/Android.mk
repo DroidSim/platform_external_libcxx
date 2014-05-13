@@ -14,38 +14,37 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/re/re.alg/re.alg.match/Android.mk
 
-test_name := re/re.alg/re.alg.match/awk
-test_src := awk.pass.cpp
+test_name := re/re.alg/re.alg.match/egrep
+test_src := egrep.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := re/re.alg/re.alg.match/grep
 test_src := grep.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := re/re.alg/re.alg.match/egrep
-test_src := egrep.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := re/re.alg/re.alg.match/ecma
-test_src := ecma.pass.cpp
+test_name := re/re.alg/re.alg.match/parse_curly_brackets
+test_src := parse_curly_brackets.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := re/re.alg/re.alg.match/extended
 test_src := extended.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := re/re.alg/re.alg.match/basic
-test_src := basic.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := re/re.alg/re.alg.match/parse_curly_brackets
-test_src := parse_curly_brackets.pass.cpp
+test_name := re/re.alg/re.alg.match/awk
+test_src := awk.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := re/re.alg/re.alg.match/lookahead_capture
 test_src := lookahead_capture.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := re/re.alg/re.alg.match/basic
+test_src := basic.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := re/re.alg/re.alg.match/ecma
+test_src := ecma.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

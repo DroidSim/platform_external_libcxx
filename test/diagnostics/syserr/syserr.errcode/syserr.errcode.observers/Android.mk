@@ -14,18 +14,17 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/diagnostics/syserr/syserr.errcode/syserr.errcode.observers/Android.mk
 
 test_name := diagnostics/syserr/syserr.errcode/syserr.errcode.observers/bool
 test_src := bool.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := diagnostics/syserr/syserr.errcode/syserr.errcode.observers/default_error_condition
-test_src := default_error_condition.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := diagnostics/syserr/syserr.errcode/syserr.errcode.observers/category
 test_src := category.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := diagnostics/syserr/syserr.errcode/syserr.errcode.observers/default_error_condition
+test_src := default_error_condition.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := diagnostics/syserr/syserr.errcode/syserr.errcode.observers/message

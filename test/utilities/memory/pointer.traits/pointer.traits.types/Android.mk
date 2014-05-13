@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/pointer.traits/pointer.traits.types/Android.mk
 
 test_name := utilities/memory/pointer.traits/pointer.traits.types/rebind
 test_src := rebind.pass.cpp

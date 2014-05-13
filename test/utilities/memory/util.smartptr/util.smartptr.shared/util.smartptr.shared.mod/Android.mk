@@ -14,26 +14,25 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.mod/Android.mk
 
-test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.mod/reset_pointer_deleter
-test_src := reset_pointer_deleter.pass.cpp
+test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.mod/reset_pointer_deleter_allocator
+test_src := reset_pointer_deleter_allocator.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.mod/swap
 test_src := swap.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.mod/reset_pointer
-test_src := reset_pointer.pass.cpp
+test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.mod/reset_pointer_deleter
+test_src := reset_pointer_deleter.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.mod/reset
 test_src := reset.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.mod/reset_pointer_deleter_allocator
-test_src := reset_pointer_deleter_allocator.pass.cpp
+test_name := utilities/memory/util.smartptr/util.smartptr.shared/util.smartptr.shared.mod/reset_pointer
+test_src := reset_pointer.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

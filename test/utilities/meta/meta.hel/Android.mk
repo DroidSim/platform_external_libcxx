@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/meta/meta.hel/Android.mk
 
 test_name := utilities/meta/meta.hel/integral_constant
 test_src := integral_constant.pass.cpp

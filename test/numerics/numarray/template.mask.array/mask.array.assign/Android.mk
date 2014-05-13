@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/numarray/template.mask.array/mask.array.assign/Android.mk
 
 test_name := numerics/numarray/template.mask.array/mask.array.assign/mask_array
 test_src := mask_array.pass.cpp

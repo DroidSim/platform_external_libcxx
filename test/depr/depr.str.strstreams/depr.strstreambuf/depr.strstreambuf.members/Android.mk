@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.members/Android.mk
-
-test_name := depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.members/freeze
-test_src := freeze.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.members/pcount
 test_src := pcount.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.members/freeze
+test_src := freeze.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.members/str

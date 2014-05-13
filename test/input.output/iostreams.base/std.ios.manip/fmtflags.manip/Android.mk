@@ -14,62 +14,61 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/input.output/iostreams.base/std.ios.manip/fmtflags.manip/Android.mk
-
-test_name := input.output/iostreams.base/std.ios.manip/fmtflags.manip/unitbuf
-test_src := unitbuf.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostreams.base/std.ios.manip/fmtflags.manip/noskipws
 test_src := noskipws.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/iostreams.base/std.ios.manip/fmtflags.manip/nounitbuf
-test_src := nounitbuf.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/iostreams.base/std.ios.manip/fmtflags.manip/noshowpoint
-test_src := noshowpoint.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostreams.base/std.ios.manip/fmtflags.manip/showbase
 test_src := showbase.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := input.output/iostreams.base/std.ios.manip/fmtflags.manip/skipws
-test_src := skipws.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := input.output/iostreams.base/std.ios.manip/fmtflags.manip/uppercase
-test_src := uppercase.pass.cpp
+test_name := input.output/iostreams.base/std.ios.manip/fmtflags.manip/noshowbase
+test_src := noshowbase.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostreams.base/std.ios.manip/fmtflags.manip/showpoint
 test_src := showpoint.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := input.output/iostreams.base/std.ios.manip/fmtflags.manip/noshowbase
-test_src := noshowbase.pass.cpp
+test_name := input.output/iostreams.base/std.ios.manip/fmtflags.manip/noboolalpha
+test_src := noboolalpha.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostreams.base/std.ios.manip/fmtflags.manip/noshowpoint
+test_src := noshowpoint.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostreams.base/std.ios.manip/fmtflags.manip/showpos
 test_src := showpos.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := input.output/iostreams.base/std.ios.manip/fmtflags.manip/noboolalpha
-test_src := noboolalpha.pass.cpp
+test_name := input.output/iostreams.base/std.ios.manip/fmtflags.manip/skipws
+test_src := skipws.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostreams.base/std.ios.manip/fmtflags.manip/nounitbuf
+test_src := nounitbuf.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostreams.base/std.ios.manip/fmtflags.manip/boolalpha
+test_src := boolalpha.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := input.output/iostreams.base/std.ios.manip/fmtflags.manip/uppercase
+test_src := uppercase.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := input.output/iostreams.base/std.ios.manip/fmtflags.manip/noshowpos
 test_src := noshowpos.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := input.output/iostreams.base/std.ios.manip/fmtflags.manip/nouppercase
-test_src := nouppercase.pass.cpp
+test_name := input.output/iostreams.base/std.ios.manip/fmtflags.manip/unitbuf
+test_src := unitbuf.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := input.output/iostreams.base/std.ios.manip/fmtflags.manip/boolalpha
-test_src := boolalpha.pass.cpp
+test_name := input.output/iostreams.base/std.ios.manip/fmtflags.manip/nouppercase
+test_src := nouppercase.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

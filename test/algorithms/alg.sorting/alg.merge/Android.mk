@@ -14,7 +14,10 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/algorithms/alg.sorting/alg.merge/Android.mk
+
+test_name := algorithms/alg.sorting/alg.merge/merge_comp
+test_src := merge_comp.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := algorithms/alg.sorting/alg.merge/inplace_merge_comp
 test_src := inplace_merge_comp.pass.cpp
@@ -26,10 +29,6 @@ include external/libcxx/test/Android.build.mk
 
 test_name := algorithms/alg.sorting/alg.merge/inplace_merge
 test_src := inplace_merge.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := algorithms/alg.sorting/alg.merge/merge_comp
-test_src := merge_comp.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

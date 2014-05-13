@@ -14,18 +14,17 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/thread/thread.condition/Android.mk
 
 test_name := thread/thread.condition/notify_all_at_thread_exit
 test_src := notify_all_at_thread_exit.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := thread/thread.condition/cv_status
-test_src := cv_status.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := thread/thread.condition/version
 test_src := version.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := thread/thread.condition/cv_status
+test_src := cv_status.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

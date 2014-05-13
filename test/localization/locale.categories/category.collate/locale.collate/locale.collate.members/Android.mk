@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/localization/locale.categories/category.collate/locale.collate/locale.collate.members/Android.mk
-
-test_name := localization/locale.categories/category.collate/locale.collate/locale.collate.members/compare
-test_src := compare.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := localization/locale.categories/category.collate/locale.collate/locale.collate.members/transform
 test_src := transform.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := localization/locale.categories/category.collate/locale.collate/locale.collate.members/compare
+test_src := compare.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := localization/locale.categories/category.collate/locale.collate/locale.collate.members/hash

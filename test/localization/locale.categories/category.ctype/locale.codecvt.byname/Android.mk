@@ -14,10 +14,9 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/localization/locale.categories/category.ctype/locale.codecvt.byname/Android.mk
 
-test_name := localization/locale.categories/category.ctype/locale.codecvt.byname/ctor_char32_t
-test_src := ctor_char32_t.pass.cpp
+test_name := localization/locale.categories/category.ctype/locale.codecvt.byname/ctor_wchar_t
+test_src := ctor_wchar_t.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := localization/locale.categories/category.ctype/locale.codecvt.byname/ctor_char16_t
@@ -28,8 +27,8 @@ test_name := localization/locale.categories/category.ctype/locale.codecvt.byname
 test_src := ctor_char.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := localization/locale.categories/category.ctype/locale.codecvt.byname/ctor_wchar_t
-test_src := ctor_wchar_t.pass.cpp
+test_name := localization/locale.categories/category.ctype/locale.codecvt.byname/ctor_char32_t
+test_src := ctor_char32_t.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

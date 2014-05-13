@@ -14,18 +14,17 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/depr/depr.auto.ptr/auto.ptr/auto.ptr.conv/Android.mk
 
-test_name := depr/depr.auto.ptr/auto.ptr/auto.ptr.conv/assign_from_auto_ptr_ref
-test_src := assign_from_auto_ptr_ref.pass.cpp
+test_name := depr/depr.auto.ptr/auto.ptr/auto.ptr.conv/convert_to_auto_ptr
+test_src := convert_to_auto_ptr.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := depr/depr.auto.ptr/auto.ptr/auto.ptr.conv/convert_from_auto_ptr_ref
 test_src := convert_from_auto_ptr_ref.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := depr/depr.auto.ptr/auto.ptr/auto.ptr.conv/convert_to_auto_ptr
-test_src := convert_to_auto_ptr.pass.cpp
+test_name := depr/depr.auto.ptr/auto.ptr/auto.ptr.conv/assign_from_auto_ptr_ref
+test_src := assign_from_auto_ptr_ref.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := depr/depr.auto.ptr/auto.ptr/auto.ptr.conv/convert_to_auto_ptr_ref

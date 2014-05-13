@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/container.adaptors/queue/queue.cons.alloc/Android.mk
 
 test_name := containers/container.adaptors/queue/queue.cons.alloc/ctor_container_alloc
 test_src := ctor_container_alloc.pass.cpp
@@ -24,16 +23,16 @@ test_name := containers/container.adaptors/queue/queue.cons.alloc/ctor_queue_all
 test_src := ctor_queue_alloc.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := containers/container.adaptors/queue/queue.cons.alloc/ctor_rcontainer_alloc
-test_src := ctor_rcontainer_alloc.pass.cpp
-include external/libcxx/test/Android.build.mk
-
 test_name := containers/container.adaptors/queue/queue.cons.alloc/ctor_alloc
 test_src := ctor_alloc.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := containers/container.adaptors/queue/queue.cons.alloc/ctor_rqueue_alloc
 test_src := ctor_rqueue_alloc.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := containers/container.adaptors/queue/queue.cons.alloc/ctor_rcontainer_alloc
+test_src := ctor_rcontainer_alloc.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

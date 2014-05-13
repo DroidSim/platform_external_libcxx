@@ -14,22 +14,21 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/numerics/numarray/valarray.range/Android.mk
-
-test_name := numerics/numarray/valarray.range/begin_const
-test_src := begin_const.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := numerics/numarray/valarray.range/end_non_const
-test_src := end_non_const.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := numerics/numarray/valarray.range/end_const
 test_src := end_const.pass.cpp
 include external/libcxx/test/Android.build.mk
 
+test_name := numerics/numarray/valarray.range/begin_const
+test_src := begin_const.pass.cpp
+include external/libcxx/test/Android.build.mk
+
 test_name := numerics/numarray/valarray.range/begin_non_const
 test_src := begin_non_const.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := numerics/numarray/valarray.range/end_non_const
+test_src := end_non_const.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

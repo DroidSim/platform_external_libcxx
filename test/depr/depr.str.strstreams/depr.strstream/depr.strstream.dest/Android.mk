@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/depr/depr.str.strstreams/depr.strstream/depr.strstream.dest/Android.mk
 
 test_name := depr/depr.str.strstreams/depr.strstream/depr.strstream.dest/rdbuf
 test_src := rdbuf.pass.cpp

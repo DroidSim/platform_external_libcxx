@@ -14,7 +14,22 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/language.support/support.exception/except.nested/Android.mk
+
+test_name := language.support/support.exception/except.nested/rethrow_if_nested
+test_src := rethrow_if_nested.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := language.support/support.exception/except.nested/assign
+test_src := assign.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := language.support/support.exception/except.nested/ctor_default
+test_src := ctor_default.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := language.support/support.exception/except.nested/throw_with_nested
+test_src := throw_with_nested.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := language.support/support.exception/except.nested/rethrow_nested
 test_src := rethrow_nested.pass.cpp
@@ -22,22 +37,6 @@ include external/libcxx/test/Android.build.mk
 
 test_name := language.support/support.exception/except.nested/ctor_copy
 test_src := ctor_copy.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := language.support/support.exception/except.nested/assign
-test_src := assign.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := language.support/support.exception/except.nested/rethrow_if_nested
-test_src := rethrow_if_nested.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := language.support/support.exception/except.nested/throw_with_nested
-test_src := throw_with_nested.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := language.support/support.exception/except.nested/ctor_default
-test_src := ctor_default.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

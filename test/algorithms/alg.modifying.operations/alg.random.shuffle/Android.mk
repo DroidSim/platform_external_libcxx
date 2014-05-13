@@ -14,7 +14,10 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/algorithms/alg.modifying.operations/alg.random.shuffle/Android.mk
+
+test_name := algorithms/alg.modifying.operations/alg.random.shuffle/random_shuffle_urng
+test_src := random_shuffle_urng.pass.cpp
+include external/libcxx/test/Android.build.mk
 
 test_name := algorithms/alg.modifying.operations/alg.random.shuffle/random_shuffle_rand
 test_src := random_shuffle_rand.pass.cpp
@@ -22,10 +25,6 @@ include external/libcxx/test/Android.build.mk
 
 test_name := algorithms/alg.modifying.operations/alg.random.shuffle/random_shuffle
 test_src := random_shuffle.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := algorithms/alg.modifying.operations/alg.random.shuffle/random_shuffle_urng
-test_src := random_shuffle_urng.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

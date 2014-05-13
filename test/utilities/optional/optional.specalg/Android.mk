@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/optional/optional.specalg/Android.mk
-
-test_name := utilities/optional/optional.specalg/swap
-test_src := swap.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := utilities/optional/optional.specalg/make_optional
 test_src := make_optional.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := utilities/optional/optional.specalg/swap
+test_src := swap.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

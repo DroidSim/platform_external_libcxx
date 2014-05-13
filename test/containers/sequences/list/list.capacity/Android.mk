@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/containers/sequences/list/list.capacity/Android.mk
 
 test_name := containers/sequences/list/list.capacity/resize_size_value
 test_src := resize_size_value.pass.cpp

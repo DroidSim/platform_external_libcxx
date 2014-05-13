@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/re/re.results/re.results.form/Android.mk
-
-test_name := re/re.results/re.results.form/form1
-test_src := form1.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := re/re.results/re.results.form/form4
 test_src := form4.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := re/re.results/re.results.form/form1
+test_src := form1.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := re/re.results/re.results.form/form2

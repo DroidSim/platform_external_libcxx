@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/intseq/intseq.make/Android.mk
 
 test_name := utilities/intseq/intseq.make/make_integer_seq
 test_src := make_integer_seq.pass.cpp

@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/utilities/memory/ptr.align/Android.mk
 
 test_name := utilities/memory/ptr.align/align
 test_src := align.pass.cpp

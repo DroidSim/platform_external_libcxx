@@ -14,34 +14,33 @@
 # limitations under the License.
 #
 LOCAL_PATH := $(call my-dir)
-test_makefile := external/libcxx/test/strings/basic.string/string.capacity/Android.mk
-
-test_name := strings/basic.string/string.capacity/length
-test_src := length.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := strings/basic.string/string.capacity/resize_size_char
-test_src := resize_size_char.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := strings/basic.string/string.capacity/shrink_to_fit
-test_src := shrink_to_fit.pass.cpp
-include external/libcxx/test/Android.build.mk
-
-test_name := strings/basic.string/string.capacity/clear
-test_src := clear.pass.cpp
-include external/libcxx/test/Android.build.mk
 
 test_name := strings/basic.string/string.capacity/size
 test_src := size.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := strings/basic.string/string.capacity/capacity
+test_src := capacity.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := strings/basic.string/string.capacity/max_size
 test_src := max_size.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := strings/basic.string/string.capacity/capacity
-test_src := capacity.pass.cpp
+test_name := strings/basic.string/string.capacity/clear
+test_src := clear.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := strings/basic.string/string.capacity/resize_size
+test_src := resize_size.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := strings/basic.string/string.capacity/shrink_to_fit
+test_src := shrink_to_fit.pass.cpp
+include external/libcxx/test/Android.build.mk
+
+test_name := strings/basic.string/string.capacity/resize_size_char
+test_src := resize_size_char.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 test_name := strings/basic.string/string.capacity/reserve
@@ -52,8 +51,8 @@ test_name := strings/basic.string/string.capacity/empty
 test_src := empty.pass.cpp
 include external/libcxx/test/Android.build.mk
 
-test_name := strings/basic.string/string.capacity/resize_size
-test_src := resize_size.pass.cpp
+test_name := strings/basic.string/string.capacity/length
+test_src := length.pass.cpp
 include external/libcxx/test/Android.build.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
