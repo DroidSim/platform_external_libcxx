@@ -1,0 +1,7 @@
+Code-Review+2: Ian Rogers <irogers@google.com>
+Verified+1: Dan Albert <danalbert@google.com>
+Submitted-by: Dan Albert <danalbert@google.com>
+Submitted-at: Fri, 16 May 2014 21:47:38 +0000
+Reviewed-on: https://android-review.googlesource.com/94904
+Project: platform/external/libcxx
+Branch: refs/heads/master
