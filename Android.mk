@@ -65,8 +65,8 @@ ifeq ($(TARGET_OS),gnu_linux)
 LOCAL_LDLIBS := -ldl -lpthread
 else
 LOCAL_SHARED_LIBRARIES := libdl
-endif
 LOCAL_SYSTEM_SHARED_LIBRARIES := libc
+endif
 
 # Bug: 14296739
 # The MIPS target in LLVM is spuriously generating a text relocation for
