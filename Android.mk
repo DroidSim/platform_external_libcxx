@@ -61,7 +61,11 @@ LOCAL_SRC_FILES := $(LIBCXX_SRC_FILES)
 LOCAL_CPPFLAGS := $(LIBCXX_CPPFLAGS) -Iexternal/libcxxrt/include -DLIBCXXRT
 LOCAL_RTTI_FLAG := -frtti
 LOCAL_STATIC_LIBRARIES := libcxxrt
+ifeq ($(TARGET_OS),gnu_linux)
+LOCAL_LDLIBS := -ldl -lpthread
+else
 LOCAL_SHARED_LIBRARIES := libdl
+endif
 LOCAL_SYSTEM_SHARED_LIBRARIES := libc
 
 # Bug: 14296739
@@ -74,7 +78,9 @@ LOCAL_LDFLAGS := -Wl,--no-fatal-warnings
 endif
 
 ifneq ($(TARGET_ARCH),arm)
+ifneq ($(TARGET_OS),gnu_linux)
 	LOCAL_SHARED_LIBRARIES += libdl
+endif
 endif
 
 LOCAL_ADDITIONAL_DEPENDENCIES := $(LOCAL_PATH)/Android.mk
